@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "276183602808",
+    "project_id": "alertarosa-c180e",
+    "storage_bucket": "alertarosa-c180e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276183602808:android:86580444739ce920f5bf8d",
+        "android_client_info": {
+          "package_name": "com.mycompany.alertarosa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276183602808-027p0h42kvvlhk8ap98knhpj4497ie59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.alertarosa",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "276183602808-kd885sasjc34c2g3jon0hkq7ft2034po.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBny0GxwcyOjM2vOeHuvpo3Hhr62k2hZew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276183602808-kd885sasjc34c2g3jon0hkq7ft2034po.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "276183602808-s6e1tu97da6p8dvgjh7ervjsl45d9e3b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.alertarosa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
