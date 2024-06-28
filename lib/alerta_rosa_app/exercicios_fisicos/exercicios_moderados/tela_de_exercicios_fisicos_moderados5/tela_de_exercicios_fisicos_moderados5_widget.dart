@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_video_player.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tela_de_exercicios_fisicos_moderados5_model.dart';
 export 'tela_de_exercicios_fisicos_moderados5_model.dart';
 
@@ -50,36 +48,25 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Visibility(
-          visible: responsiveVisibility(
-            context: context,
-            tablet: false,
-            tabletLandscape: false,
-            desktop: false,
-          ),
+          
           child: Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color(0xFFECA9BB),
-                  Color(0xFFF8A2B0),
-                  Color(0xFFECA9BB)
-                ],
-                stops: [0.0, 0.5, 1.0],
-                begin: AlignmentDirectional(-1.0, -1.0),
-                end: AlignmentDirectional(1.0, 1.0),
-              ),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/plano-de-fundo.png'),
+            ),
             ),
             child: Stack(
               children: [
                 Align(
-                  alignment: AlignmentDirectional(-0.04, -0.91),
+                  alignment: const AlignmentDirectional(-0.04, -0.91),
                   child: Container(
                     width: 70.0,
                     height: 70.0,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
@@ -89,10 +76,10 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.4, -0.73),
+                  alignment: const AlignmentDirectional(0.4, -0.73),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                     child: Text(
                       'Exercícios Físicos Moderados',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -105,10 +92,10 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.07, -0.46),
+                  alignment: const AlignmentDirectional(-0.07, -0.46),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                     child: Text(
                       ' 5.Flexão dos cotovelos',
                       textAlign: TextAlign.start,
@@ -123,10 +110,10 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.01, 0.94),
+                  alignment: const AlignmentDirectional(0.01, 0.94),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.asset(
@@ -139,10 +126,10 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-1.09, 0.83),
+                  alignment: const AlignmentDirectional(-1.09, 0.83),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 0.0, 0.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         _model.timerController.onStartTimer();
@@ -151,11 +138,11 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                       options: FFButtonOptions(
                         width: 101.0,
                         height: 21.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC92D7E),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFC92D7E),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Plus Jakarta Sans',
@@ -175,10 +162,10 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-1.08, 0.89),
+                  alignment: const AlignmentDirectional(-1.08, 0.89),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 0.0, 0.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         _model.timerController.onStopTimer();
@@ -187,11 +174,11 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                       options: FFButtonOptions(
                         width: 100.0,
                         height: 21.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC92D7E),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFC92D7E),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Plus Jakarta Sans',
@@ -211,10 +198,10 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-1.09, 0.94),
+                  alignment: const AlignmentDirectional(-1.09, 0.94),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 0.0, 0.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         _model.timerController.onResetTimer();
@@ -223,11 +210,11 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                       options: FFButtonOptions(
                         width: 100.0,
                         height: 20.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC92D7E),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFC92D7E),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Plus Jakarta Sans',
@@ -247,7 +234,7 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.81, 0.71),
+                  alignment: const AlignmentDirectional(-0.81, 0.71),
                   child: FlutterFlowTimer(
                     initialTime: _model.timerInitialTimeMs,
                     getDisplayTime: (value) => StopWatchTimer.getDisplayTime(
@@ -256,7 +243,7 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                       milliSecond: false,
                     ),
                     controller: _model.timerController,
-                    updateStateInterval: Duration(milliseconds: 60000),
+                    updateStateInterval: const Duration(milliseconds: 60000),
                     onChanged: (value, displayTime, shouldUpdate) {
                       _model.timerMilliseconds = value;
                       _model.timerValue = displayTime;
@@ -271,7 +258,7 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                               color: FlutterFlowTheme.of(context).primaryText,
                             ),
                           ),
-                          duration: Duration(milliseconds: 4000),
+                          duration: const Duration(milliseconds: 4000),
                           backgroundColor:
                               FlutterFlowTheme.of(context).secondary,
                         ),
@@ -287,7 +274,7 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                         ),
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: AlignmentDirectional(-0.92, 0.77),
                   child: Icon(
                     Icons.circle_outlined,
@@ -295,7 +282,7 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                     size: 100.0,
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: AlignmentDirectional(-0.48, 0.77),
                   child: Icon(
                     Icons.more_time_rounded,
@@ -304,10 +291,10 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, -0.66),
+                  alignment: const AlignmentDirectional(0.0, -0.66),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                     child: Text(
                       'É recomendável realizar a série de exercícios.  Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
                       textAlign: TextAlign.justify,
@@ -320,7 +307,7 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.38, -0.85),
+                  alignment: const AlignmentDirectional(0.38, -0.85),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -330,14 +317,14 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                       context.pushNamed(
                         'TelaDeExerciciosFisicosModerados6',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
                         },
                       );
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_right,
                       color: Color(0xFFC92D7E),
                       size: 40.0,
@@ -345,7 +332,7 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.04, -0.54),
+                  alignment: const AlignmentDirectional(0.04, -0.54),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button pressed ...');
@@ -355,10 +342,10 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                       width: 150.0,
                       height: 20.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFFC92D7E),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xFFC92D7E),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Plus Jakarta Sans',
@@ -377,7 +364,7 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.84, 0.24),
+                  alignment: const AlignmentDirectional(-0.84, 0.24),
                   child: Text(
                     'Passo a passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -389,10 +376,10 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.49),
+                  alignment: const AlignmentDirectional(0.0, 0.49),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 10.0, 0.0),
                     child: Text(
                       'A praticante deverá ficar de pé, segurando os pesos (saco de arroz/feijão ou garrafa pet). Em seguida elevar os braços estendidos a frente do tronco até chegar à altura dos ombros ou mais baixo caso haja alguma limitação do praticante e em seguida voltar a posição inicial de forma controlada, conforme vídeo.\nDeve-se fazer 1 série de 12 a 15 repetições nas duas primeiras semanas e a partir da terceira semana 3 séries de 10 a 15 repetições.',
                       textAlign: TextAlign.justify,
@@ -404,7 +391,7 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                     ),
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: AlignmentDirectional(0.82, -0.15),
                   child: FlutterFlowVideoPlayer(
                     path:
@@ -420,7 +407,7 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.46, -0.85),
+                  alignment: const AlignmentDirectional(-0.46, -0.85),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -430,21 +417,21 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                       context.pushNamed(
                         'TelaDeExerciciosFisicosModerados4',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.rightToLeft,
                           ),
                         },
                       );
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_left,
                       color: Color(0xFFC92D7E),
                       size: 40.0,
                     ),
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: AlignmentDirectional(-0.74, -0.15),
                   child: FlutterFlowVideoPlayer(
                     path:

@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tela_de_mamilo_invertido_model.dart';
 export 'tela_de_mamilo_invertido_model.dart';
 
@@ -44,34 +41,23 @@ class _TelaDeMamiloInvertidoWidgetState
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Visibility(
-          visible: responsiveVisibility(
-            context: context,
-            tablet: false,
-            tabletLandscape: false,
-            desktop: false,
-          ),
+          
           child: Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color(0xFFF8A2B0),
-                  Color(0xFFF8A2B0),
-                  Color(0xFFF8A2B0)
-                ],
-                stops: [0.0, 0.5, 1.0],
-                begin: AlignmentDirectional(-1.0, -1.0),
-                end: AlignmentDirectional(1.0, 1.0),
-              ),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/plano-de-fundo.png'),
+            ),
             ),
             child: Stack(
               children: [
                 Align(
-                  alignment: AlignmentDirectional(0.0, -0.76),
+                  alignment: const AlignmentDirectional(0.0, -0.76),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                     child: Text(
                       'Fique atenta ao sintoma de mamilo invertido, pois essa pode ser uma indicação importante do câncer de mama, e a detecção precoce pode salvar vidas',
                       textAlign: TextAlign.justify,
@@ -85,12 +71,12 @@ class _TelaDeMamiloInvertidoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.93, -0.52),
+                  alignment: const AlignmentDirectional(-0.93, -0.52),
                   child: Container(
                     width: 120.0,
                     height: 120.0,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
@@ -100,7 +86,7 @@ class _TelaDeMamiloInvertidoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.67, -0.49),
+                  alignment: const AlignmentDirectional(0.67, -0.49),
                   child: Text(
                     'Mamilo Invertido',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -113,7 +99,7 @@ class _TelaDeMamiloInvertidoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.84, -0.43),
+                  alignment: const AlignmentDirectional(0.84, -0.43),
                   child: Text(
                     'Vamos falar sobre?',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -124,7 +110,7 @@ class _TelaDeMamiloInvertidoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(1.09, 0.28),
+                  alignment: const AlignmentDirectional(1.09, 0.28),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -136,10 +122,10 @@ class _TelaDeMamiloInvertidoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, -0.08),
+                  alignment: const AlignmentDirectional(0.0, -0.08),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(80.0, 0.0, 80.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(80.0, 0.0, 80.0, 0.0),
                     child: Text(
                       'Normalmente, os mamilos apontam para fora, se sobrepondo à auréola. Porém, algumas pessoas podem ter um mamilo achatado ou puxado para dentro, chamado de mamilo invertido. ',
                       textAlign: TextAlign.justify,
@@ -152,10 +138,10 @@ class _TelaDeMamiloInvertidoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.77),
+                  alignment: const AlignmentDirectional(0.0, 0.77),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 20.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 20.0, 0.0),
                     child: Text(
                       'Mantenha-se informada e atenta aos sinais dos seus seios para garantir a prevenção e o diagnóstico precoce do câncer de mama',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -167,7 +153,7 @@ class _TelaDeMamiloInvertidoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.93),
+                  alignment: const AlignmentDirectional(0.0, 0.93),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -179,7 +165,7 @@ class _TelaDeMamiloInvertidoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.04, -0.91),
+                  alignment: const AlignmentDirectional(0.04, -0.91),
                   child: Text(
                     'Sinais e Sintomas',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -192,7 +178,7 @@ class _TelaDeMamiloInvertidoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.74, -0.92),
+                  alignment: const AlignmentDirectional(-0.74, -0.92),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -201,7 +187,7 @@ class _TelaDeMamiloInvertidoWidgetState
                     onTap: () async {
                       context.safePop();
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_left,
                       color: Color(0xFFF03E69),
                       size: 40.0,

@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tela_de_apoio_emocional_model.dart';
 export 'tela_de_apoio_emocional_model.dart';
 
@@ -44,16 +42,10 @@ class _TelaDeApoioEmocionalWidgetState
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Visibility(
-          visible: responsiveVisibility(
-            context: context,
-            tablet: false,
-            tabletLandscape: false,
-            desktop: false,
-          ),
           child: Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [
                   Color(0xFFECA9BB),
@@ -68,13 +60,13 @@ class _TelaDeApoioEmocionalWidgetState
             child: Stack(
               children: [
                 Align(
-                  alignment: AlignmentDirectional(0.0, -0.74),
+                  alignment: const AlignmentDirectional(0.0, -0.74),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(90.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(90.0, 0.0, 0.0, 0.0),
                         child: Text(
                           'Apoio Emocional',
                           style:
@@ -90,12 +82,12 @@ class _TelaDeApoioEmocionalWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.04, -0.95),
+                  alignment: const AlignmentDirectional(-0.04, -0.95),
                   child: Container(
                     width: 80.0,
                     height: 80.0,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
@@ -105,10 +97,10 @@ class _TelaDeApoioEmocionalWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, -0.62),
+                  alignment: const AlignmentDirectional(0.0, -0.62),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                     child: Text(
                       '\"Meditar ajuda a desenvolver uma maior resiliência emocional, essencial para lidar com a ansiedade e depressão associadas ao câncer de mama. Ao aceitar o acompanhamento psicológico, a paciente pode encontrar um apoio vital para enfrentar os desafios emocionais e psicológicos trazidos pela doença.\"',
                       textAlign: TextAlign.justify,
@@ -122,7 +114,7 @@ class _TelaDeApoioEmocionalWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.77, -0.45),
+                  alignment: const AlignmentDirectional(0.77, -0.45),
                   child: Text(
                     '-Dr. Jon Kabat-Zinn, 1990',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -134,7 +126,7 @@ class _TelaDeApoioEmocionalWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.88, -0.04),
+                  alignment: const AlignmentDirectional(-0.88, -0.04),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -146,10 +138,10 @@ class _TelaDeApoioEmocionalWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, -0.02),
+                  alignment: const AlignmentDirectional(0.0, -0.02),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(180.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(180.0, 0.0, 10.0, 0.0),
                     child: Text(
                       'Sabemos o  quanto o câncer pode ser agressivo não apenas com o nosso corpo, mas principalmente com a nossa mente, buscar o apoio emocional é de suma importãncia para o enfrentamento. Confira abaixo, alguns dos métodos que você pode adotar.',
                       textAlign: TextAlign.justify,
@@ -163,16 +155,16 @@ class _TelaDeApoioEmocionalWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.02, 0.45),
+                  alignment: const AlignmentDirectional(-0.02, 0.45),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(
                           'TelaDeLidandoDepressao',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.leftToRight,
                             ),
@@ -183,11 +175,11 @@ class _TelaDeApoioEmocionalWidgetState
                       options: FFButtonOptions(
                         width: 200.0,
                         height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC92D7E),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFC92D7E),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Plus Jakarta Sans',
@@ -207,13 +199,13 @@ class _TelaDeApoioEmocionalWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.01, 0.34),
+                  alignment: const AlignmentDirectional(-0.01, 0.34),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaDeMeditacaoGuiada',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.fade,
                             duration: Duration(milliseconds: 0),
@@ -226,10 +218,10 @@ class _TelaDeApoioEmocionalWidgetState
                       width: 200.0,
                       height: 40.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFFC92D7E),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xFFC92D7E),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Plus Jakarta Sans',
@@ -247,7 +239,7 @@ class _TelaDeApoioEmocionalWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.05, 0.89),
+                  alignment: const AlignmentDirectional(-0.05, 0.89),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -259,7 +251,7 @@ class _TelaDeApoioEmocionalWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.45, -0.9),
+                  alignment: const AlignmentDirectional(-0.45, -0.9),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -269,7 +261,7 @@ class _TelaDeApoioEmocionalWidgetState
                       context.pushNamed(
                         'TelaDeMenuInicial',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.fade,
                             duration: Duration(milliseconds: 0),
@@ -277,7 +269,7 @@ class _TelaDeApoioEmocionalWidgetState
                         },
                       );
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_left,
                       color: Color(0xFFC92D7E),
                       size: 40.0,

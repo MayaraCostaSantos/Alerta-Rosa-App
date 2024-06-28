@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tela_de_alimentacao_model.dart';
 export 'tela_de_alimentacao_model.dart';
 
@@ -43,30 +41,18 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Visibility(
-          visible: responsiveVisibility(
-            context: context,
-            tablet: false,
-            tabletLandscape: false,
-            desktop: false,
-          ),
           child: Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color(0xFFECA9BB),
-                  Color(0xFFF8A2B0),
-                  Color(0xFFECA9BB)
-                ],
-                stops: [0.0, 0.5, 1.0],
-                begin: AlignmentDirectional(-1.0, -1.0),
-                end: AlignmentDirectional(1.0, 1.0),
-              ),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/plano-de-fundo.png'),
+            ),
             ),
             child: Stack(
               children: [
-                Align(
+                const Align(
                   alignment: AlignmentDirectional(0.0, -0.72),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
@@ -74,12 +60,12 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.05, -0.94),
+                  alignment: const AlignmentDirectional(-0.05, -0.94),
                   child: Container(
                     width: 80.0,
                     height: 80.0,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
@@ -89,10 +75,10 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, -0.64),
+                  alignment: const AlignmentDirectional(0.0, -0.64),
                   child: Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        15.0, 0.0, 15.0, 0.0),
                     child: Text(
                       'A alimentação saudável é crucial para portadores de câncer de mama, pois pode ajudar na prevenção de recorrência da doença e na melhoria da qualidade de vida durante e após o tratamento.',
                       textAlign: TextAlign.justify,
@@ -106,7 +92,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.83, -0.51),
+                  alignment: const AlignmentDirectional(0.83, -0.51),
                   child: Text(
                     '-A Susan G. Komen Foundation, 2004',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -119,19 +105,19 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.05, 0.0),
+                  alignment: const AlignmentDirectional(-0.05, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 250.0, 0.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
                             context.pushNamed(
                               'TelaDePaladar',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType:
                                       PageTransitionType.leftToRight,
@@ -143,11 +129,11 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                           options: FFButtonOptions(
                             width: 234.0,
                             height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFFC92D7E),
+                            color: const Color(0xFFC92D7E),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -157,7 +143,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                                   letterSpacing: 0.0,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),
@@ -166,14 +152,14 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                         ),
                       ),
                       Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            0.0, 20.0, 0.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
                             context.pushNamed(
                               'TelaDeRegularAlimentacao',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType:
                                       PageTransitionType.leftToRight,
@@ -185,11 +171,11 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                           options: FFButtonOptions(
                             width: 234.0,
                             height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFFC92D7E),
+                            color: const Color(0xFFC92D7E),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -199,7 +185,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                                   letterSpacing: 0.0,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),
@@ -208,14 +194,14 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                         ),
                       ),
                       Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            0.0, 20.0, 0.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
                             context.pushNamed(
                               'TelaDeReceitas',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -227,11 +213,11 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                           options: FFButtonOptions(
                             width: 234.0,
                             height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFFC92D7E),
+                            color: const Color(0xFFC92D7E),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -241,7 +227,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                                   letterSpacing: 0.0,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),
@@ -250,7 +236,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 295.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
@@ -266,10 +252,10 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.32),
+                  alignment: const AlignmentDirectional(0.0, 0.32),
                   child: Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        15.0, 0.0, 15.0, 0.0),
                     child: Text(
                       'Além disso, a Cleveland Clinic recomenda a inclusão de vegetais crucíferos como brócolis, couve-flor, couve e repolho na dieta, pois são ricos em fitoquímicos que podem ter efeitos positivos na saúde dos portadores de câncer de mama. A dieta deve  incluir grãos integrais e proteínas magras para fornecer os nutrientes necessários para apoiar o sistema imunológico e ajudar na recuperação durante e após o tratamento.',
                       textAlign: TextAlign.justify,
@@ -282,10 +268,10 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.77, -0.73),
+                  alignment: const AlignmentDirectional(0.77, -0.73),
                   child: Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 60.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        60.0, 0.0, 60.0, 0.0),
                     child: Text(
                       'Alimentação e Saúde',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -298,7 +284,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.43, -0.88),
+                  alignment: const AlignmentDirectional(-0.43, -0.88),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -308,7 +294,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                       context.pushNamed(
                         'TelaDeMenuInicial',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.fade,
                             duration: Duration(milliseconds: 0),
@@ -316,7 +302,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                         },
                       );
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_left,
                       color: Color(0xFFC92D7E),
                       size: 40.0,

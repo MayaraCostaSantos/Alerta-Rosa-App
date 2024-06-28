@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'sinais_esintomas_model.dart';
 export 'sinais_esintomas_model.dart';
 
@@ -42,36 +40,24 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Visibility(
-          visible: responsiveVisibility(
-            context: context,
-            tablet: false,
-            tabletLandscape: false,
-            desktop: false,
-          ),
           child: Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color(0xFFF8A2B0),
-                  Color(0xFFF8A2B0),
-                  Color(0xFFF8A2B0)
-                ],
-                stops: [0.0, 0.5, 1.0],
-                begin: AlignmentDirectional(-1.0, -1.0),
-                end: AlignmentDirectional(1.0, 1.0),
-              ),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/plano-de-fundo.png'),
+            ),
             ),
             child: Stack(
               children: [
                 Align(
-                  alignment: AlignmentDirectional(-0.97, -0.87),
+                  alignment: const AlignmentDirectional(-0.97, -0.87),
                   child: Container(
                     width: 100.0,
                     height: 100.0,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
@@ -81,7 +67,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.62, -0.91),
+                  alignment: const AlignmentDirectional(0.62, -0.91),
                   child: Text(
                     'SINAIS E SINTOMAS',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -94,13 +80,13 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.25, -0.09),
+                  alignment: const AlignmentDirectional(0.25, -0.09),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaDeCarocoNaAxila',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -112,10 +98,10 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                       width: 250.0,
                       height: 35.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0x3CD29267),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0x3CD29267),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Roboto',
@@ -134,13 +120,13 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.27, -0.22),
+                  alignment: const AlignmentDirectional(0.27, -0.22),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaNoduloNaMama',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -152,10 +138,10 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                       width: 250.0,
                       height: 35.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xDEF03E69),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xDEF03E69),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Roboto',
@@ -174,13 +160,13 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.27, -0.35),
+                  alignment: const AlignmentDirectional(0.27, -0.35),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaSecrecaonomamilo',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -192,10 +178,10 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                       width: 250.0,
                       height: 35.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0x3CD29267),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0x3CD29267),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Roboto',
@@ -213,20 +199,20 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                     ),
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: AlignmentDirectional(0.0, 0.0),
                   child: Stack(
                     children: [],
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.29, -0.48),
+                  alignment: const AlignmentDirectional(0.29, -0.48),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaDeMamiloInvertido',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -238,10 +224,10 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                       width: 250.0,
                       height: 35.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xDEF03E69),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xDEF03E69),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Roboto',
@@ -260,13 +246,13 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.22, 0.44),
+                  alignment: const AlignmentDirectional(0.22, 0.44),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaDeDorNaMamaOuMamilo',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -278,10 +264,10 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                       width: 250.0,
                       height: 35.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0x4DB07556),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0x4DB07556),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Roboto',
@@ -299,13 +285,13 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.22, 0.3),
+                  alignment: const AlignmentDirectional(0.22, 0.3),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaDeIrritacaoNaPele',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -317,10 +303,10 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                       width: 250.0,
                       height: 35.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xDEF03E69),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xDEF03E69),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Roboto',
@@ -338,13 +324,13 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.27, 0.04),
+                  alignment: const AlignmentDirectional(0.27, 0.04),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaInchacoOuTodaAmama',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -356,10 +342,10 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                       width: 250.0,
                       height: 35.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xDEF03E69),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xDEF03E69),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Roboto',
@@ -377,13 +363,13 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.22, 0.17),
+                  alignment: const AlignmentDirectional(0.22, 0.17),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaPeleComAspectoEnrugado',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -395,10 +381,10 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                       width: 250.0,
                       height: 35.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0x4DB07556),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0x4DB07556),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Roboto',
@@ -416,7 +402,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.43, -0.58),
+                  alignment: const AlignmentDirectional(0.43, -0.58),
                   child: Text(
                     'Clique no sintoma que está sentindo',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -428,10 +414,10 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, -0.8),
+                  alignment: const AlignmentDirectional(0.0, -0.8),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(120.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(120.0, 0.0, 10.0, 0.0),
                     child: Text(
                       'Para qualquer sinal semelhante a esses, entre em contato imediatamente com seu médico(a).',
                       textAlign: TextAlign.start,
@@ -444,7 +430,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.19, 0.82),
+                  alignment: const AlignmentDirectional(-0.19, 0.82),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -455,7 +441,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                     ),
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: AlignmentDirectional(-0.9, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -464,7 +450,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.76, 0.16),
+                  alignment: const AlignmentDirectional(-0.76, 0.16),
                   child: Text(
                     '6',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -476,7 +462,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.76, 0.44),
+                  alignment: const AlignmentDirectional(-0.76, 0.44),
                   child: Text(
                     '8',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -488,7 +474,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.77, 0.05),
+                  alignment: const AlignmentDirectional(-0.77, 0.05),
                   child: Text(
                     '5',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -500,7 +486,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.77, 0.29),
+                  alignment: const AlignmentDirectional(-0.77, 0.29),
                   child: Text(
                     '7',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -512,7 +498,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.76, -0.21),
+                  alignment: const AlignmentDirectional(-0.76, -0.21),
                   child: Text(
                     '3',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -524,7 +510,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.76, -0.08),
+                  alignment: const AlignmentDirectional(-0.76, -0.08),
                   child: Text(
                     '4',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -536,7 +522,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.76, -0.34),
+                  alignment: const AlignmentDirectional(-0.76, -0.34),
                   child: Text(
                     '2',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -548,7 +534,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.76, -0.48),
+                  alignment: const AlignmentDirectional(-0.76, -0.48),
                   child: Text(
                     '1',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -560,7 +546,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.01, 0.65),
+                  alignment: const AlignmentDirectional(-0.01, 0.65),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -572,7 +558,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.12, 0.82),
+                  alignment: const AlignmentDirectional(0.12, 0.82),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -584,10 +570,10 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.95),
+                  alignment: const AlignmentDirectional(0.0, 0.95),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                     child: Text(
                       'Uma iniciativa da Universidade Estadual de Ciências da Saúde de Alagoas e do Conselho Nacional de Desenvolvimento Científico e Tecnológico, no combate ao câncer de mama.',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(

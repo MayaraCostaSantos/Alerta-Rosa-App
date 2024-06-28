@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_audio_player.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tela_de_meditacao_guiada_model.dart';
 export 'tela_de_meditacao_guiada_model.dart';
 
@@ -45,30 +42,18 @@ class _TelaDeMeditacaoGuiadaWidgetState
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Visibility(
-          visible: responsiveVisibility(
-            context: context,
-            tablet: false,
-            tabletLandscape: false,
-            desktop: false,
-          ),
           child: Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color(0xFFECA9BB),
-                  Color(0xFFF8A2B0),
-                  Color(0xFFECA9BB)
-                ],
-                stops: [0.0, 0.5, 1.0],
-                begin: AlignmentDirectional(-1.0, -1.0),
-                end: AlignmentDirectional(1.0, 1.0),
-              ),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/plano-de-fundo.png'),
+            ),
             ),
             child: Stack(
               children: [
-                Align(
+                const Align(
                   alignment: AlignmentDirectional(0.0, -0.69),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
@@ -76,12 +61,12 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.07, -0.9),
+                  alignment: const AlignmentDirectional(0.07, -0.9),
                   child: Container(
                     width: 80.0,
                     height: 80.0,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
@@ -91,10 +76,10 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, -0.62),
+                  alignment: const AlignmentDirectional(0.0, -0.62),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                     child: Text(
                       '\"Meditar ajuda a desenvolver uma maior resiliência emocional, essencial para lidar com a ansiedade e depressão associadas ao câncer de mama\". ',
                       textAlign: TextAlign.justify,
@@ -108,7 +93,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.85, -0.52),
+                  alignment: const AlignmentDirectional(0.85, -0.52),
                   child: Text(
                     '-Dr. Jon Kabat-Zinn, 1990.',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -120,7 +105,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.01, 0.92),
+                  alignment: const AlignmentDirectional(-0.01, 0.92),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -132,7 +117,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.93, -0.41),
+                  alignment: const AlignmentDirectional(-0.93, -0.41),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -144,13 +129,13 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.02, -0.07),
+                  alignment: const AlignmentDirectional(0.02, -0.07),
                   child: Container(
                     width: 251.0,
                     height: 78.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(30.0),
                         bottomRight: Radius.circular(30.0),
                         topLeft: Radius.circular(30.0),
@@ -178,7 +163,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                               ),
                       fillColor:
                           FlutterFlowTheme.of(context).secondaryBackground,
-                      playbackButtonColor: Color(0xFFC92D7E),
+                      playbackButtonColor: const Color(0xFFC92D7E),
                       activeTrackColor: FlutterFlowTheme.of(context).alternate,
                       elevation: 4.0,
                       playInBackground: PlayInBackground.enabled,
@@ -186,13 +171,13 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.02, 0.21),
+                  alignment: const AlignmentDirectional(0.02, 0.21),
                   child: Container(
                     width: 253.0,
                     height: 88.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(30.0),
                         bottomRight: Radius.circular(30.0),
                         topLeft: Radius.circular(30.0),
@@ -220,7 +205,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                               ),
                       fillColor:
                           FlutterFlowTheme.of(context).secondaryBackground,
-                      playbackButtonColor: Color(0xFFC92D7E),
+                      playbackButtonColor: const Color(0xFFC92D7E),
                       activeTrackColor: FlutterFlowTheme.of(context).alternate,
                       elevation: 4.0,
                       playInBackground:
@@ -229,13 +214,13 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.05, 0.52),
+                  alignment: const AlignmentDirectional(0.05, 0.52),
                   child: Container(
                     width: 254.0,
                     height: 100.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(30.0),
                         bottomRight: Radius.circular(30.0),
                         topLeft: Radius.circular(30.0),
@@ -263,7 +248,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                               ),
                       fillColor:
                           FlutterFlowTheme.of(context).secondaryBackground,
-                      playbackButtonColor: Color(0xFFC92D7E),
+                      playbackButtonColor: const Color(0xFFC92D7E),
                       activeTrackColor: FlutterFlowTheme.of(context).alternate,
                       elevation: 4.0,
                       playInBackground:
@@ -272,10 +257,10 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.26, -0.39),
+                  alignment: const AlignmentDirectional(-0.26, -0.39),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(110.0, 0.0, 20.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(110.0, 0.0, 20.0, 0.0),
                     child: Text(
                       'Coloque fones de ouvido, feche os olhos e deixe-se guiar e sintonizar com a meditação, ouça, absorva e se deixe curar, relaxar, receber e agradecer.\n\n- Yoga Mudra, por Raissa Zoccal.',
                       textAlign: TextAlign.justify,
@@ -289,7 +274,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.33, -0.87),
+                  alignment: const AlignmentDirectional(-0.33, -0.87),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -298,7 +283,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                     onTap: () async {
                       context.pushNamed('TelaDeApoioEmocional');
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_left,
                       color: Color(0xFFC92D7E),
                       size: 40.0,
@@ -306,10 +291,10 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-1.1, -0.69),
+                  alignment: const AlignmentDirectional(-1.1, -0.69),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(90.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(90.0, 0.0, 0.0, 0.0),
                     child: Text(
                       'Meditação guiada',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(

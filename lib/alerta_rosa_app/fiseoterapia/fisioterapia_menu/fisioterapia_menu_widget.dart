@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'fisioterapia_menu_model.dart';
 export 'fisioterapia_menu_model.dart';
 
@@ -42,39 +40,28 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Visibility(
-          visible: responsiveVisibility(
-            context: context,
-            tablet: false,
-            tabletLandscape: false,
-            desktop: false,
-          ),
+          
           child: Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color(0xFFF8A2B0),
-                  Color(0xFFF8A2B0),
-                  Color(0xFFF8A2B0)
-                ],
-                stops: [0.0, 0.5, 1.0],
-                begin: AlignmentDirectional(-1.0, -1.0),
-                end: AlignmentDirectional(1.0, 1.0),
-              ),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/plano-de-fundo.png'),
             ),
-            child: Container(
+            ),
+            child: SizedBox(
               width: double.infinity,
               height: double.infinity,
               child: Stack(
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(-0.97, -0.87),
+                    alignment: const AlignmentDirectional(-0.97, -0.87),
                     child: Container(
                       width: 100.0,
                       height: 100.0,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                       ),
                       child: Image.asset(
@@ -84,10 +71,10 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.93, -0.95),
+                    alignment: const AlignmentDirectional(0.93, -0.95),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                       child: Text(
                         'Menu de Fisioterapia',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -101,7 +88,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.25, -0.09),
+                    alignment: const AlignmentDirectional(0.25, -0.09),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed('TelaDeFiseoTerapia4');
@@ -110,11 +97,11 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                       options: FFButtonOptions(
                         width: 250.0,
                         height: 35.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0x3CD29267),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0x3CD29267),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -134,13 +121,13 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.27, -0.22),
+                    alignment: const AlignmentDirectional(0.27, -0.22),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(
                           'TelaDeFiseoTerapia3',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.leftToRight,
                             ),
@@ -151,11 +138,11 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                       options: FFButtonOptions(
                         width: 250.0,
                         height: 35.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC92D7E),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFC92D7E),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -175,13 +162,13 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.27, -0.35),
+                    alignment: const AlignmentDirectional(0.27, -0.35),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(
                           'TelaDeFiseoTerapia2',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.leftToRight,
                             ),
@@ -192,11 +179,11 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                       options: FFButtonOptions(
                         width: 250.0,
                         height: 35.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0x3CD29267),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0x3CD29267),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -215,20 +202,20 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                       ),
                     ),
                   ),
-                  Align(
+                  const Align(
                     alignment: AlignmentDirectional(0.0, 0.0),
                     child: Stack(
                       children: [],
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.29, -0.48),
+                    alignment: const AlignmentDirectional(0.29, -0.48),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(
                           'TelaDeFiseoTerapia1',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.leftToRight,
                             ),
@@ -239,11 +226,11 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                       options: FFButtonOptions(
                         width: 250.0,
                         height: 35.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC92D7E),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFC92D7E),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -263,13 +250,13 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.22, 0.44),
+                    alignment: const AlignmentDirectional(0.22, 0.44),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(
                           'TelaDeFiseoTerapia8',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.leftToRight,
                             ),
@@ -280,11 +267,11 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                       options: FFButtonOptions(
                         width: 250.0,
                         height: 35.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0x4DB07556),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0x4DB07556),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -304,13 +291,13 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.21, 0.57),
+                    alignment: const AlignmentDirectional(0.21, 0.57),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(
                           'TelaDeFiseoTerapia9',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.leftToRight,
                             ),
@@ -321,11 +308,11 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                       options: FFButtonOptions(
                         width: 250.0,
                         height: 35.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC92D7E),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFC92D7E),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -345,13 +332,13 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.27, 0.04),
+                    alignment: const AlignmentDirectional(0.27, 0.04),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(
                           'TelaDeFiseoTerapia5',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.leftToRight,
                             ),
@@ -362,11 +349,11 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                       options: FFButtonOptions(
                         width: 250.0,
                         height: 35.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC92D7E),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFC92D7E),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -386,13 +373,13 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.22, 0.17),
+                    alignment: const AlignmentDirectional(0.22, 0.17),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(
                           'TelaDeFiseoTerapia6',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.leftToRight,
                             ),
@@ -403,11 +390,11 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                       options: FFButtonOptions(
                         width: 250.0,
                         height: 35.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0x4DB07556),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0x4DB07556),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -427,7 +414,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.43, -0.58),
+                    alignment: const AlignmentDirectional(0.43, -0.58),
                     child: Text(
                       'Clique no sintoma que está sentindo',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -439,10 +426,10 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, -0.78),
+                    alignment: const AlignmentDirectional(0.0, -0.78),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(120.0, 0.0, 10.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(120.0, 0.0, 10.0, 0.0),
                       child: Text(
                         'Seja na prevenção ou na reabilitação, a prática de exercícios terapêuticos é fundamental para a qualidade de vida da paciente',
                         textAlign: TextAlign.start,
@@ -461,10 +448,10 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     desktop: false,
                   ))
                     Align(
-                      alignment: AlignmentDirectional(-0.03, 0.93),
+                      alignment: const AlignmentDirectional(-0.03, 0.93),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
                           child: Image.asset(
@@ -476,7 +463,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                         ),
                       ),
                     ),
-                  Align(
+                  const Align(
                     alignment: AlignmentDirectional(-0.9, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -485,7 +472,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.76, 0.16),
+                    alignment: const AlignmentDirectional(-0.76, 0.16),
                     child: Text(
                       '6',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -497,7 +484,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.77, 0.56),
+                    alignment: const AlignmentDirectional(-0.77, 0.56),
                     child: Text(
                       '9',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -509,7 +496,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.77, 0.05),
+                    alignment: const AlignmentDirectional(-0.77, 0.05),
                     child: Text(
                       '5',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -521,7 +508,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.77, 0.29),
+                    alignment: const AlignmentDirectional(-0.77, 0.29),
                     child: Text(
                       '7',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -533,7 +520,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.76, -0.21),
+                    alignment: const AlignmentDirectional(-0.76, -0.21),
                     child: Text(
                       '3',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -545,7 +532,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.76, -0.08),
+                    alignment: const AlignmentDirectional(-0.76, -0.08),
                     child: Text(
                       '4',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -557,7 +544,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.76, -0.34),
+                    alignment: const AlignmentDirectional(-0.76, -0.34),
                     child: Text(
                       '2',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -569,7 +556,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.76, -0.48),
+                    alignment: const AlignmentDirectional(-0.76, -0.48),
                     child: Text(
                       '1',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -581,13 +568,13 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.22, 0.3),
+                    alignment: const AlignmentDirectional(0.22, 0.3),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(
                           'TelaDeFiseoTerapia7',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.leftToRight,
                             ),
@@ -598,11 +585,11 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                       options: FFButtonOptions(
                         width: 250.0,
                         height: 35.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC92D7E),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFC92D7E),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -622,7 +609,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.76, 0.44),
+                    alignment: const AlignmentDirectional(-0.76, 0.44),
                     child: Text(
                       '8',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(

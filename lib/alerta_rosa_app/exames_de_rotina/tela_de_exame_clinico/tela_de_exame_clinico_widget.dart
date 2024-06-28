@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tela_de_exame_clinico_model.dart';
 export 'tela_de_exame_clinico_model.dart';
 
@@ -39,16 +36,10 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
       body: Visibility(
-        visible: responsiveVisibility(
-          context: context,
-          tablet: false,
-          tabletLandscape: false,
-          desktop: false,
-        ),
         child: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [Color(0xFFECA9BB), Color(0xFFF8A2B0), Color(0xFFECA9BB)],
               stops: [0.0, 1.0, 1.0],
@@ -59,12 +50,12 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(-0.01, -0.94),
+                alignment: const AlignmentDirectional(-0.01, -0.94),
                 child: Container(
                   width: 80.0,
                   height: 80.0,
                   clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
                   child: Image.asset(
@@ -74,12 +65,12 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.07, -0.58),
+                alignment: const AlignmentDirectional(-0.07, -0.58),
                 child: Text(
                   'Exame Clínico',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
-                        color: Color(0xFFC92D7E),
+                        color: const Color(0xFFC92D7E),
                         fontSize: 20.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.bold,
@@ -87,7 +78,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.01, 0.94),
+                alignment: const AlignmentDirectional(-0.01, 0.94),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -99,7 +90,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.42, -0.88),
+                alignment: const AlignmentDirectional(-0.42, -0.88),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -109,14 +100,14 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                     context.pushNamed(
                       'TelaDeExamesDeRotina',
                       extra: <String, dynamic>{
-                        kTransitionInfoKey: TransitionInfo(
+                        kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.rightToLeft,
                         ),
                       },
                     );
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_left,
                     color: Color(0xFFC92D7E),
                     size: 40.0,
@@ -124,7 +115,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.05, -0.75),
+                alignment: const AlignmentDirectional(0.05, -0.75),
                 child: Text(
                   'Exames de Rotina',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -137,9 +128,9 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-1.1, 0.12),
+                alignment: const AlignmentDirectional(-1.1, 0.12),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -152,9 +143,9 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, -0.68),
+                alignment: const AlignmentDirectional(0.0, -0.68),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 10.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 10.0, 0.0),
                   child: Text(
                     'A realização de exames clínicos regulares é crucial para a detecção precoce do câncer de mama, pois permite a identificação de alterações suspeitas em estágios iniciais.',
                     textAlign: TextAlign.justify,
@@ -167,10 +158,10 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, -0.33),
+                alignment: const AlignmentDirectional(0.0, -0.33),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(100.0, 0.0, 80.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(100.0, 0.0, 80.0, 0.0),
                   child: Text(
                     'É a observação e palpação das mamas por um médico, que busca identificar quaisquer anomalias ou alterações nos tecidos mamários, permitindo uma intervenção precoce e aumentando as chances de um tratamento eficaz.',
                     textAlign: TextAlign.justify,
@@ -183,7 +174,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.99, 0.56),
+                alignment: const AlignmentDirectional(0.99, 0.56),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -195,10 +186,10 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 0.58),
+                alignment: const AlignmentDirectional(0.0, 0.58),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 130.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 130.0, 0.0),
                   child: Text(
                     'Além da detecção precoce do câncer de mama, o exame clínico serve para educar as pacientes sobre a importância do autoexame, monitorar condições benignas que podem evoluir, orientar sobre os fatores de risco e promover hábitos de vida saudáveis que contribuem para a prevenção da doença.',
                     textAlign: TextAlign.justify,
@@ -210,7 +201,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                   ),
                 ),
               ),
-              Align(
+              const Align(
                 alignment: AlignmentDirectional(-0.79, 0.68),
                 child: Icon(
                   Icons.favorite_rounded,
@@ -218,7 +209,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                   size: 20.0,
                 ),
               ),
-              Align(
+              const Align(
                 alignment: AlignmentDirectional(-0.93, 0.68),
                 child: Icon(
                   Icons.favorite_rounded,

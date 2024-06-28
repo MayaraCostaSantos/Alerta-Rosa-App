@@ -1,12 +1,8 @@
 import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:provider/provider.dart';
 import 'tela_de_saude_mental_model.dart';
 export 'tela_de_saude_mental_model.dart';
 
@@ -51,7 +47,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
         child: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             boxShadow: [
               BoxShadow(
                 blurRadius: 4.0,
@@ -62,24 +58,22 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 ),
               )
             ],
-            gradient: LinearGradient(
-              colors: [Color(0xFFF8A2B0), Color(0xFFF8A2B0), Color(0xFFF8A2B0)],
-              stops: [0.0, 0.5, 1.0],
-              begin: AlignmentDirectional(-1.0, -1.0),
-              end: AlignmentDirectional(1.0, 1.0),
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/plano-de-fundo.png'),
             ),
           ),
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(0.0, -0.74),
+                alignment: const AlignmentDirectional(0.0, -0.74),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(100.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(100.0, 0.0, 0.0, 0.0),
                       child: Text(
                         'Saúde Mental',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -91,17 +85,17 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                       ),
                     ),
                   ]
-                      .addToStart(SizedBox(width: 20.0))
-                      .addToEnd(SizedBox(width: 40.0)),
+                      .addToStart(const SizedBox(width: 20.0))
+                      .addToEnd(const SizedBox(width: 40.0)),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.05, -0.91),
+                alignment: const AlignmentDirectional(-0.05, -0.91),
                 child: Container(
                   width: 70.0,
                   height: 70.0,
                   clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
                   child: Image.asset(
@@ -111,11 +105,11 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 0.64),
+                alignment: const AlignmentDirectional(0.0, 0.64),
                 child: Form(
                   key: _model.formKey,
                   autovalidateMode: AutovalidateMode.disabled,
-                  child: Container(
+                  child: SizedBox(
                     width: double.infinity,
                     height: 180.0,
                     child: CarouselSlider(
@@ -284,9 +278,9 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, -0.6),
+                alignment: const AlignmentDirectional(0.0, -0.6),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                   child: Text(
                     '\"Um diagnóstico de câncer de mama não é apenas uma batalha física, mas também uma jornada emocional e psicológica significativa\" . Relato da Surviving Breast Cancer, uma organização que dedica apoio mental aos afetados. ',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -299,7 +293,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                   ),
                 ),
               ),
-              Align(
+              const Align(
                 alignment: AlignmentDirectional(0.54, -0.47),
                 child: Icon(
                   Icons.star_sharp,
@@ -307,7 +301,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                   size: 20.0,
                 ),
               ),
-              Align(
+              const Align(
                 alignment: AlignmentDirectional(0.1, -0.47),
                 child: Icon(
                   Icons.star_sharp,
@@ -315,7 +309,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                   size: 20.0,
                 ),
               ),
-              Align(
+              const Align(
                 alignment: AlignmentDirectional(0.21, -0.47),
                 child: Icon(
                   Icons.star_sharp,
@@ -323,7 +317,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                   size: 20.0,
                 ),
               ),
-              Align(
+              const Align(
                 alignment: AlignmentDirectional(0.33, -0.47),
                 child: Icon(
                   Icons.star_sharp,
@@ -331,7 +325,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                   size: 20.0,
                 ),
               ),
-              Align(
+              const Align(
                 alignment: AlignmentDirectional(0.43, -0.47),
                 child: Icon(
                   Icons.star_sharp,
@@ -340,7 +334,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.96, -0.22),
+                alignment: const AlignmentDirectional(-0.96, -0.22),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -352,10 +346,10 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, -0.18),
+                alignment: const AlignmentDirectional(0.0, -0.18),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(155.0, 0.0, 10.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(155.0, 0.0, 10.0, 0.0),
                   child: Text(
                     '\"Janelle Hail, fundadora da Breast Cancer Foundation, afirma que relatos de superação são valiosos para quem enfrenta a doença, oferecendo inspiração, esperança, sentimento de comunidade, estratégias de enfrentamento e empoderamento\".',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -367,7 +361,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.06, 0.0),
+                alignment: const AlignmentDirectional(-0.06, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -376,7 +370,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               120.0, 725.0, 0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
@@ -394,14 +388,14 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 0.18),
+                alignment: const AlignmentDirectional(0.0, 0.18),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(60.0, 30.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(60.0, 30.0, 0.0, 0.0),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
@@ -413,11 +407,11 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                       ),
                     ),
                   ]
-                      .addToStart(SizedBox(width: 5.0))
-                      .addToEnd(SizedBox(width: 100.0)),
+                      .addToStart(const SizedBox(width: 5.0))
+                      .addToEnd(const SizedBox(width: 100.0)),
                 ),
               ),
-              Align(
+              const Align(
                 alignment: AlignmentDirectional(-0.79, 0.21),
                 child: Icon(
                   Icons.diversity_3_outlined,
@@ -426,7 +420,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.9, 0.5),
+                alignment: const AlignmentDirectional(0.9, 0.5),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -434,7 +428,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                   highlightColor: Colors.transparent,
                   onTap: () async {
                     await _model.carouselController?.nextPage(
-                      duration: Duration(milliseconds: 300),
+                      duration: const Duration(milliseconds: 300),
                       curve: Curves.ease,
                     );
                   },
@@ -446,7 +440,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.89, 0.5),
+                alignment: const AlignmentDirectional(-0.89, 0.5),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -454,7 +448,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                   highlightColor: Colors.transparent,
                   onTap: () async {
                     await _model.carouselController?.previousPage(
-                      duration: Duration(milliseconds: 300),
+                      duration: const Duration(milliseconds: 300),
                       curve: Curves.ease,
                     );
                   },
@@ -466,7 +460,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.63, -0.75),
+                alignment: const AlignmentDirectional(-0.63, -0.75),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -476,7 +470,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                     context.pushNamed(
                       'TelaDeMenuInicial',
                       extra: <String, dynamic>{
-                        kTransitionInfoKey: TransitionInfo(
+                        kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
@@ -484,7 +478,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                       },
                     );
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_left,
                     color: Color(0xFFF03E69),
                     size: 40.0,

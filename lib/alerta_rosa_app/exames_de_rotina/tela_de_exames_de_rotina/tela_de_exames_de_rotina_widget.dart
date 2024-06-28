@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tela_de_exames_de_rotina_model.dart';
 export 'tela_de_exames_de_rotina_model.dart';
 
@@ -40,16 +38,10 @@ class _TelaDeExamesDeRotinaWidgetState
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
       body: Visibility(
-        visible: responsiveVisibility(
-          context: context,
-          tablet: false,
-          tabletLandscape: false,
-          desktop: false,
-        ),
         child: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [Color(0xFFECA9BB), Color(0xFFF8A2B0), Color(0xFFECA9BB)],
               stops: [0.0, 1.0, 1.0],
@@ -60,12 +52,12 @@ class _TelaDeExamesDeRotinaWidgetState
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(-0.05, -0.91),
+                alignment: const AlignmentDirectional(-0.05, -0.91),
                 child: Container(
                   width: 80.0,
                   height: 80.0,
                   clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
                   child: Image.asset(
@@ -75,9 +67,9 @@ class _TelaDeExamesDeRotinaWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, -0.33),
+                alignment: const AlignmentDirectional(0.0, -0.33),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 80.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 80.0, 0.0),
                   child: Text(
                     'Você sabia que fazer o exame de sangue, o autoexame e os exames de mama com frequência são fundamentais? A detecção precoce do câncer de mama torna este tipo de câncer com altas taxas de cura.',
                     textAlign: TextAlign.justify,
@@ -91,7 +83,7 @@ class _TelaDeExamesDeRotinaWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.07, -0.69),
+                alignment: const AlignmentDirectional(-0.07, -0.69),
                 child: Text(
                   'Exames de Rotina',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -104,7 +96,7 @@ class _TelaDeExamesDeRotinaWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(1.07, 0.01),
+                alignment: const AlignmentDirectional(1.07, 0.01),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -116,7 +108,7 @@ class _TelaDeExamesDeRotinaWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.06, 0.92),
+                alignment: const AlignmentDirectional(0.06, 0.92),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -128,7 +120,7 @@ class _TelaDeExamesDeRotinaWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.42, -0.86),
+                alignment: const AlignmentDirectional(-0.42, -0.86),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -138,7 +130,7 @@ class _TelaDeExamesDeRotinaWidgetState
                     context.pushNamed(
                       'TelaDeMenuInicial',
                       extra: <String, dynamic>{
-                        kTransitionInfoKey: TransitionInfo(
+                        kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
@@ -146,7 +138,7 @@ class _TelaDeExamesDeRotinaWidgetState
                       },
                     );
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_left,
                     color: Color(0xFFC92D7E),
                     size: 40.0,
@@ -154,7 +146,7 @@ class _TelaDeExamesDeRotinaWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.92, 0.28),
+                alignment: const AlignmentDirectional(-0.92, 0.28),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -166,10 +158,10 @@ class _TelaDeExamesDeRotinaWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.03, 0.3),
+                alignment: const AlignmentDirectional(-0.03, 0.3),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(125.0, 0.0, 10.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(125.0, 0.0, 10.0, 0.0),
                   child: Text(
                     'Por favor clique no exame que deseja saber mais!',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -180,15 +172,15 @@ class _TelaDeExamesDeRotinaWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.04, 0.67),
+                alignment: const AlignmentDirectional(0.04, 0.67),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 5.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 5.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaDeMamografia',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -200,10 +192,10 @@ class _TelaDeExamesDeRotinaWidgetState
                       width: 172.0,
                       height: 30.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFFC92D7E),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xFFC92D7E),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Plus Jakarta Sans',
@@ -211,7 +203,7 @@ class _TelaDeExamesDeRotinaWidgetState
                                 letterSpacing: 0.0,
                               ),
                       elevation: 3.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),
@@ -221,15 +213,15 @@ class _TelaDeExamesDeRotinaWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.04, 0.5),
+                alignment: const AlignmentDirectional(0.04, 0.5),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaDeExameDeSangue',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -241,10 +233,10 @@ class _TelaDeExamesDeRotinaWidgetState
                       width: 172.0,
                       height: 30.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFFC92D7E),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xFFC92D7E),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Plus Jakarta Sans',
@@ -252,7 +244,7 @@ class _TelaDeExamesDeRotinaWidgetState
                                 letterSpacing: 0.0,
                               ),
                       elevation: 3.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),
@@ -262,15 +254,15 @@ class _TelaDeExamesDeRotinaWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.04, 0.59),
+                alignment: const AlignmentDirectional(0.04, 0.59),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'TelaDeExameClinico',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -282,10 +274,10 @@ class _TelaDeExamesDeRotinaWidgetState
                       width: 172.0,
                       height: 30.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFFC92D7E),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xFFC92D7E),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Plus Jakarta Sans',
@@ -293,7 +285,7 @@ class _TelaDeExamesDeRotinaWidgetState
                                 letterSpacing: 0.0,
                               ),
                       elevation: 3.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),

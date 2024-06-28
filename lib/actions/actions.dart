@@ -17,7 +17,7 @@ Future deslizar(BuildContext context) async {
           fontSize: 14.0,
         ),
       ),
-      duration: Duration(milliseconds: 60),
+      duration: const Duration(milliseconds: 60),
       backgroundColor: FlutterFlowTheme.of(context).primaryText,
     ),
   );
