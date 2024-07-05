@@ -68,14 +68,14 @@ class _TelaDeEntradaWidgetState extends State<TelaDeEntradaWidget> {
                     alignment: const AlignmentDirectional(0.0, 0.15),
                     child: Image.asset(
                       'assets/images/globalImages/text-overlay.png',
-                      width: MediaQuery.of(context).size.width * 0.6,
+                      width: 250,
                       fit: BoxFit.cover,
                     ),
                   ),
                   Align(
                     alignment: const AlignmentDirectional(0.0, 0.13),
                     child: Container(
-                      width: MediaQuery.of(context).size.width * 0.4,
+                      width: 150,
                       decoration: const BoxDecoration(
                         color: Color(0x00FFFFFF),
                       ),
@@ -84,6 +84,7 @@ class _TelaDeEntradaWidgetState extends State<TelaDeEntradaWidget> {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color(0xFFE52687),
+                          fontFamily: 'Source Sans Pro',
                           fontSize: 16.0,
                           fontWeight: FontWeight.bold,
                         ),

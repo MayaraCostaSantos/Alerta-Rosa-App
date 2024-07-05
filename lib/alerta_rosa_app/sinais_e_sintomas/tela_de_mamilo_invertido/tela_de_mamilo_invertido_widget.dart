@@ -41,15 +41,14 @@ class _TelaDeMamiloInvertidoWidgetState
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Visibility(
-          
           child: Container(
             width: double.infinity,
             height: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage('assets/images/plano-de-fundo.png'),
-            ),
+                fit: BoxFit.cover,
+                image: AssetImage('assets/images/globalImages/plano-de-fundo.png'),
+              ),
             ),
             child: Stack(
               children: [
@@ -157,7 +156,7 @@ class _TelaDeMamiloInvertidoWidgetState
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
-                      'assets/images/logo-removebg-preview.png',
+                      'assets/images/globalImages/logo-removebg-preview.png',
                       width: 130.0,
                       height: 60.0,
                       fit: BoxFit.cover,

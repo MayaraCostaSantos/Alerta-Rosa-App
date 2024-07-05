@@ -96,13 +96,14 @@ class _FFButtonWidgetState extends State<FFButtonWidget> {
               ),
             ),
           )
-        : AutoSizeText(
+        : Text(
             text ?? '',
             style:
                 text == null ? null : widget.options.textStyle?.withoutColor(),
             textAlign: widget.options.textAlign,
             maxLines: maxLines,
-            overflow: TextOverflow.ellipsis,
+            overflow: TextOverflow.clip,
+            softWrap: true,
           );
 
     final onPressed = widget.onPressed != null
@@ -226,7 +227,9 @@ class _FFButtonWidgetState extends State<FFButtonWidget> {
           ),
           label: textWidget,
           onPressed: onPressed,
-          style: style,
+          style: style.copyWith(
+            alignment: Alignment.centerLeft + Alignment(0.05, 0),
+          ),
         ),
       );
     }

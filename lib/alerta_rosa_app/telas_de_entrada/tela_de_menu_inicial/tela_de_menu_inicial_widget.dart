@@ -53,7 +53,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
           child: Stack(
             children: [
               Align(
-                alignment: Alignment.topLeft - const Alignment(-0.05, -0.12),
+                alignment: Alignment.topLeft - const Alignment(-0.05, -0.05),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -75,18 +75,18 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
                       'assets/images/iconeVoltar.png',
-                      height: MediaQuery.of(context).size.width * 0.1,
+                      height: 44.8,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
               ),
               Align(
-                alignment: Alignment.topRight - const Alignment(0.0, -0.1),
+                alignment: Alignment.topRight - const Alignment(0.0, -0.02),
                 child: ClipRRect(
                   child: Image.asset(
                     'assets/images/globalImages/logo-removebg-preview.png',
-                    width: MediaQuery.of(context).size.width * 0.2,
+                    width: 90,
                     fit: BoxFit.cover,
                   ),
                 ),

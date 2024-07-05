@@ -82,7 +82,7 @@ class _TelaDeExameDeSangueWidgetState extends State<TelaDeExameDeSangueWidget> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
-                    'assets/images/logo-removebg-preview.png',
+                    'assets/images/globalImages/logo-removebg-preview.png',
                     width: 117.0,
                     height: 61.0,
                     fit: BoxFit.cover,

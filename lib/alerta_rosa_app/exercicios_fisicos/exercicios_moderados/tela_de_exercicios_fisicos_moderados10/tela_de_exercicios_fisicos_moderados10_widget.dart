@@ -55,7 +55,7 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
             decoration: const BoxDecoration(
               image: DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage('assets/images/plano-de-fundo.png'),
+              image: AssetImage('assets/images/globalImages/plano-de-fundo.png'),
             ),
             ),
             child: Stack(
@@ -113,7 +113,7 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.asset(
-                        'assets/images/logo-removebg-preview.png',
+                        'assets/images/globalImages/logo-removebg-preview.png',
                         width: 130.0,
                         height: 60.0,
                         fit: BoxFit.cover,
