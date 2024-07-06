@@ -45,9 +45,9 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
             height: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage('assets/images/globalImages/plano-de-fundo-2.png'),
-            ),
+                fit: BoxFit.cover,
+                image: AssetImage('assets/images/globalImages/plano-de-fundo-2.png'),
+              ),
             ),
             child: Stack(
               children: [
@@ -108,6 +108,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
                               child: Center(
                                 child: Stack(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   children: [
                                     const Text(
                                       'SINAIS \nE\n SINTOMAS',
@@ -122,10 +123,10 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: Alignment.centerRight + const Alignment(0.7, 0.0),
+                                      alignment: Alignment.centerRight + const Alignment(1.0, 0.0),
                                       child: Image.asset(
                                         'assets/images/sinais-e-sintomas.png',
-                                        height: 150.0,
+                                        width: 75,
                                         fit: BoxFit.cover,
                                       ),
                                     ),
@@ -153,7 +154,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                             extra: <String, dynamic>{
                               kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
-                                transitionType: PageTransitionType.leftToRight,
+                                transitionType: PageTransitionType.rightToLeft,
                               ),
                             },
                           );
@@ -186,7 +187,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                             extra: <String, dynamic>{
                               kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
-                                transitionType: PageTransitionType.leftToRight,
+                                transitionType: PageTransitionType.rightToLeft,
                               ),
                             },
                           );
@@ -220,7 +221,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                             extra: <String, dynamic>{
                               kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
-                                transitionType: PageTransitionType.leftToRight,
+                                transitionType: PageTransitionType.rightToLeft,
                               ),
                             },
                           );
@@ -253,7 +254,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                             extra: <String, dynamic>{
                               kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
-                                transitionType: PageTransitionType.leftToRight,
+                                transitionType: PageTransitionType.rightToLeft,
                               ),
                             },
                           );
@@ -286,7 +287,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                             extra: <String, dynamic>{
                               kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
-                                transitionType: PageTransitionType.leftToRight,
+                                transitionType: PageTransitionType.rightToLeft,
                               ),
                             },
                           );
@@ -323,7 +324,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                             extra: <String, dynamic>{
                               kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
-                                transitionType: PageTransitionType.leftToRight,
+                                transitionType: PageTransitionType.rightToLeft,
                               ),
                             },
                           );
@@ -357,7 +358,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                             extra: <String, dynamic>{
                               kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
-                                transitionType: PageTransitionType.leftToRight,
+                                transitionType: PageTransitionType.rightToLeft,
                               ),
                             },
                           );
@@ -390,7 +391,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                             extra: <String, dynamic>{
                               kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
-                                transitionType: PageTransitionType.leftToRight,
+                                transitionType: PageTransitionType.rightToLeft,
                               ),
                             },
                           );
