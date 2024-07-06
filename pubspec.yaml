@@ -189,6 +189,9 @@ flutter:
      - family: Nautilus Pompilius
        fonts:
          - asset: assets/fonts/NautilusPompilius.otf
+     - family: Shrinkhand
+       fonts:
+         - asset: assets/fonts/Shrikhand-Regular.ttf
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf

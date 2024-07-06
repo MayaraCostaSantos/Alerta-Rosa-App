@@ -65,8 +65,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                       extra: <String, dynamic>{
                         kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
-                          transitionType: PageTransitionType.fade,
-                          duration: Duration(milliseconds: 0),
+                          transitionType: PageTransitionType.rightToLeft,
                         ),
                       },
                     );
@@ -202,8 +201,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                       extra: <String, dynamic>{
                                         kTransitionInfoKey: const TransitionInfo(
                                           hasTransition: true,
-                                          transitionType: PageTransitionType.fade,
-                                          duration: Duration(milliseconds: 0),
+                                          transitionType: PageTransitionType.leftToRight,
                                         ),
                                       },
                                     );
@@ -265,8 +263,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                       extra: <String, dynamic>{
                                         kTransitionInfoKey: const TransitionInfo(
                                           hasTransition: true,
-                                          transitionType: PageTransitionType.fade,
-                                          duration: Duration(milliseconds: 0),
+                                          transitionType: PageTransitionType.leftToRight,
                                         ),
                                       },
                                     );
@@ -328,8 +325,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                       extra: <String, dynamic>{
                                         kTransitionInfoKey: const TransitionInfo(
                                           hasTransition: true,
-                                          transitionType: PageTransitionType.fade,
-                                          duration: Duration(milliseconds: 0),
+                                          transitionType: PageTransitionType.leftToRight,
                                         ),
                                       },
                                     );
@@ -431,8 +427,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         extra: <String, dynamic>{
                                           kTransitionInfoKey: const TransitionInfo(
                                             hasTransition: true,
-                                            transitionType: PageTransitionType.fade,
-                                            duration: Duration(milliseconds: 0),
+                                            transitionType: PageTransitionType.leftToRight,
                                           ),
                                         },
                                       );
@@ -494,8 +489,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         extra: <String, dynamic>{
                                           kTransitionInfoKey: const TransitionInfo(
                                             hasTransition: true,
-                                            transitionType: PageTransitionType.fade,
-                                            duration: Duration(milliseconds: 0),
+                                            transitionType: PageTransitionType.leftToRight,
                                           ),
                                         },
                                       );
@@ -557,8 +551,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         extra: <String, dynamic>{
                                           kTransitionInfoKey: const TransitionInfo(
                                             hasTransition: true,
-                                            transitionType: PageTransitionType.fade,
-                                            duration: Duration(milliseconds: 0),
+                                            transitionType: PageTransitionType.leftToRight,
                                           ),
                                         },
                                       );
@@ -634,8 +627,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         extra: <String, dynamic>{
                                           kTransitionInfoKey: const TransitionInfo(
                                             hasTransition: true,
-                                            transitionType: PageTransitionType.fade,
-                                            duration: Duration(milliseconds: 0),
+                                            transitionType: PageTransitionType.leftToRight,
                                           ),
                                         },
                                       );
@@ -697,8 +689,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         extra: <String, dynamic>{
                                           kTransitionInfoKey: const TransitionInfo(
                                             hasTransition: true,
-                                            transitionType: PageTransitionType.fade,
-                                            duration: Duration(milliseconds: 0),
+                                            transitionType: PageTransitionType.leftToRight,
                                           ),
                                         },
                                       );

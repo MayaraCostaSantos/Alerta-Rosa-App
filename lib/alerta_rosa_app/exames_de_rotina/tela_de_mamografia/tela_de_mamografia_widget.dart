@@ -39,186 +39,15 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
           width: double.infinity,
           height: double.infinity,
           decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Color(0xFFECA9BB), Color(0xFFF8A2B0), Color(0xFFECA9BB)],
-              stops: [0.0, 1.0, 1.0],
-              begin: AlignmentDirectional(0.0, -1.0),
-              end: AlignmentDirectional(0, 1.0),
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/globalImages/plano-de-fundo.png'),
             ),
           ),
           child: Stack(
             children: [
               Align(
-                alignment: const AlignmentDirectional(0.01, -0.94),
-                child: Container(
-                  width: 80.0,
-                  height: 80.0,
-                  clipBehavior: Clip.antiAlias,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                  ),
-                  child: Image.asset(
-                    'assets/images/icone-exame_de_rotina.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(-0.05, -0.51),
-                child: Text(
-                  'Mamografia',
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Montserrat',
-                        color: const Color(0xFFC92D7E),
-                        fontSize: 20.0,
-                        letterSpacing: 0.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(-0.07, 0.9),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/globalImages/logo-removebg-preview.png',
-                    width: 130.0,
-                    height: 60.0,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.43, -0.87),
-                child: InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    context.pushNamed(
-                      'TelaDeMenuInicial',
-                      extra: <String, dynamic>{
-                        kTransitionInfoKey: const TransitionInfo(
-                          hasTransition: true,
-                          transitionType: PageTransitionType.fade,
-                          duration: Duration(milliseconds: 0),
-                        ),
-                      },
-                    );
-                  },
-                  child: const Icon(
-                    Icons.arrow_right,
-                    color: Color(0xFFC92D7E),
-                    size: 40.0,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.01, -0.72),
-                child: Text(
-                  'Exames de Rotina',
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Roboto',
-                        color: FlutterFlowTheme.of(context).primaryText,
-                        fontSize: 20.0,
-                        letterSpacing: 2.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(-1.22, -0.15),
-                child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8.0),
-                    child: Image.asset(
-                      'assets/images/luta14-removebg-preview.png',
-                      width: 134.0,
-                      height: 103.0,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.0, -0.65),
-                child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 10.0, 0.0),
-                  child: Text(
-                    'A mamografia é fundamental na prevenção do câncer de mama, pois permite a detecção de tumores em estágios iniciais, muitas vezes antes de serem palpáveis, aumentando significativamente as chances de um tratamento bem-sucedido',
-                    textAlign: TextAlign.justify,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          fontSize: 12.0,
-                          letterSpacing: 0.0,
-                        ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.0, -0.13),
-                child: Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(140.0, 0.0, 30.0, 0.0),
-                  child: Text(
-                    'É a observação e palpação das mamas por um médico, que busca identificar quaisquer anomalias ou alterações nos tecidos mamários, permitindo uma intervenção precoce e aumentando as chances de um tratamento eficaz.',
-                    textAlign: TextAlign.justify,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          fontSize: 11.0,
-                          letterSpacing: 0.0,
-                        ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.99, 0.58),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/ideia1-removebg-preview.png',
-                    width: 122.0,
-                    height: 163.0,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.0, 0.62),
-                child: Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 130.0, 0.0),
-                  child: Text(
-                    'Além de detectar tumores em estágios iniciais, a mamografia é importante para avaliar a extensão de um câncer já diagnosticado, monitorar mulheres com alto risco de desenvolver a doença, diferenciar entre lesões benignas e malignas, e acompanhar a resposta ao tratamento em pacientes com câncer de mama.',
-                    textAlign: TextAlign.justify,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          fontSize: 12.0,
-                          letterSpacing: 0.0,
-                        ),
-                  ),
-                ),
-              ),
-              const Align(
-                alignment: AlignmentDirectional(-0.56, 0.69),
-                child: Icon(
-                  Icons.favorite_rounded,
-                  color: Color(0xFFC92D7E),
-                  size: 20.0,
-                ),
-              ),
-              const Align(
-                alignment: AlignmentDirectional(-0.68, 0.69),
-                child: Icon(
-                  Icons.favorite_rounded,
-                  color: Color(0xFFC92D7E),
-                  size: 20.0,
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(-0.38, -0.88),
+                alignment: Alignment.topLeft - const Alignment(-0.05, -0.2),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -227,11 +56,208 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                   onTap: () async {
                     context.safePop();
                   },
-                  child: const Icon(
-                    Icons.arrow_left,
-                    color: Color(0xFFC92D7E),
-                    size: 40.0,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(8.0),
+                    child: Image.asset(
+                      'assets/images/iconeVoltar.png',
+                      height: 44.8,
+                      fit: BoxFit.cover,
+                    ),
                   ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topRight - const Alignment(0.0, -0.02),
+                child: ClipRRect(
+                  child: Image.asset(
+                    'assets/images/globalImages/logo-removebg-preview.png',
+                    width: 90,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              ClipRRect(
+                child: SizedBox(
+                    width: 200,
+                    height: 130,
+                    child: Stack(
+                      children: [
+                        Center(
+                          child: DecoratedBox(
+                              decoration: const BoxDecoration(
+                                color: const Color(0xFFF03E69),
+                                borderRadius: BorderRadius.only(
+                                  topRight: Radius.elliptical(255, 255),
+                                  bottomRight: Radius.elliptical(255, 255),
+                                ),
+                              ),
+                              child: Container(
+                                  width: 200,
+                                  height: 50,
+                                  padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+                                  child: const Center(
+                                    child: Text(
+                                      'MAMOGRAFIA',
+                                      overflow: TextOverflow.clip,
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'Open Sans Extra Bold',
+                                        color: Color(0xFFFFFFFF),
+                                        fontSize: 18.0,
+                                        fontWeight: FontWeight.w900,
+                                        overflow: TextOverflow.clip,
+                                      ),
+                                    ),
+                                  )
+                              )
+                          ),
+                        ),
+                      ],
+                    )
+                ),
+              ),
+              Align(
+                alignment: const AlignmentDirectional(-0.9, -0.35),
+                child: Image.asset(
+                  'assets/images/mamografia.png',
+                  width: 150,
+                ),
+              ),
+              Align(
+                alignment: const AlignmentDirectional(0.9, -0.7),
+                child: Container(
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFF8A2B0),
+                      borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                    ),
+                    width: 250,
+                    padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
+                    child: const Wrap(
+                      children: [
+                        Text(
+                          'O exame é feito com a mulher em pé e, enquanto isso, o médico irá posicionar o seio entre as duas placas do mamógrafo.',
+                          overflow: TextOverflow.clip,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            color: Color(0xFFFFFFFF),
+                            fontSize: 16.0,
+                            height: 1.1,
+                          ),
+                        ),
+                      ],
+                    )
+                ),
+              ),
+              Align(
+                alignment: const AlignmentDirectional(0.9, -0.35),
+                child: Container(
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFF8A2B0),
+                      borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                    ),
+                    width: 250,
+                    padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
+                    child: const Wrap(
+                      children: [
+                        Text(
+                          'É preciso ficar imóvel e segurar a respiração por alguns segundos para a imagem ficar mais nítida.',
+                          overflow: TextOverflow.clip,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            color: Color(0xFFFFFFFF),
+                            fontSize: 16.0,
+                            height: 1.1,
+                          ),
+                        ),
+                      ],
+                    )
+                ),
+              ),
+              Align(
+                alignment: const AlignmentDirectional(0.9, 0),
+                child: Container(
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFF8A2B0),
+                      borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                    ),
+                    width: 250,
+                    padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
+                    child: const Wrap(
+                      children: [
+                        Text(
+                          'A mamografia pode provocar dor em algumas mulheres.',
+                          overflow: TextOverflow.clip,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            color: Color(0xFFFFFFFF),
+                            fontSize: 16.0,
+                            height: 1.1,
+                          ),
+                        ),
+                      ],
+                    )
+                ),
+              ),
+
+              Align(
+                alignment: const AlignmentDirectional(-0.9, 0.55),
+                child: Image.asset(
+                  'assets/videos/clock.gif',
+                  width: 150,
+                ),
+              ),
+              Align(
+                alignment: const AlignmentDirectional(0.9, 0.5),
+                child: Container(
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFF8A2B0),
+                      borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                    ),
+                    width: 250,
+                    padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
+                    child: const Wrap(
+                      children: [
+                        Text(
+                          'Dura entre 15 a 30 minutos.',
+                          overflow: TextOverflow.clip,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            color: Color(0xFFFFFFFF),
+                            fontSize: 16.0,
+                            height: 1.1,
+                          ),
+                        ),
+                      ],
+                    )
+                ),
+              ),
+              Align(
+                alignment: const AlignmentDirectional(0, 1),
+                child: Flex(
+                  direction: Axis.horizontal,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
+                        width: 150,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/globalImages/download.png',
+                        width: 75.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
