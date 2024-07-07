@@ -109,7 +109,7 @@ class _TelaSecrecaonomamiloWidgetState
                           child: Center(
                             child: Text(
                               'Secreção no mamilo',
-                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                 fontFamily: 'Shrikhand',
                                 color: const Color(0xFFDB5275),
                                 fontSize: 24.0,

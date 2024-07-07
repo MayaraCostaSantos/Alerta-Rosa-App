@@ -107,7 +107,7 @@ class _TelaNoduloNaMamaWidgetState extends State<TelaNoduloNaMamaWidget> {
                           child: Center(
                             child: Text(
                               'Nódulo na mama',
-                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                 fontFamily: 'Shrikhand',
                                 color: const Color(0xFFDB5275),
                                 fontSize: 24.0,

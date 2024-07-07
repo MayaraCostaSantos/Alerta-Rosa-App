@@ -110,7 +110,7 @@ class _TelaDeDorNaMamaOuMamiloWidgetState
                             child: Text(
                               'Dor na mama ou no mamilo',
                               textAlign: TextAlign.center,
-                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                 fontFamily: 'Shrikhand',
                                 color: const Color(0xFFDB5275),
                                 fontSize: 24.0,
