@@ -142,7 +142,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        color: const Color(0xFFF35A81),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -230,7 +230,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        color: const Color(0xFFF35A81),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -312,7 +312,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        color: const Color(0xFFF35A81),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -353,7 +353,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        color: const Color(0xFFF35A81),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -589,7 +589,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        color: const Color(0xFFF35A81),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(

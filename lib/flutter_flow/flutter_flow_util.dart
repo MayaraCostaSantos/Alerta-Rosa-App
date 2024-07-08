@@ -362,6 +362,7 @@ void fixStatusBarOniOS16AndBelow(BuildContext context) {
   if (!isiOS) {
     return;
   }
+
   final brightness = Theme.of(context).brightness;
   if (_lastBrightness != brightness) {
     _lastBrightness = brightness;

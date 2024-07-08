@@ -267,10 +267,12 @@ class _TelaDeRegularAlimentacaoWidgetState
                         },
                       );
                     },
-                    child: const Icon(
-                      Icons.arrow_left,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
+                    child: ClipRRect(
+                      child: Image.asset(
+                        'assets/images/iconeVoltar.png',
+                        height: 44.8,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),

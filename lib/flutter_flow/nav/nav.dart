@@ -278,7 +278,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         ),
         FFRoute(
           name: 'TelaDeExerciciosIntensos7',
-          path: '/TelaDeExerciciosFisicos1',
+          path: '/telaDeExerciciosIntensos7',
           builder: (context, params) => const TelaDeExerciciosIntensos7Widget(),
         ),
         FFRoute(

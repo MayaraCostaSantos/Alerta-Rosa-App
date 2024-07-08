@@ -93,31 +93,30 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
               ClipRRect(
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width * 1,
-                  height: MediaQuery.of(context).size.height * 0.25,
+                  height: MediaQuery.of(context).size.height * 0.2,
                   child: Stack(
                     children: <Widget>[
                       Center(
                         child: Container(
                           decoration: BoxDecoration(
                             boxShadow: [
-
                               BoxShadow(
                                 color: Colors.black.withOpacity(0.3),
                                 spreadRadius: -20,
                                 blurRadius: 20,
-                                offset: Offset(0, 25), // changes position of shadow
+                                offset: const Offset(0, 25),
                               ),
                               BoxShadow(
                                 color: Colors.black.withOpacity(0.3),
                                 spreadRadius: -35,
                                 blurRadius: 15,
-                                offset: Offset(30, 25), // changes position of shadow
+                                offset: const Offset(30, 25),
                               ),
                               BoxShadow(
                                 color: Colors.black.withOpacity(0.3),
                                 spreadRadius: -35,
                                 blurRadius: 15,
-                                offset: Offset(-30, 25), // changes position of shadow
+                                offset: const Offset(-30, 25),
                               ),
                             ],
                           ),
@@ -135,7 +134,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                           style: TextStyle(
                             fontFamily: 'Nautilus Pompilius',
                             color: Color(0xFFFFEFEB),
-                            fontSize: 48.0,
+                            fontSize: 36,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -145,14 +144,14 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.0, -0.5),
+                alignment: const AlignmentDirectional(0.0, -0.55),
                 child: DecoratedBox(
                   decoration: BoxDecoration(
                     color: const Color(0xFFDB5275),
                     borderRadius: BorderRadius.circular(25.0),
                   ),
                   child: Container(
-                    width: MediaQuery.of(context).size.width * 0.6,
+                    width: MediaQuery.of(context).size.width * 0.5,
                     padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
                     child: const Text(
                       'Sobre câncer de mama',
@@ -160,7 +159,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                       style: TextStyle(
                         fontFamily: 'Montserrat, sans-serif',
                         color: Color(0xFFFFF4E9),
-                        fontSize: 22.0,
+                        fontSize: 18.0,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -207,8 +206,8 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                     );
                                   },
                                   child: Container(
-                                    width: 100.0,
-                                    height: 100.0,
+                                    width: MediaQuery.of(context).size.height * 0.1,
+                                    height: MediaQuery.of(context).size.height * 0.1,
                                     clipBehavior: Clip.antiAlias,
                                     decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
@@ -229,7 +228,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         color: Color(0xFFDB5275),
                                         fontFamily: 'League Spartan',
                                         fontWeight: FontWeight.w900,
-                                        fontSize: 16,
+                                        fontSize: 14,
                                       ),
                                   ),
                                 ),
@@ -269,8 +268,8 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                     );
                                   },
                                   child: Container(
-                                    width: 100.0,
-                                    height: 100.0,
+                                    width: MediaQuery.of(context).size.height * 0.1,
+                                    height: MediaQuery.of(context).size.height * 0.1,
                                     clipBehavior: Clip.antiAlias,
                                     decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
@@ -291,7 +290,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         color: Color(0xFFDB5275),
                                         fontFamily: 'League Spartan',
                                         fontWeight: FontWeight.w900,
-                                        fontSize: 16,
+                                        fontSize: 14,
                                       ),
                                     ),
                                 ),
@@ -331,8 +330,8 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                     );
                                   },
                                   child: Container(
-                                    width: 100.0,
-                                    height: 100.0,
+                                    width: MediaQuery.of(context).size.height * 0.1,
+                                    height: MediaQuery.of(context).size.height * 0.1,
                                     clipBehavior: Clip.antiAlias,
                                     decoration: BoxDecoration(
                                       border: Border.all(
@@ -357,7 +356,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                       color: Color(0xFFDB5275),
                                       fontFamily: 'League Spartan',
                                       fontWeight: FontWeight.w900,
-                                      fontSize: 16,
+                                      fontSize: 14,
                                     ),
                                   ),
                                 ),
@@ -378,15 +377,15 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                       borderRadius: BorderRadius.circular(25.0),
                     ),
                     child: Container(
-                      width: MediaQuery.of(context).size.width * 0.6,
+                      width: MediaQuery.of(context).size.width * 0.5,
                       padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
                       child: const Text(
                         'O que gostaria de saber?',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontFamily: 'Montserrat, sans-serif',
+                          fontFamily: 'Montserrat',
                           color: Color(0xFFFFF4E9),
-                          fontSize: 22.0,
+                          fontSize: 18.0,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -433,8 +432,8 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                       );
                                     },
                                     child: Container(
-                                      width: 100.0,
-                                      height: 100.0,
+                                      width: MediaQuery.of(context).size.height * 0.1,
+                                      height: MediaQuery.of(context).size.height * 0.1,
                                       clipBehavior: Clip.antiAlias,
                                       decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
@@ -455,7 +454,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         color: Color(0xFFDB5275),
                                         fontFamily: 'League Spartan',
                                         fontWeight: FontWeight.w900,
-                                        fontSize: 16,
+                                        fontSize: 14,
                                       ),
                                     ),
                                   ),
@@ -495,8 +494,8 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                       );
                                     },
                                     child: Container(
-                                      width: 100.0,
-                                      height: 100.0,
+                                      width: MediaQuery.of(context).size.height * 0.1,
+                                      height: MediaQuery.of(context).size.height * 0.1,
                                       clipBehavior: Clip.antiAlias,
                                       decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
@@ -517,7 +516,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         color: Color(0xFFDB5275),
                                         fontFamily: 'League Spartan',
                                         fontWeight: FontWeight.w900,
-                                        fontSize: 16,
+                                        fontSize: 14,
                                       ),
                                     ),
                                   ),
@@ -557,8 +556,8 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                       );
                                     },
                                     child: Container(
-                                      width: 100.0,
-                                      height: 100.0,
+                                      width: MediaQuery.of(context).size.height * 0.1,
+                                      height: MediaQuery.of(context).size.height * 0.1,
                                       clipBehavior: Clip.antiAlias,
                                       decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
@@ -579,7 +578,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         color: Color(0xFFDB5275),
                                         fontFamily: 'League Spartan',
                                         fontWeight: FontWeight.w900,
-                                        fontSize: 16,
+                                        fontSize: 14,
                                       ),
                                     ),
                                   ),
@@ -633,8 +632,8 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                       );
                                     },
                                     child: Container(
-                                      width: 100.0,
-                                      height: 100.0,
+                                      width: MediaQuery.of(context).size.height * 0.1,
+                                      height: MediaQuery.of(context).size.height * 0.1,
                                       clipBehavior: Clip.antiAlias,
                                       decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
@@ -655,7 +654,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         color: Color(0xFFDB5275),
                                         fontFamily: 'League Spartan',
                                         fontWeight: FontWeight.w900,
-                                        fontSize: 16,
+                                        fontSize: 14,
                                       ),
                                     ),
                                   ),
@@ -695,8 +694,8 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                       );
                                     },
                                     child: Container(
-                                      width: 100.0,
-                                      height: 100.0,
+                                      width: MediaQuery.of(context).size.height * 0.1,
+                                      height: MediaQuery.of(context).size.height * 0.1,
                                       clipBehavior: Clip.antiAlias,
                                       decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
@@ -717,7 +716,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                                         color: Color(0xFFDB5275),
                                         fontFamily: 'League Spartan',
                                         fontWeight: FontWeight.w900,
-                                        fontSize: 16,
+                                        fontSize: 14,
                                       ),
                                     ),
                                   ),
@@ -732,7 +731,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
               ),
 
               Align(
-                alignment: const AlignmentDirectional(0, 1),
+                alignment: const AlignmentDirectional(0, 0.95),
                 child: Flex(
                   direction: Axis.horizontal,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -741,7 +740,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.asset(
                         'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
-                        width: 150,
+                        height: 30.0,
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -749,7 +748,7 @@ class _TelaDeMenuInicialWidgetState extends State<TelaDeMenuInicialWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.asset(
                         'assets/images/globalImages/download.png',
-                        width: 75.0,
+                        height: 50.0,
                         fit: BoxFit.cover,
                       ),
                     ),

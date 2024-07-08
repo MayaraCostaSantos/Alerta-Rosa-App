@@ -49,37 +49,108 @@ class _TelaDeExerciciosFisicos1WidgetState
             height: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage('assets/images/globalImages/plano-de-fundo.png'),
-            ),
+                fit: BoxFit.cover,
+                image: AssetImage('assets/images/globalImages/plano-de-fundo-2.png'),
+              ),
             ),
             child: Stack(
               children: [
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.85),
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    clipBehavior: Clip.antiAlias,
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                    ),
+                  alignment: Alignment.topRight - const Alignment(0.0, -0.02),
+                  child: ClipRRect(
                     child: Image.asset(
-                      'assets/images/exercicios_fisicos-removebg-preview.png',
+                      'assets/images/globalImages/logo-removebg-preview.png',
+                      width: 90,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.35, -0.61),
-                  child: Text(
-                    'Exercícios Físicos ',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          fontSize: 30.0,
-                          letterSpacing: 2.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  alignment: Alignment.topLeft - const Alignment(-0.05, -0.05),
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.pushNamed(
+                        'TelaDeMenuInicial',
+                        extra: <String, dynamic>{
+                          kTransitionInfoKey: const TransitionInfo(
+                            hasTransition: true,
+                            transitionType: PageTransitionType.leftToRight,
+                          ),
+                        },
+                      );
+                    },
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/iconeVoltar.png',
+                        height: 44.8,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.topRight - const Alignment(0.0, -0.02),
+                  child: ClipRRect(
+                    child: Image.asset(
+                      'assets/images/globalImages/logo-removebg-preview.png',
+                      width: 90,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                ClipRRect(
+                  child: SizedBox(
+                      width: MediaQuery.of(context).size.width,
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      child: Stack(
+                        children: [
+                          Center(
+                            child: DecoratedBox(
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(51, 219, 82, 117),
+                                  borderRadius: BorderRadius.circular(25.0),
+                                ),
+                                child: Container(
+                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    height: MediaQuery.of(context).size.height * 0.15,
+                                    padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+                                    child: Center(
+                                        child: Stack(
+                                          alignment: const AlignmentDirectional(0.0, 0.0),
+                                          children: [
+                                            const Text(
+                                              'EXERCÍCIOS FÍSICOS',
+                                              overflow: TextOverflow.clip,
+                                              textAlign: TextAlign.center,
+                                              style: TextStyle(
+                                                fontFamily: 'Open Sans',
+                                                color: Color(0xFFD07170),
+                                                fontSize: 24.0,
+                                                fontWeight: FontWeight.w900,
+                                                overflow: TextOverflow.clip,
+                                              ),
+                                            ),
+                                            Align(
+                                              alignment: Alignment.centerRight + const Alignment(1.0, 0.0),
+                                              child: Image.asset(
+                                                'assets/images/exercicios_fisicos-removebg-preview.png',
+                                                width: 70,
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
+                                          ],
+                                        )
+                                    )
+                                )
+                            ),
+                          ),
+                        ],
+                      )
                   ),
                 ),
                 Align(
@@ -88,13 +159,12 @@ class _TelaDeExerciciosFisicos1WidgetState
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(30.0, 0.0, 30.0, 0.0),
                     child: Text(
-                      ' Os exercícios físicos de educação física no tratamento pós-operatório do câncer de mama são fundamentais para a recuperação e qualidade de vida das pacientes. Eles auxiliam na redução de complicações pós-cirúrgicas, como a linfedema, além de contribuírem para a melhora da função muscular e da mobilidade.  ',
+                      'Os exercícios físicos de educação física no tratamento pós-operatório do câncer de mama são fundamentais para a recuperação e qualidade de vida das pacientes. Eles auxiliam na redução de complicações pós-cirúrgicas, como a linfedema, além de contribuírem para a melhora da função muscular e da mobilidade.  ',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
-                            fontSize: 14.0,
-                            letterSpacing: 0.0,
-                            fontWeight: FontWeight.w500,
+                            fontFamily: 'Montserrat',
+                            fontSize: 12.0,
+                            fontWeight: FontWeight.w600,
                           ),
                     ),
                   ),
@@ -105,7 +175,7 @@ class _TelaDeExerciciosFisicos1WidgetState
                     '\"',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Rubik',
-                          color: const Color(0xFFC92D7E),
+                          color: const Color(0xFFF35A81),
                           fontSize: 50.0,
                           letterSpacing: 0.0,
                         ),
@@ -117,7 +187,7 @@ class _TelaDeExerciciosFisicos1WidgetState
                     '\"',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Rubik',
-                          color: const Color(0xFFC92D7E),
+                          color: const Color(0xFFF35A81),
                           fontSize: 50.0,
                           letterSpacing: 0.0,
                         ),
@@ -145,7 +215,7 @@ class _TelaDeExerciciosFisicos1WidgetState
                   child: Text(
                     '- Dra. Susan Love.',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'Montserrat',
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
                         ),
@@ -173,23 +243,21 @@ class _TelaDeExerciciosFisicos1WidgetState
                       options: FFButtonOptions(
                         width: 300.0,
                         height: 30.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFDB5275),
+                        textAlign: TextAlign.center,
                         textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Roboto',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
+                          FlutterFlowTheme.of(context).titleSmall.override(
+                            fontFamily: 'Montserrat',
+                            color: Colors.white,
+                            letterSpacing: 0.0,
+                          ),
                         elevation: 3.0,
                         borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(16.0),
                       ),
                     ),
                   ),
@@ -215,23 +283,20 @@ class _TelaDeExerciciosFisicos1WidgetState
                       options: FFButtonOptions(
                         width: 300.0,
                         height: 30.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFDB5275),
+                        textAlign: TextAlign.center,
                         textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Roboto',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
+                          FlutterFlowTheme.of(context).titleSmall.override(
+                            fontFamily: 'Montserrat',
+                            color: Colors.white,
+                          ),
                         elevation: 3.0,
                         borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(16.0),
                       ),
                     ),
                   ),
@@ -258,111 +323,103 @@ class _TelaDeExerciciosFisicos1WidgetState
                       options: FFButtonOptions(
                         width: 300.0,
                         height: 30.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFDB5275),
+                        textAlign: TextAlign.center,
                         textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Roboto',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
+                          FlutterFlowTheme.of(context).titleSmall.override(
+                            fontFamily: 'Montserrat',
+                            color: Colors.white,
+                            letterSpacing: 0.0,
+                          ),
                         elevation: 3.0,
                         borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(16.0),
                       ),
                     ),
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.03, 0.91),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8.0),
-                    child: Image.asset(
-                      'assets/images/globalImages/logo-removebg-preview.png',
-                      width: 130.0,
-                      height: 60.0,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(-0.46, -0.78),
-                  child: InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      context.pushNamed(
-                        'TelaDeMenuInicial',
-                        extra: <String, dynamic>{
-                          kTransitionInfoKey: const TransitionInfo(
-                            hasTransition: true,
-                            transitionType: PageTransitionType.fade,
-                            duration: Duration(milliseconds: 0),
-                          ),
-                        },
-                      );
-                    },
-                    child: const Icon(
-                      Icons.arrow_left,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
-                    ),
-                  ),
-                ),
-                Align(
                   alignment: const AlignmentDirectional(0.0, 0.03),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 50.0, 0.0),
-                    child: Text(
-                      'Para pacientes pós-operatórios recentes, é recomendável iniciar com exercícios leves.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
+                  child: SizedBox(
+                    width: 300,
+                    child: Wrap(
+                      children: [
+                        Text(
+                          'Para pacientes pós-operatórios recentes, é recomendável iniciar com exercícios leves.',
+                          textAlign: TextAlign.justify,
+                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Montserrat',
                             fontSize: 12.0,
                             letterSpacing: 0.0,
                           ),
-                    ),
+                        ),
+                      ],
+                    )
                   ),
                 ),
                 Align(
                   alignment: const AlignmentDirectional(0.0, 0.31),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 50.0, 0.0),
-                    child: Text(
-                      'Para pacientes pós-operatórios com melhoria física e adaptados aos exercícios leves, é recomendável incorporar atividades moderadas, pois podem contribuir significativamente para a recuperação física.',
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
-                            fontSize: 12.0,
-                            letterSpacing: 0.0,
-                          ),
-                    ),
+                  child: SizedBox(
+                    width: 300,
+                    child: Wrap(
+                      children: [Text(
+                        'Para pacientes pós-operatórios com melhoria física e adaptados aos exercícios leves, é recomendável incorporar atividades moderadas, pois podem contribuir significativamente para a recuperação física.',
+                        textAlign: TextAlign.justify,
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                          fontFamily: 'Montserrat',
+                          fontSize: 12.0,
+                          letterSpacing: 0.0,
+                        ),
+                      ),],
+                    )
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, 0.65),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 50.0, 0.0),
-                    child: Text(
-                      'É fundamental estar adaptado a exercícios físicos leves e moderados antes de iniciar atividades intensas, garantindo uma transição gradual e segura sob supervisão médica para preservar a saúde e evitar lesões.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
+                  alignment: const AlignmentDirectional(0.0, 0.7),
+                  child: SizedBox(
+                    width: 300,
+                    child: Wrap(
+                      children: [
+                        Text(
+                          'É fundamental estar adaptado a exercícios físicos leves e moderados antes de iniciar atividades intensas, garantindo uma transição gradual e segura sob supervisão médica para preservar a saúde e evitar lesões.',
+                          textAlign: TextAlign.justify,
+                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Montserrat',
                             fontSize: 12.0,
                             letterSpacing: 0.0,
                           ),
-                    ),
+                        ),
+                      ],
+                    )
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(0, 0.95),
+                  child: Flex(
+                    direction: Axis.horizontal,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
+                          height: 30.0,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/globalImages/download.png',
+                          height: 50.0,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],

@@ -168,7 +168,7 @@ class _TelaDeIrritacaoNaPeleWidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0, 1),
+                  alignment: const AlignmentDirectional(0, 0.95),
                   child: Flex(
                     direction: Axis.horizontal,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -177,7 +177,7 @@ class _TelaDeIrritacaoNaPeleWidgetState
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
                           'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
-                          width: 150,
+                          height: 30.0,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -185,7 +185,7 @@ class _TelaDeIrritacaoNaPeleWidgetState
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
                           'assets/images/globalImages/download.png',
-                          width: 75.0,
+                          height: 50.0,
                           fit: BoxFit.cover,
                         ),
                       ),

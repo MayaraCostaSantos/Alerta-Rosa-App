@@ -107,16 +107,16 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
                               child: Center(
                                 child: Stack(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   children: [
                                     const Text(
-                                      'SINAIS \nE\n SINTOMAS',
+                                      'SINAIS\nE\nSINTOMAS',
                                       overflow: TextOverflow.clip,
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         fontFamily: 'Open Sans Extra Bold',
                                         color: Color(0xFFD07170),
-                                        fontSize: 32.0,
+                                        fontSize: 24.0,
                                         fontWeight: FontWeight.w900,
                                         overflow: TextOverflow.clip,
                                       ),
@@ -421,7 +421,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                 ),
 
                 Align(
-                  alignment: const AlignmentDirectional(0, 1),
+                  alignment: const AlignmentDirectional(0, 0.95),
                   child: Flex(
                     direction: Axis.horizontal,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -430,7 +430,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
                           'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
-                          width: 150,
+                          height: 30.0,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -438,7 +438,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
                           'assets/images/globalImages/download.png',
-                          width: 75.0,
+                          height: 50.0,
                           fit: BoxFit.cover,
                         ),
                       ),

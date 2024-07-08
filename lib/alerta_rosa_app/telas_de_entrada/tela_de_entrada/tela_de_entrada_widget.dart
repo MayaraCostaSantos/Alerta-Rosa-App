@@ -134,13 +134,13 @@ class _TelaDeEntradaWidgetState extends State<TelaDeEntradaWidget> {
                 alignment: const AlignmentDirectional(0, 0.8),
                 child: Flex(
                   direction: Axis.horizontal,
-                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.asset(
                         'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
-                        width: 150,
+                        height: 30.0,
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -148,7 +148,7 @@ class _TelaDeEntradaWidgetState extends State<TelaDeEntradaWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.asset(
                         'assets/images/globalImages/download.png',
-                        width: 75.0,
+                        height: 50.0,
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -156,14 +156,14 @@ class _TelaDeEntradaWidgetState extends State<TelaDeEntradaWidget> {
                 ),
               ),
               const Align(
-                alignment: AlignmentDirectional(0.0, 0.97),
+                alignment: Alignment(0, 0.92),
                 child: Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                   child: Text(
                     'Uma iniciativa da Universidade Estadual de Ciências da Saúde de Alagoas com o apoio do Conselho Nacional Desenvolvimento Científico e Tecnológico.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 14.0,
+                      fontSize: 12.0,
                       letterSpacing: 0.0,
                     ),
                   ),

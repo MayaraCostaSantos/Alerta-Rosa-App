@@ -179,7 +179,7 @@ class _TelaDeApoioEmocionalWidgetState
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        color: const Color(0xFFF35A81),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Plus Jakarta Sans',
@@ -221,7 +221,7 @@ class _TelaDeApoioEmocionalWidgetState
                           const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
                           const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: const Color(0xFFC92D7E),
+                      color: const Color(0xFFF35A81),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Plus Jakarta Sans',
@@ -269,10 +269,12 @@ class _TelaDeApoioEmocionalWidgetState
                         },
                       );
                     },
-                    child: const Icon(
-                      Icons.arrow_left,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
+                    child: ClipRRect(
+                      child: Image.asset(
+                        'assets/images/iconeVoltar.png',
+                        height: 44.8,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),

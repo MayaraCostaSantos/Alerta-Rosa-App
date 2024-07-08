@@ -1,3 +1,4 @@
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
@@ -5,7 +6,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'auth/firebase_auth/firebase_user_provider.dart';
 import 'auth/firebase_auth/auth_util.dart';
-import 'package:flutter/services.dart';
 
 import 'backend/firebase/firebase_config.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
@@ -14,6 +14,7 @@ import 'flutter_flow/internationalization.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   GoRouter.optionURLReflectsImperativeAPIs = true;
   usePathUrlStrategy();
   await initFirebase();
@@ -80,7 +81,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack);
     return MaterialApp.router(
       title: 'Alerta Rosa',
       localizationsDelegates: const [
@@ -99,8 +99,8 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: false,
       ),
       darkTheme: ThemeData(
-        brightness: Brightness.dark,
-        fontFamily: 'Source Sans Pro',
+        brightness: Brightness.light,
+        fontFamily: 'Montserrat',
         useMaterial3: false,
       ),
       themeMode: _themeMode,

@@ -54,20 +54,25 @@ class _TelaDeExerciciosIntensos5WidgetState
             decoration: const BoxDecoration(
               image: DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage('assets/images/globalImages/plano-de-fundo.png'),
+              image: AssetImage('assets/images/globalImages/plano-de-fundo-2.png'),
             ),
             ),
             child: Stack(
               children: [
                 Align(
-                  alignment: const AlignmentDirectional(0.01, -0.89),
-                  child: Container(
-                    width: 70.0,
-                    height: 70.0,
-                    clipBehavior: Clip.antiAlias,
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
+                  alignment: Alignment.topRight - const Alignment(0.0, -0.02),
+                  child: ClipRRect(
+                    child: Image.asset(
+                      'assets/images/globalImages/logo-removebg-preview.png',
+                      width: 90,
+                      fit: BoxFit.cover,
                     ),
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(0.00, -0.95),
+                  child: SizedBox(
+                    height: 70.0,
                     child: Image.asset(
                       'assets/images/exercicios_fisicos-removebg-preview.png',
                       fit: BoxFit.cover,
@@ -75,312 +80,7 @@ class _TelaDeExerciciosIntensos5WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.17, -0.7),
-                  child: Text(
-                    'Exercícios Físicos Intensos',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          fontSize: 20.0,
-                          letterSpacing: 2.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.18, -0.47),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
-                    child: Text(
-                      '5. Agachamento estático na parede',
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
-                            fontSize: 15.0,
-                            letterSpacing: 0.0,
-                            fontWeight: FontWeight.bold,
-                            lineHeight: 0.0,
-                          ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.02, 0.93),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        'assets/images/globalImages/logo-removebg-preview.png',
-                        width: 113.0,
-                        height: 56.0,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(-1.07, 0.84),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
-                    child: FFButtonWidget(
-                      onPressed: () async {
-                        _model.timerController.onStartTimer();
-                      },
-                      text: 'INÍCIO',
-                      options: FFButtonOptions(
-                        width: 101.0,
-                        height: 21.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Plus Jakarta Sans',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: FlutterFlowTheme.of(context).primaryBackground,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(-1.07, 0.9),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 0.0, 0.0),
-                    child: FFButtonWidget(
-                      onPressed: () async {
-                        _model.timerController.onStopTimer();
-                      },
-                      text: 'PARAR',
-                      options: FFButtonOptions(
-                        width: 100.0,
-                        height: 21.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Plus Jakarta Sans',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: FlutterFlowTheme.of(context).primaryBackground,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(-1.07, 0.95),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(20.0, 30.0, 0.0, 0.0),
-                    child: FFButtonWidget(
-                      onPressed: () async {
-                        _model.timerController.onResetTimer();
-                      },
-                      text: 'RESET',
-                      options: FFButtonOptions(
-                        width: 100.0,
-                        height: 20.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Plus Jakarta Sans',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: FlutterFlowTheme.of(context).primaryBackground,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(-0.82, 0.71),
-                  child: FlutterFlowTimer(
-                    initialTime: _model.timerInitialTimeMs,
-                    getDisplayTime: (value) => StopWatchTimer.getDisplayTime(
-                      value,
-                      hours: false,
-                      milliSecond: false,
-                    ),
-                    controller: _model.timerController,
-                    updateStateInterval: const Duration(milliseconds: 60000),
-                    onChanged: (value, displayTime, shouldUpdate) {
-                      _model.timerMilliseconds = value;
-                      _model.timerValue = displayTime;
-                      if (shouldUpdate) setState(() {});
-                    },
-                    onEnded: () async {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            'Time Complated',
-                            style: TextStyle(
-                              color: FlutterFlowTheme.of(context).primaryText,
-                            ),
-                          ),
-                          duration: const Duration(milliseconds: 4000),
-                          backgroundColor:
-                              FlutterFlowTheme.of(context).secondary,
-                        ),
-                      );
-                    },
-                    textAlign: TextAlign.start,
-                    style: FlutterFlowTheme.of(context).headlineSmall.override(
-                          fontFamily: 'Playfair Display',
-                          color: FlutterFlowTheme.of(context).primaryBackground,
-                          fontSize: 25.0,
-                          letterSpacing: 0.0,
-                        ),
-                  ),
-                ),
-                const Align(
-                  alignment: AlignmentDirectional(-0.92, 0.79),
-                  child: Icon(
-                    Icons.circle_outlined,
-                    color: Color(0xFFC92D7E),
-                    size: 100.0,
-                  ),
-                ),
-                const Align(
-                  alignment: AlignmentDirectional(-0.52, 0.79),
-                  child: Icon(
-                    Icons.more_time_rounded,
-                    color: Color(0xFFC92D7E),
-                    size: 30.0,
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, -0.63),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                    child: Text(
-                      'É recomendável realizar a série de exercícios.  Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
-                            fontSize: 12.0,
-                            letterSpacing: 0.0,
-                          ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.43, -0.84),
-                  child: InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      context.pushNamed(
-                        'TelaDeExerciciosIntensos6',
-                        extra: <String, dynamic>{
-                          kTransitionInfoKey: const TransitionInfo(
-                            hasTransition: true,
-                            transitionType: PageTransitionType.fade,
-                            duration: Duration(milliseconds: 0),
-                          ),
-                        },
-                      );
-                    },
-                    child: const Icon(
-                      Icons.arrow_right,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, -0.52),
-                  child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
-                    },
-                    text: 'Quarta-Feira 1',
-                    options: FFButtonOptions(
-                      width: 150.0,
-                      height: 20.0,
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                      iconPadding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: const Color(0xFFC92D7E),
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Plus Jakarta Sans',
-                                color: Colors.white,
-                                fontSize: 14.0,
-                                letterSpacing: 0.0,
-                              ),
-                      elevation: 3.0,
-                      borderSide: BorderSide(
-                        color: FlutterFlowTheme.of(context).primaryBackground,
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    showLoadingIndicator: false,
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(-0.85, 0.23),
-                  child: Text(
-                    'Passo a passo:',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, 0.48),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
-                    child: Text(
-                      'A praticante deverá ficar de pé e com as costas encostadas na parede. Em seguida deverá dar um passo a frente colocando os pés paralelos. Escorregando na parede num movimeto de agachamento, mantendo-se encostada na parede, coforme o vídeo. Em seguida marca o tempo nessa posição \"sentada\". Deve-se fazer 2 séries de 15 a 45 segundos nas duas primeiras semanas, a partir da terceira semana 3 séries de 30 a 90 segundos.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
-                            fontSize: 12.0,
-                            letterSpacing: 0.0,
-                          ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(-0.4, -0.84),
+                  alignment: const AlignmentDirectional(-0.4, -0.9),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -400,47 +100,324 @@ class _TelaDeExerciciosIntensos5WidgetState
                         },
                       );
                     },
-                    child: const Icon(
-                      Icons.arrow_left_outlined,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/iconeVoltar.png',
+                        height: 44.8,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(0.4, -0.9),
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.pushNamed(
+                        'TelaDeExerciciosIntensos6',
+                        extra: <String, dynamic>{
+                          kTransitionInfoKey: const TransitionInfo(
+                            hasTransition: true,
+                            transitionType: PageTransitionType.fade,
+                            duration: Duration(milliseconds: 0),
+                          ),
+                        },
+                      );
+                    },
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Transform.flip(
+                        flipX: true,
+                        child: Image.asset(
+                          'assets/images/iconeVoltar.png',
+                          height: 44.8,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(0.0, -0.52),
+                  child: Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                    child: Text(
+                      '5. Agachamento estático na parede',
+                      textAlign: TextAlign.start,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Montserrat',
+                            fontSize: 14.0,
+                            letterSpacing: 0.0,
+                            fontWeight: FontWeight.bold,
+                            lineHeight: 0.0,
+                          ),
+                    ),
+                  ),
+                ),
+
+                Align(
+                  alignment: const AlignmentDirectional(-0.8, 0.14),
+                  child: Text(
+                    'Passo a passo:',
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Montserrat',
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const Alignment(0.0, 0.4),
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    child: Text(
+                      'A praticante deverá ficar de pé e com as costas encostadas na parede. Em seguida deverá dar um passo a frente colocando os pés paralelos. Escorregando na parede num movimeto de agachamento, mantendo-se encostada na parede, coforme o vídeo. Em seguida marca o tempo nessa posição \"sentada\". Deve-se fazer 2 séries de 15 a 45 segundos nas duas primeiras semanas, a partir da terceira semana 3 séries de 30 a 90 segundos.',
+                      textAlign: TextAlign.justify,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Montserrat',
+                            fontSize: 12.0,
+                            letterSpacing: 0.0,
+                          ),
+                    ),
+                  ),
+                ),
+
+                const Align(
+                  alignment: AlignmentDirectional(-0.04, -0.27),
+                  child: SizedBox(
+                    width: 125.0,
+                    child: FlutterFlowVideoPlayer(
+                      path: 'https://firebasestorage.googleapis.com/v0/b/alertarosa-c180e.appspot.com/o/WhatsApp_Video_2024-05-03_at_15.41.09.mp4?alt=media&token=e6184164-b37b-4f28-990d-f5e42fbdf129',
+                      videoType: VideoType.network,
+                      autoPlay: false,
+                      looping: true,
+                      showControls: true,
+                      allowFullScreen: true,
+                      allowPlaybackSpeedMenu: true,
+                      lazyLoad: false,
+                    ),
+                  )
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(-0.85, 0.6),
+                  child: SizedBox(
+                    child: FFButtonWidget(
+                      onPressed: () async {
+                        _model.timerController.onStartTimer();
+                      },
+                      text: 'INÍCIO',
+                      icon: const Icon(
+                        Icons.play_arrow,
+                        color: Colors.white,
+                        size: 20,
+                      ),
+                      options: FFButtonOptions(
+                        width: 130.0,
+                        height: 30,
+                        color: const Color(0xFFF35A81),
+                        iconPadding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
+                        textAlign: TextAlign.center,
+                        textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Open Sans',
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          letterSpacing: 0.0,
+                        ),
+                        elevation: 3.0,
+                        borderRadius: BorderRadius.circular(16.0),
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(-0.85, 0.7),
+                  child: SizedBox(
+                    child: FFButtonWidget(
+                      onPressed: () async {
+                        _model.timerController.onStopTimer();
+                      },
+                      text: 'PARAR',
+                      icon: const Icon(
+                        Icons.stop,
+                        color: Colors.white,
+                        size: 20,
+                      ),
+                      options: FFButtonOptions(
+                        width: 130.0,
+                        height: 30,
+                        iconPadding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
+                        color: const Color(0xFFF35A81),
+                        textAlign: TextAlign.center,
+                        textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Open Sans',
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          letterSpacing: 0.0,
+                        ),
+                        elevation: 3.0,
+                        borderRadius: BorderRadius.circular(16.0),
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(-0.85, 0.8),
+                  child: SizedBox(
+                    child: FFButtonWidget(
+                      onPressed: () async {
+                        _model.timerController.onResetTimer();
+                      },
+                      text: 'RESET',
+                      icon: const Icon(
+                        Icons.refresh,
+                        color: Colors.white,
+                        size: 20,
+                      ),
+                      options: FFButtonOptions(
+                        width: 130.0,
+                        height: 30,
+                        iconPadding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                        color: const Color(0xFFF35A81),
+                        textAlign: TextAlign.center,
+                        textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Open Sans',
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          letterSpacing: 0.0,
+                        ),
+                        elevation: 3.0,
+                        borderRadius: BorderRadius.circular(16.0),
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(0.3, 0.69),
+                  child: FlutterFlowTimer(
+                    initialTime: _model.timerInitialTimeMs,
+                    getDisplayTime: (value) => StopWatchTimer.getDisplayTime(
+                      value,
+                      hours: false,
+                      milliSecond: false,
+                    ),
+                    controller: _model.timerController,
+                    updateStateInterval: const Duration(milliseconds: 60000),
+                    onChanged: (value, displayTime, shouldUpdate) {
+                      _model.timerMilliseconds = value;
+                      _model.timerValue = displayTime;
+                      if (shouldUpdate) setState(() {});
+                    },
+                    onEnded: () async {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                            'Tempo Concluído!',
+                            style: TextStyle(
+                              color: FlutterFlowTheme.of(context).primaryText,
+                            ),
+                          ),
+                          duration: const Duration(milliseconds: 4000),
+                          backgroundColor: FlutterFlowTheme.of(context).secondary,
+                        ),
+                      );
+                    },
+                    textAlign: TextAlign.center,
+                    style: FlutterFlowTheme.of(context).headlineSmall.override(
+                      fontFamily: 'Open Sans',
+                      color: Colors.black,
+                      fontSize: 24.0,
+                      letterSpacing: 0.0,
                     ),
                   ),
                 ),
                 const Align(
-                  alignment: AlignmentDirectional(-0.04, -0.18),
-                  child: FlutterFlowVideoPlayer(
-                    path:
-                        'https://firebasestorage.googleapis.com/v0/b/alertarosa-c180e.appspot.com/o/WhatsApp_Video_2024-05-03_at_15.41.09.mp4?alt=media&token=e6184164-b37b-4f28-990d-f5e42fbdf129',
-                    videoType: VideoType.network,
-                    width: 226.0,
-                    height: 245.0,
-                    autoPlay: false,
-                    looping: true,
-                    showControls: true,
-                    allowFullScreen: true,
-                    allowPlaybackSpeedMenu: true,
-                    lazyLoad: false,
+                  alignment: AlignmentDirectional(0.35, 0.77),
+                  child: Icon(
+                    Icons.circle_outlined,
+                    color: Color(0xFFF35A81),
+                    size: 120.0,
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.15, 0.71),
-                  child: Text(
-                    'Intervalo',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          color: const Color(0xFFC92D7E),
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  alignment: const AlignmentDirectional(0.55, 0.8),
+                  child: IconButton(
+                    onPressed: () {
+                      _model.timerController.addTime(mSec: 200);
+                    },
+                    icon: const Icon(
+                      Icons.more_time_rounded,
+                      color: Color(0xFFF35A81),
+                      size: 30.0,
+                    ),
                   ),
                 ),
-                const Align(
-                  alignment: AlignmentDirectional(-0.37, 0.72),
-                  child: Icon(
-                    Icons.lock_reset,
-                    color: Color(0xFFC92D7E),
-                    size: 24.0,
+                Align(
+                  alignment: const AlignmentDirectional(0.0, -0.75),
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    child: Text(
+                      'É recomendável realizar a série de exercícios. Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
+                      textAlign: TextAlign.justify,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12.0,
+                        letterSpacing: 0.0,
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(0.00, -0.6),
+                  child: Container(
+                    width: 200.0,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFF35A81),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
+                    child: Text(
+                      'Quarta-Feira',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily: 'Montserrat',
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(0, 0.95),
+                  child: Flex(
+                    direction: Axis.horizontal,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
+                          height: 30.0,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/globalImages/download.png',
+                          height: 50.0,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],

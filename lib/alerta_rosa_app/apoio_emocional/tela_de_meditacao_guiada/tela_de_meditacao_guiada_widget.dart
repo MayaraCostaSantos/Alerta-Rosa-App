@@ -163,7 +163,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                               ),
                       fillColor:
                           FlutterFlowTheme.of(context).secondaryBackground,
-                      playbackButtonColor: const Color(0xFFC92D7E),
+                      playbackButtonColor: const Color(0xFFF35A81),
                       activeTrackColor: FlutterFlowTheme.of(context).alternate,
                       elevation: 4.0,
                       playInBackground: PlayInBackground.enabled,
@@ -205,7 +205,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                               ),
                       fillColor:
                           FlutterFlowTheme.of(context).secondaryBackground,
-                      playbackButtonColor: const Color(0xFFC92D7E),
+                      playbackButtonColor: const Color(0xFFF35A81),
                       activeTrackColor: FlutterFlowTheme.of(context).alternate,
                       elevation: 4.0,
                       playInBackground:
@@ -248,7 +248,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                               ),
                       fillColor:
                           FlutterFlowTheme.of(context).secondaryBackground,
-                      playbackButtonColor: const Color(0xFFC92D7E),
+                      playbackButtonColor: const Color(0xFFF35A81),
                       activeTrackColor: FlutterFlowTheme.of(context).alternate,
                       elevation: 4.0,
                       playInBackground:
@@ -283,10 +283,12 @@ class _TelaDeMeditacaoGuiadaWidgetState
                     onTap: () async {
                       context.pushNamed('TelaDeApoioEmocional');
                     },
-                    child: const Icon(
-                      Icons.arrow_left,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
+                    child: ClipRRect(
+                      child: Image.asset(
+                        'assets/images/iconeVoltar.png',
+                        height: 44.8,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),

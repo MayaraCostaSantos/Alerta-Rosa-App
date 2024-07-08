@@ -206,7 +206,7 @@ class _TelaDeFiseoTerapia7WidgetState extends State<TelaDeFiseoTerapia7Widget> {
                   },
                   child: const Icon(
                     Icons.arrow_left,
-                    color: Color(0xFFC92D7E),
+                    color: Color(0xFFF35A81),
                     size: 40.0,
                   ),
                 ),

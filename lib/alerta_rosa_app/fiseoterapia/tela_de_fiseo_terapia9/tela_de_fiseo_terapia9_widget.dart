@@ -159,7 +159,7 @@ class _TelaDeFiseoTerapia9WidgetState extends State<TelaDeFiseoTerapia9Widget> {
                   },
                   child: const Icon(
                     Icons.arrow_right,
-                    color: Color(0xFFC92D7E),
+                    color: Color(0xFFF35A81),
                     size: 40.0,
                   ),
                 ),
@@ -241,7 +241,7 @@ class _TelaDeFiseoTerapia9WidgetState extends State<TelaDeFiseoTerapia9Widget> {
                   },
                   child: const Icon(
                     Icons.arrow_left,
-                    color: Color(0xFFC92D7E),
+                    color: Color(0xFFF35A81),
                     size: 40.0,
                   ),
                 ),

@@ -51,24 +51,54 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
             child: Stack(
               children: [
                 Align(
-                  alignment: const AlignmentDirectional(0.06, -0.77),
+                  alignment: Alignment.topLeft - const Alignment(-0.05, -0.05),
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      Navigator.pop(context);
+                    },
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/iconeVoltar.png',
+                        height: 44.8,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.topRight - const Alignment(0.0, -0.02),
+                  child: ClipRRect(
+                    child: Image.asset(
+                      'assets/images/globalImages/logo-removebg-preview.png',
+                      width: 90,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(0.06, -0.85),
                   child: Text(
-                    'Autoexame',
+                    'AUTOEXAME',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto Condensed',
-                          color: FlutterFlowTheme.of(context).primaryText,
+                          fontFamily: 'Open Sans',
+                          color: const Color(0xFFD07170),
                           fontSize: 20.0,
                           letterSpacing: 2.0,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.w800,
                         ),
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.14, 0.09),
+                  alignment: const AlignmentDirectional(-0.25, -0.32),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
-                      'assets/images/AUTOEXAME_3.jpg',
+                      'assets/images/exame-1.png',
                       width: 288.0,
                       height: 94.0,
                       fit: BoxFit.cover,
@@ -76,17 +106,18 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.14, -0.32),
+                  alignment: const AlignmentDirectional(0, 0.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
-                      'assets/images/exame2.jpg',
+                      'assets/images/exame-2.png',
                       width: 288.0,
                       height: 94.0,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
+
                 Align(
                   alignment: const AlignmentDirectional(0.01, 0.52),
                   child: ClipRRect(
@@ -100,32 +131,6 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.32, -0.91),
-                  child: InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      context.pushNamed(
-                        'TelaDeMenuInicial',
-                        extra: <String, dynamic>{
-                          kTransitionInfoKey: const TransitionInfo(
-                            hasTransition: true,
-                            transitionType: PageTransitionType.fade,
-                            duration: Duration(milliseconds: 0),
-                          ),
-                        },
-                      );
-                    },
-                    child: const Icon(
-                      Icons.arrow_left,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
-                    ),
-                  ),
-                ),
-                Align(
                   alignment: const AlignmentDirectional(0.0, -0.69),
                   child: Padding(
                     padding:
@@ -134,7 +139,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                       '\"O autoexame é o primeiro passo para a aceitação e o amor próprio; sem ele, é quase impossível crescer ou aprender na vida.\"',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
+                            fontFamily: 'Montserrat',
                             fontSize: 12.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w600,
@@ -147,7 +152,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                   child: Text(
                     ' – Iyanla Vanzant',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'Montserrat',
                           fontSize: 12.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
@@ -194,6 +199,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                     size: 20.0,
                   ),
                 ),
+
                 Align(
                   alignment: const AlignmentDirectional(0.04, -0.56),
                   child: Text(
@@ -206,39 +212,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                         ),
                   ),
                 ),
-                Align(
-                  alignment: const AlignmentDirectional(0.03, 0.91),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8.0),
-                    child: Image.asset(
-                      'assets/images/globalImages/logo-removebg-preview.png',
-                      width: 130.0,
-                      height: 60.0,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, -0.16),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                        child: Text(
-                          '2°  Passo:',
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Roboto',
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+
                 Align(
                   alignment: const AlignmentDirectional(0.0, -0.48),
                   child: Padding(
@@ -247,7 +221,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                     child: Text(
                       'Olha-se no espelho e inspecione as mamas com os braços em diferentes posições.',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
+                            fontFamily: 'Montserrat',
                             fontSize: 12.0,
                             letterSpacing: 0.0,
                           ),
@@ -266,7 +240,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                           '1°  Passo:',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Roboto',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -276,26 +250,11 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.93, -0.1),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                    child: Text(
-                      'Olha-se no espelho e inspecione as mamas em direções e posições diferente. ',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
-                            fontSize: 12.0,
-                            letterSpacing: 0.0,
-                          ),
-                    ),
-                  ),
-                ),
-                Align(
                   alignment: const AlignmentDirectional(0.87, 0.48),
                   child: Text(
-                    '6°  Passo:',
+                    '5°  Passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'Montserrat',
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
                         ),
@@ -307,7 +266,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                     'Examine \nno sentido \nhorário\ne anti-horário.',
                     textAlign: TextAlign.justify,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'Montserrat',
                           fontSize: 12.0,
                           letterSpacing: 0.0,
                         ),
@@ -316,9 +275,9 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                 Align(
                   alignment: const AlignmentDirectional(-0.93, 0.29),
                   child: Text(
-                    '3°  Passo:',
+                    '2°  Passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'Montserrat',
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
                         ),
@@ -333,7 +292,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                       'Use suavemente\n as pontas\n dos dedos.',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
+                            fontFamily: 'Montserrat',
                             fontSize: 12.0,
                             letterSpacing: 0.0,
                           ),
@@ -343,9 +302,9 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                 Align(
                   alignment: const AlignmentDirectional(-0.94, 0.47),
                   child: Text(
-                    '4°  Passo:',
+                    '3°  Passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'Montserrat',
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
                         ),
@@ -360,7 +319,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                       'Examine \nna vertical.',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
+                            fontFamily: 'Montserrat',
                             fontSize: 12.0,
                             letterSpacing: 0.0,
                           ),
@@ -370,9 +329,9 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                 Align(
                   alignment: const AlignmentDirectional(0.87, 0.29),
                   child: Text(
-                    '5°  Passo:',
+                    '4°  Passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'Montserrat',
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
                         ),
@@ -384,55 +343,61 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                     'Verifique\nse existem\n pequenos\n caroços.',
                     textAlign: TextAlign.justify,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'Montserrat',
                           fontSize: 12.0,
                           letterSpacing: 0.0,
                         ),
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.05, 0.73),
+                  alignment: const AlignmentDirectional(-0.05, 0.8),
                   child: Container(
-                    width: 306.0,
-                    height: 25.0,
+                    width: MediaQuery.of(context).size.width * 0.7,
                     decoration: const BoxDecoration(
-                      color: Color(0xFFC92D7E),
-                      borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(30.0),
-                        bottomRight: Radius.circular(30.0),
-                        topLeft: Radius.circular(30.0),
-                        topRight: Radius.circular(30.0),
+                      color: Color(0xFFFF6699),
+                      borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                    ),
+                    padding: const EdgeInsetsDirectional.fromSTEB(4.0, 4.0, 4.0, 4.0),
+                    child: Wrap(
+                      children: [
+                        Text(
+                          ' Qualquer alteração suspeita deve ser investigada!',
+                          textAlign: TextAlign.center,
+                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Montserrat',
+                            color: const Color(0xFFFFFFFF),
+                            fontSize: 12.0,
+                            letterSpacing: 0.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ]
+                    )
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(0, 0.95),
+                  child: Flex(
+                    direction: Axis.horizontal,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
+                          height: 30.0,
+                          fit: BoxFit.cover,
+                        ),
                       ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(-0.09, 0.72),
-                  child: Text(
-                    ' Qualquer alteração suspeita deve ser investigada!',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          fontSize: 12.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.bold,
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/globalImages/download.png',
+                          height: 50.0,
+                          fit: BoxFit.cover,
                         ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.05, -0.96),
-                  child: Container(
-                    width: 80.0,
-                    height: 80.0,
-                    clipBehavior: Clip.antiAlias,
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                    ),
-                    child: Image.asset(
-                      'assets/images/mama.jpg',
-                      fit: BoxFit.cover,
-                    ),
+                      ),
+                    ],
                   ),
                 ),
               ],

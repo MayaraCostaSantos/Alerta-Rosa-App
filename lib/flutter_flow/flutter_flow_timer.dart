@@ -19,6 +19,11 @@ class FlutterFlowTimerController with ChangeNotifier {
     notifyListeners();
   }
 
+  void addTime({required int mSec}) {
+    timer.onChangeRawSecond!(mSec);
+    notifyListeners();
+  }
+
   void onResetTimer() {
     timer.onResetTimer();
     late final StreamSubscription subscription;

@@ -143,10 +143,10 @@ class _TelaDeMamiloInvertidoWidgetState
                       'Normalmente, os mamilos apontam para fora, se sobrepondo à auréola. Porém, algumas pessoas podem ter um mamilo achatado ou puxado para dentro, chamado de mamilo invertido. ',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Montserrat',
-                            fontSize: 18.0,
-                            letterSpacing: 0.0,
-                          ),
+                        fontFamily: 'Montserrat',
+                        fontSize: 18.0,
+                        letterSpacing: 0.0,
+                      ),
                     ),
                   ),
                 ),
@@ -167,7 +167,7 @@ class _TelaDeMamiloInvertidoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0, 1),
+                  alignment: const AlignmentDirectional(0, 0.95),
                   child: Flex(
                     direction: Axis.horizontal,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -176,7 +176,7 @@ class _TelaDeMamiloInvertidoWidgetState
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
                           'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
-                          width: 150,
+                          height: 30.0,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -184,7 +184,7 @@ class _TelaDeMamiloInvertidoWidgetState
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
                           'assets/images/globalImages/download.png',
-                          width: 75.0,
+                          height: 50.0,
                           fit: BoxFit.cover,
                         ),
                       ),

@@ -282,10 +282,16 @@ class _TelaDeReceitasWidgetState extends State<TelaDeReceitasWidget> {
                         },
                       );
                     },
-                    child: const Icon(
-                      Icons.arrow_right,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Transform.flip(
+                        flipX: true,
+                        child: Image.asset(
+                          'assets/images/iconeVoltar.png',
+                          height: 44.8,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -293,7 +299,7 @@ class _TelaDeReceitasWidgetState extends State<TelaDeReceitasWidget> {
                   alignment: AlignmentDirectional(0.34, -0.45),
                   child: Icon(
                     Icons.fastfood_sharp,
-                    color: Color(0xFFC92D7E),
+                    color: Color(0xFFF35A81),
                     size: 24.0,
                   ),
                 ),
@@ -316,10 +322,12 @@ class _TelaDeReceitasWidgetState extends State<TelaDeReceitasWidget> {
                         },
                       );
                     },
-                    child: const Icon(
-                      Icons.arrow_left,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
+                    child: ClipRRect(
+                      child: Image.asset(
+                        'assets/images/iconeVoltar.png',
+                        height: 44.8,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),

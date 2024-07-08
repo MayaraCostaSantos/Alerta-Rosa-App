@@ -138,7 +138,7 @@ class _TelaDeExerciciosFisicosModerados7WidgetState
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        color: const Color(0xFFF35A81),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Plus Jakarta Sans',
@@ -174,7 +174,7 @@ class _TelaDeExerciciosFisicosModerados7WidgetState
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        color: const Color(0xFFF35A81),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Plus Jakarta Sans',
@@ -210,7 +210,7 @@ class _TelaDeExerciciosFisicosModerados7WidgetState
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        color: const Color(0xFFF35A81),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Plus Jakarta Sans',
@@ -249,7 +249,7 @@ class _TelaDeExerciciosFisicosModerados7WidgetState
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text(
-                            'Time Complated',
+                            'Tempo Concluído!',
                             style: TextStyle(
                               color: FlutterFlowTheme.of(context).primaryText,
                             ),
@@ -274,7 +274,7 @@ class _TelaDeExerciciosFisicosModerados7WidgetState
                   alignment: AlignmentDirectional(-0.98, 0.73),
                   child: Icon(
                     Icons.circle_outlined,
-                    color: Color(0xFFC92D7E),
+                    color: Color(0xFFF35A81),
                     size: 100.0,
                   ),
                 ),
@@ -282,23 +282,22 @@ class _TelaDeExerciciosFisicosModerados7WidgetState
                   alignment: AlignmentDirectional(-0.57, 0.76),
                   child: Icon(
                     Icons.more_time_rounded,
-                    color: Color(0xFFC92D7E),
+                    color: Color(0xFFF35A81),
                     size: 30.0,
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.66),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, -0.7),
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(
                       'É recomendável realizar a série de exercícios.  Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
-                            fontSize: 12.0,
-                            letterSpacing: 0.0,
-                          ),
+                        fontFamily: 'Montserrat',
+                        fontSize: 12.0,
+                        letterSpacing: 0.0,
+                      ),
                     ),
                   ),
                 ),
@@ -320,10 +319,16 @@ class _TelaDeExerciciosFisicosModerados7WidgetState
                         },
                       );
                     },
-                    child: const Icon(
-                      Icons.arrow_right,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Transform.flip(
+                        flipX: true,
+                        child: Image.asset(
+                          'assets/images/iconeVoltar.png',
+                          height: 44.8,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -344,7 +349,7 @@ class _TelaDeExerciciosFisicosModerados7WidgetState
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFC92D7E),
+                        color: const Color(0xFFF35A81),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Plus Jakarta Sans',
@@ -410,10 +415,12 @@ class _TelaDeExerciciosFisicosModerados7WidgetState
                         },
                       );
                     },
-                    child: const Icon(
-                      Icons.arrow_left,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
+                    child: ClipRRect(
+                      child: Image.asset(
+                        'assets/images/iconeVoltar.png',
+                        height: 44.8,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
