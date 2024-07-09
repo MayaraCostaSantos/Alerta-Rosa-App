@@ -131,9 +131,9 @@ class _TelaDeExamesDeRotinaWidgetState
               ),
 
               Align(
-                alignment: const AlignmentDirectional(0.5, -0.3),
+                alignment: const AlignmentDirectional(0.5, -0.35),
                   child: Container(
-                    width: 340,
+                    width: MediaQuery.of(context).size.width * 0.8,
                     height: 125,
                     decoration: const BoxDecoration(
                       color: Color(0xFFD9A19C),
@@ -143,7 +143,7 @@ class _TelaDeExamesDeRotinaWidgetState
                         bottomRight: Radius.circular(100),
                       ),
                     ),
-                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 8.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 12.0),
                     child: const Center(
                       child: Text(
                         'Você sabia que fazer o exame de sangue, o autoexame e os exames de mama com frequência são fundamentais? A detecção precoce do câncer de mama torna este tipo de câncer com altas taxas de cura.',
@@ -152,7 +152,7 @@ class _TelaDeExamesDeRotinaWidgetState
                         style: TextStyle(
                           fontFamily: 'Montserrat',
                           color: Color(0xFFFFFFFF),
-                          fontSize: 16.0,
+                          fontSize: 14.0,
                           fontStyle: FontStyle.italic,
                           height: 1.1,
                         ),
@@ -174,13 +174,14 @@ class _TelaDeExamesDeRotinaWidgetState
               Align(
                 alignment: const AlignmentDirectional(-1, 0.25),
                 child: SizedBox(
-                    height: 85,
                     child: Flex(
                       direction: Axis.horizontal,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         SizedBox(
                           height: 85,
-                          width: 148,
+                          width: MediaQuery.of(context).size.width * 0.32,
                           child: FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed(
@@ -201,7 +202,7 @@ class _TelaDeExamesDeRotinaWidgetState
                                 fontFamily: 'Montserrat',
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 18.0,
+                                fontSize: 14.0,
                               ),
                               maxLines: 2,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
@@ -212,16 +213,16 @@ class _TelaDeExamesDeRotinaWidgetState
                             ),
                           ),
                         ),
-                        Container(
-                          width: 300,
-                          height: 85,
-                          padding: const EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 4.0, 0.0),
+                        const SizedBox(width: 8),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.65,
                           child: Text(
                             'Quando o corpo desenvolve algum tipo de câncer, é comum que algumas proteínas aumentem no sangue. Por isso, um exame de sangue é fundamental para identificar o câncer de mama.',
                             textAlign: TextAlign.justify,
                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Montserrat',
-                              fontSize: 14,
+                              fontSize: 12,
+                              lineHeight: 1,
                             ),
                           ),
                         )
@@ -232,7 +233,6 @@ class _TelaDeExamesDeRotinaWidgetState
               Align(
                 alignment: const AlignmentDirectional(-1, 0.5),
                 child: SizedBox(
-                  height: 85,
                   child: Flex(
                     direction: Axis.horizontal,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -240,7 +240,7 @@ class _TelaDeExamesDeRotinaWidgetState
                     children: [
                       SizedBox(
                         height: 85,
-                        width: 148,
+                        width: MediaQuery.of(context).size.width * 0.32,
                         child: FFButtonWidget(
                           onPressed: () async {
                             context.pushNamed(
@@ -261,7 +261,7 @@ class _TelaDeExamesDeRotinaWidgetState
                               fontFamily: 'Montserrat',
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
-                              fontSize: 18.0,
+                              fontSize: 14.0,
                             ),
                             maxLines: 2,
                             padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
@@ -272,15 +272,16 @@ class _TelaDeExamesDeRotinaWidgetState
                           ),
                         ),
                       ),
-                      Container(
-                        width: 295,
-                        padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 4.0, 0.0),
+                      const SizedBox(width: 8),
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.65,
                         child: Text(
                           'É a observação e palpação das mamas por um médico ou enfermeiro.',
                           textAlign: TextAlign.justify,
                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',
-                            fontSize: 14,
+                            fontSize: 12,
+                            lineHeight: 1,
                           ),
                         ),
                       )
@@ -291,13 +292,14 @@ class _TelaDeExamesDeRotinaWidgetState
               Align(
                 alignment: const AlignmentDirectional(-1, 0.75),
                 child: SizedBox(
-                    height: 85,
                     child: Flex(
                       direction: Axis.horizontal,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         SizedBox(
                           height: 85,
-                          width: 148,
+                          width: MediaQuery.of(context).size.width * 0.32,
                           child: FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed(
@@ -318,7 +320,7 @@ class _TelaDeExamesDeRotinaWidgetState
                                 fontFamily: 'Montserrat',
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 18.0,
+                                fontSize: 14.0,
                               ),
                               textAlign: TextAlign.left,
                               padding: const EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 8.0, 0.0),
@@ -329,16 +331,16 @@ class _TelaDeExamesDeRotinaWidgetState
                             ),
                           ),
                         ),
-                        Container(
-                          width: 300,
-                          height: 85,
-                          padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 4.0, 0.0),
+                        const SizedBox(width: 8),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.65,
                           child: Text(
                             'É uma radiografia das mamas, realizada por um equipamento de raios X chamado mamógrafo, que consegue ver alterações suspeitas nas mamas.',
                             textAlign: TextAlign.justify,
                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Montserrat',
-                              fontSize: 14,
+                              fontSize: 12,
+                              lineHeight: 1,
                             ),
                           ),
                         )

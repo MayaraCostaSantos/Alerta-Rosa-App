@@ -138,15 +138,15 @@ class _TelaDeDorNaMamaOuMamiloWidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, 0.1),
+                  alignment: const AlignmentDirectional(0.0, 0.25),
                   child: SizedBox(
                     width: 250,
                     child: Text(
-                      'Sensação dolorosa e por um período prolongado, mesmo depos da menstruação.',
+                      'Sensação dolorosa e por um período prolongado, mesmo depois da menstruação.',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
-                        fontSize: 18.0,
+                        fontSize: 16.0,
                         letterSpacing: 0.0,
                       ),
                     ),

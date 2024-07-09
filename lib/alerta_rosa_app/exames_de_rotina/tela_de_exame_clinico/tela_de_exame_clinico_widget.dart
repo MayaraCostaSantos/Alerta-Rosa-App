@@ -80,45 +80,46 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
               ClipRRect(
                 child: SizedBox(
                     width: 200,
-                    height: 130,
+                    height: 100,
                     child: Stack(
                       children: [
                         Center(
                           child: DecoratedBox(
-                              decoration: const BoxDecoration(
-                                color: const Color(0xFFF03E69),
-                                borderRadius: BorderRadius.only(
-                                  topRight: Radius.elliptical(255, 255),
-                                  bottomRight: Radius.elliptical(255, 255),
-                                ),
+                            decoration: const BoxDecoration(
+                              color: const Color(0xFFF03E69),
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.elliptical(255, 255),
+                                bottomRight: Radius.elliptical(255, 255),
                               ),
-                              child: Container(
-                                  width: 200,
-                                  height: 50,
-                                  padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
-                                  child: const Center(
-                                    child: Text(
-                                      'EXAME CLÍNICO',
-                                      overflow: TextOverflow.clip,
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        fontFamily: 'Open Sans Extra Bold',
-                                        color: Color(0xFFFFFFFF),
-                                        fontSize: 18.0,
-                                        fontWeight: FontWeight.w900,
-                                        overflow: TextOverflow.clip,
-                                      ),
-                                    ),
-                                  )
+                            ),
+                            child: Container(
+                              width: 200,
+                              height: 50,
+                              padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+                              child: const Center(
+                                child: Text(
+                                  'EXAME CLÍNICO',
+                                  overflow: TextOverflow.clip,
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontFamily: 'Open Sans Extra Bold',
+                                    color: Color(0xFFFFFFFF),
+                                    fontSize: 18.0,
+                                    fontWeight: FontWeight.w900,
+                                    overflow: TextOverflow.clip,
+                                  ),
+                                ),
                               )
+                            )
                           ),
                         ),
                       ],
                     )
                 ),
               ),
+
               Align(
-                alignment: const AlignmentDirectional(0, -0.65),
+                alignment: const AlignmentDirectional(0, -0.6),
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width * 0.9,
                   child: Row(
@@ -151,7 +152,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0, -0.40),
+                alignment: const AlignmentDirectional(0, -0.30),
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width * 0.9,
                   child: Row(
@@ -185,7 +186,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0, -0.15),
+                alignment: const AlignmentDirectional(0, 0),
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width * 0.9,
                   child: Row(
@@ -218,7 +219,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0, 0.1),
+                alignment: const AlignmentDirectional(0, 0.3),
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width * 0.9,
                   child: Row(
@@ -252,7 +253,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0, 0.35),
+                alignment: const AlignmentDirectional(0, 0.6),
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width * 0.9,
                   child: Row(
@@ -284,6 +285,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                   ),
                 ),
               ),
+
               Align(
                 alignment: const AlignmentDirectional(0, 0.95),
                 child: Flex(

@@ -80,7 +80,7 @@ class _TelaDeExameDeSangueWidgetState extends State<TelaDeExameDeSangueWidget> {
               ClipRRect(
                 child: SizedBox(
                     width: 200,
-                    height: 130,
+                    height: 100,
                     child: Stack(
                       children: [
                         Center(
@@ -102,9 +102,9 @@ class _TelaDeExameDeSangueWidgetState extends State<TelaDeExameDeSangueWidget> {
                                     overflow: TextOverflow.clip,
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                      fontFamily: 'Open Sans Extra Bold',
+                                      fontFamily: 'Open Sans',
                                       color: Color(0xFFFFFFFF),
-                                      fontSize: 18.0,
+                                      fontSize: 16.0,
                                       fontWeight: FontWeight.w900,
                                       overflow: TextOverflow.clip,
                                     ),
@@ -119,7 +119,7 @@ class _TelaDeExameDeSangueWidgetState extends State<TelaDeExameDeSangueWidget> {
               ),
               SizedBox(
                 width: double.infinity,
-                height: MediaQuery.of(context).size.height * 0.85,
+                height: MediaQuery.of(context).size.height * 0.92,
                 child: Center(
                   child: Flex(
                     direction: Axis.vertical,
@@ -131,7 +131,7 @@ class _TelaDeExameDeSangueWidgetState extends State<TelaDeExameDeSangueWidget> {
                             color: Color(0xFFD9A19C),
                             borderRadius: BorderRadius.all(Radius.circular(20.0)),
                           ),
-                          width: 375,
+                          width: MediaQuery.of(context).size.width * 0.9,
                           padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
                           child: const Wrap(
                             children: [
@@ -155,7 +155,7 @@ class _TelaDeExameDeSangueWidgetState extends State<TelaDeExameDeSangueWidget> {
                             color: Color(0xFFD9A19C),
                             borderRadius: BorderRadius.all(Radius.circular(20.0)),
                           ),
-                          width: 375,
+                          width: MediaQuery.of(context).size.width * 0.9,
                           padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
                           child: const Wrap(
                             children: [
@@ -179,7 +179,7 @@ class _TelaDeExameDeSangueWidgetState extends State<TelaDeExameDeSangueWidget> {
                             color: Color(0xFFD9A19C),
                             borderRadius: BorderRadius.all(Radius.circular(20.0)),
                           ),
-                          width: 375,
+                          width: MediaQuery.of(context).size.width * 0.9,
                           padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
                           child: const Wrap(
                             children: [
@@ -203,7 +203,7 @@ class _TelaDeExameDeSangueWidgetState extends State<TelaDeExameDeSangueWidget> {
                             color: Color(0xFFD9A19C),
                             borderRadius: BorderRadius.all(Radius.circular(20.0)),
                           ),
-                          width: 375,
+                          width: MediaQuery.of(context).size.width * 0.9,
                           padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
                           child: const Wrap(
                             children: [
@@ -228,13 +228,13 @@ class _TelaDeExameDeSangueWidgetState extends State<TelaDeExameDeSangueWidget> {
 
 
               Align(
-                alignment: const AlignmentDirectional(0.01, 0.7),
+                alignment: const AlignmentDirectional(0.0, 0.8),
                 child: Container(
                     decoration: const BoxDecoration(
                       color: Color(0xFFFF6699),
                       borderRadius: BorderRadius.all(Radius.circular(20.0)),
                     ),
-                    width: 400,
+                    width: MediaQuery.of(context).size.width * 0.95,
                     padding: const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: const Wrap(
                       children: [

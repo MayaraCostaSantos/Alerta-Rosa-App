@@ -79,7 +79,7 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
               ClipRRect(
                 child: SizedBox(
                     width: 200,
-                    height: 130,
+                    height: 100,
                     child: Stack(
                       children: [
                         Center(
@@ -101,9 +101,9 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                                       overflow: TextOverflow.clip,
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                        fontFamily: 'Open Sans Extra Bold',
+                                        fontFamily: 'Open Sans',
                                         color: Color(0xFFFFFFFF),
-                                        fontSize: 18.0,
+                                        fontSize: 16.0,
                                         fontWeight: FontWeight.w900,
                                         overflow: TextOverflow.clip,
                                       ),
@@ -120,9 +120,10 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                 alignment: const AlignmentDirectional(-0.9, -0.35),
                 child: Image.asset(
                   'assets/images/mamografia.png',
-                  width: 150,
+                  width: 125,
                 ),
               ),
+
               Align(
                 alignment: const AlignmentDirectional(0.9, -0.7),
                 child: Container(
@@ -130,7 +131,7 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                       color: Color(0xFFF8A2B0),
                       borderRadius: BorderRadius.all(Radius.circular(30.0)),
                     ),
-                    width: 250,
+                    width: MediaQuery.of(context).size.width * 0.5,
                     padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
                     child: const Wrap(
                       children: [
@@ -141,7 +142,7 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             color: Color(0xFFFFFFFF),
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             height: 1.1,
                           ),
                         ),
@@ -150,13 +151,13 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.9, -0.35),
+                alignment: const AlignmentDirectional(0.9, -0.2),
                 child: Container(
                     decoration: const BoxDecoration(
                       color: Color(0xFFF8A2B0),
                       borderRadius: BorderRadius.all(Radius.circular(30.0)),
                     ),
-                    width: 250,
+                    width: MediaQuery.of(context).size.width * 0.5,
                     padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
                     child: const Wrap(
                       children: [
@@ -167,7 +168,7 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             color: Color(0xFFFFFFFF),
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             height: 1.1,
                           ),
                         ),
@@ -176,13 +177,13 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.9, 0),
+                alignment: const AlignmentDirectional(0.9, 0.2),
                 child: Container(
                     decoration: const BoxDecoration(
                       color: Color(0xFFF8A2B0),
                       borderRadius: BorderRadius.all(Radius.circular(30.0)),
                     ),
-                    width: 250,
+                    width: MediaQuery.of(context).size.width * 0.5,
                     padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
                     child: const Wrap(
                       children: [
@@ -193,7 +194,7 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             color: Color(0xFFFFFFFF),
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             height: 1.1,
                           ),
                         ),
@@ -203,20 +204,28 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
               ),
 
               Align(
-                alignment: const AlignmentDirectional(-0.9, 0.55),
+                alignment: const AlignmentDirectional(-0.9, 0.65),
                 child: Image.asset(
                   'assets/videos/clock.gif',
-                  width: 150,
+                  width: 125,
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.9, 0.5),
+                alignment: const AlignmentDirectional(-0.2, 0.6) - const AlignmentDirectional(0.02, 0.02),
+                child: const Icon(
+                  Icons.arrow_forward_rounded,
+                  color: Colors.black,
+                  size: 40,
+                ),
+              ),
+              Align(
+                alignment: const AlignmentDirectional(0.9, 0.6),
                 child: Container(
                     decoration: const BoxDecoration(
                       color: Color(0xFFF8A2B0),
                       borderRadius: BorderRadius.all(Radius.circular(30.0)),
                     ),
-                    width: 250,
+                    width: MediaQuery.of(context).size.width * 0.5,
                     padding: const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
                     child: const Wrap(
                       children: [
@@ -227,7 +236,7 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             color: Color(0xFFFFFFFF),
-                            fontSize: 16.0,
+                            fontSize: 14.0,
                             height: 1.1,
                           ),
                         ),
