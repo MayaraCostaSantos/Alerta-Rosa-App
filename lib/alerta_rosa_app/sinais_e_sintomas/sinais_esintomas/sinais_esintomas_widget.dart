@@ -404,7 +404,7 @@ class _SinaisEsintomasWidgetState extends State<SinaisEsintomasWidget> {
                         options: FFButtonOptions(
                           width: 250.0,
                           padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                          iconPadding: const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(2, 0.0, 0.0, 0.0),
                           color: const Color(0xFFF8A2B0),
                           textStyle: const TextStyle(
                             fontFamily: 'Montserrat, sans-serif',
