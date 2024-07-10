@@ -100,13 +100,13 @@ class _TelaDeExamesDeRotinaWidgetState
                                         alignment: AlignmentDirectional(0.0, 0.0),
                                         children: [
                                           const Text(
-                                            'EXAMES \nDE\n ROTINA ',
+                                            'EXAMES\nDE\nROTINA ',
                                             overflow: TextOverflow.clip,
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                               fontFamily: 'Open Sans Extra Bold',
                                               color: Color(0xFFD07170),
-                                              fontSize: 32.0,
+                                              fontSize: 24.0,
                                               fontWeight: FontWeight.w900,
                                               overflow: TextOverflow.clip,
                                             ),

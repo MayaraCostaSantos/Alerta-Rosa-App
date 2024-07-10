@@ -117,13 +117,20 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.9, -0.35),
+                alignment: const AlignmentDirectional(-0.9, -0.2),
                 child: Image.asset(
                   'assets/images/mamografia.png',
                   width: 125,
                 ),
               ),
-
+              Align(
+                alignment: const AlignmentDirectional(-0.2, -0.15) - const AlignmentDirectional(0.02, 0.02),
+                child: const Icon(
+                  Icons.arrow_forward_rounded,
+                  color: Colors.black54,
+                  size: 40,
+                ),
+              ),
               Align(
                 alignment: const AlignmentDirectional(0.9, -0.7),
                 child: Container(
@@ -214,7 +221,7 @@ class _TelaDeMamografiaWidgetState extends State<TelaDeMamografiaWidget> {
                 alignment: const AlignmentDirectional(-0.2, 0.6) - const AlignmentDirectional(0.02, 0.02),
                 child: const Icon(
                   Icons.arrow_forward_rounded,
-                  color: Colors.black,
+                  color: Colors.black54,
                   size: 40,
                 ),
               ),
