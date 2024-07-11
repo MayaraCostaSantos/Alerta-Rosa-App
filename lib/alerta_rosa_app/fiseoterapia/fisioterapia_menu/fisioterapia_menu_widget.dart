@@ -439,7 +439,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                               width: 275.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                               iconPadding: const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
-                              color: const Color(0xFFF8A2B0),
+                              color: const Color(0xFFDB5275),
                               textStyle: const TextStyle(
                                 fontFamily: 'Montserrat, sans-serif',
                                 color: Color(0xFFFFF4E9),

@@ -179,13 +179,6 @@ class _TelaDeExerciciosFisicosModerados1WidgetState
                     ),
                   ),
                 ),
-                const Align(
-                  alignment: AlignmentDirectional(-0.02, 0.0),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [],
-                  ),
-                ),
                 Align(
                   alignment: const AlignmentDirectional(0, -0.52),
                   child: SizedBox(
