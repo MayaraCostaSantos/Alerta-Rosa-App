@@ -53,11 +53,34 @@ class _TelaDeMeditacaoGuiadaWidgetState
             ),
             child: Stack(
               children: [
-                const Align(
-                  alignment: AlignmentDirectional(0.0, -0.69),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [],
+                Align(
+                  alignment: Alignment.topLeft - const Alignment(-0.05, -0.05),
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.safePop();
+                    },
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/iconeVoltar.png',
+                        height: 44.8,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.topRight - const Alignment(0.0, -0.02),
+                  child: ClipRRect(
+                    child: Image.asset(
+                      'assets/images/globalImages/logo-removebg-preview.png',
+                      width: 90,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
                 Align(
@@ -79,16 +102,16 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   alignment: const AlignmentDirectional(0.0, -0.62),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Text(
                       '\"Meditar ajuda a desenvolver uma maior resiliência emocional, essencial para lidar com a ansiedade e depressão associadas ao câncer de mama\". ',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
-                            fontSize: 12.0,
-                            letterSpacing: 0.0,
-                            fontWeight: FontWeight.w600,
-                          ),
+                        fontFamily: 'Montserrat',
+                        fontSize: 12.0,
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                   ),
                 ),
@@ -97,11 +120,12 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   child: Text(
                     '-Dr. Jon Kabat-Zinn, 1990.',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Plus Jakarta Sans',
-                          fontSize: 12.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                      fontFamily: 'Montserrat',
+                      fontSize: 12.0,
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                    ),
                   ),
                 ),
                 Align(
@@ -132,7 +156,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   alignment: const AlignmentDirectional(0.02, -0.07),
                   child: Container(
                     width: 251.0,
-                    height: 78.0,
+
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       borderRadius: const BorderRadius.only(
@@ -152,13 +176,14 @@ class _TelaDeMeditacaoGuiadaWidgetState
                       ),
                       titleTextStyle:
                           FlutterFlowTheme.of(context).titleLarge.override(
-                                fontFamily: 'Outfit',
-                                fontSize: 16.0,
+                                fontFamily: 'Montserrat',
+                                fontSize: 14.0,
                                 letterSpacing: 0.0,
+                                fontWeight: FontWeight.w500,
                               ),
                       playbackDurationTextStyle:
                           FlutterFlowTheme.of(context).labelMedium.override(
-                                fontFamily: 'Outfit',
+                                fontFamily: 'Montserrat',
                                 letterSpacing: 0.0,
                               ),
                       fillColor:
@@ -174,7 +199,6 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   alignment: const AlignmentDirectional(0.02, 0.21),
                   child: Container(
                     width: 253.0,
-                    height: 88.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       borderRadius: const BorderRadius.only(
@@ -192,19 +216,17 @@ class _TelaDeMeditacaoGuiadaWidgetState
                           title: 'Aceite a autoestima ',
                         ),
                       ),
-                      titleTextStyle:
-                          FlutterFlowTheme.of(context).titleLarge.override(
-                                fontFamily: 'Outfit',
-                                fontSize: 16.0,
-                                letterSpacing: 0.0,
-                              ),
-                      playbackDurationTextStyle:
-                          FlutterFlowTheme.of(context).labelMedium.override(
-                                fontFamily: 'Outfit',
-                                letterSpacing: 0.0,
-                              ),
-                      fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
+                      titleTextStyle: FlutterFlowTheme.of(context).titleLarge.override(
+                        fontFamily: 'Montserrat',
+                        fontSize: 14.0,
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.w500,
+                      ),
+                      playbackDurationTextStyle: FlutterFlowTheme.of(context).labelMedium.override(
+                        fontFamily: 'Montserrat',
+                        letterSpacing: 0.0,
+                      ),
+                      fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                       playbackButtonColor: const Color(0xFFF35A81),
                       activeTrackColor: FlutterFlowTheme.of(context).alternate,
                       elevation: 4.0,
@@ -217,7 +239,6 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   alignment: const AlignmentDirectional(0.05, 0.52),
                   child: Container(
                     width: 254.0,
-                    height: 100.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       borderRadius: const BorderRadius.only(
@@ -235,24 +256,21 @@ class _TelaDeMeditacaoGuiadaWidgetState
                           title: 'Receba a cura e deixe preencher',
                         ),
                       ),
-                      titleTextStyle:
-                          FlutterFlowTheme.of(context).titleLarge.override(
-                                fontFamily: 'Outfit',
-                                fontSize: 16.0,
-                                letterSpacing: 0.0,
-                              ),
-                      playbackDurationTextStyle:
-                          FlutterFlowTheme.of(context).labelMedium.override(
-                                fontFamily: 'Outfit',
-                                letterSpacing: 0.0,
-                              ),
-                      fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
+                      titleTextStyle: FlutterFlowTheme.of(context).titleLarge.override(
+                        fontFamily: 'Montserrat',
+                        fontSize: 14.0,
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.w500,
+                      ),
+                      playbackDurationTextStyle: FlutterFlowTheme.of(context).labelMedium.override(
+                        fontFamily: 'Montserrat',
+                        letterSpacing: 0.0,
+                      ),
+                      fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                       playbackButtonColor: const Color(0xFFF35A81),
                       activeTrackColor: FlutterFlowTheme.of(context).alternate,
                       elevation: 4.0,
-                      playInBackground:
-                          PlayInBackground.disabledRestoreOnForeground,
+                      playInBackground: PlayInBackground.disabledRestoreOnForeground,
                     ),
                   ),
                 ),
@@ -265,7 +283,7 @@ class _TelaDeMeditacaoGuiadaWidgetState
                       'Coloque fones de ouvido, feche os olhos e deixe-se guiar e sintonizar com a meditação, ouça, absorva e se deixe curar, relaxar, receber e agradecer.\n\n- Yoga Mudra, por Raissa Zoccal.',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
+                            fontFamily: 'Montserrat',
                             fontSize: 12.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w600,
@@ -274,38 +292,40 @@ class _TelaDeMeditacaoGuiadaWidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.33, -0.87),
-                  child: InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      context.pushNamed('TelaDeApoioEmocional');
-                    },
-                    child: ClipRRect(
-                      child: Image.asset(
-                        'assets/images/iconeVoltar.png',
-                        height: 44.8,
-                        fit: BoxFit.cover,
-                      ),
+                  alignment: const AlignmentDirectional(0, -0.69),
+                  child: Text(
+                    'Meditação guiada',
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Open Sans',
+                      fontSize: 20.0,
+                      letterSpacing: 2.0,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-1.1, -0.69),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(90.0, 0.0, 0.0, 0.0),
-                    child: Text(
-                      'Meditação guiada',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
-                            fontSize: 22.0,
-                            letterSpacing: 2.0,
-                            fontWeight: FontWeight.w600,
-                          ),
-                    ),
+                  alignment: const AlignmentDirectional(0, 0.95),
+                  child: Flex(
+                    direction: Axis.horizontal,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
+                          height: 30.0,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/globalImages/download.png',
+                          height: 50.0,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],

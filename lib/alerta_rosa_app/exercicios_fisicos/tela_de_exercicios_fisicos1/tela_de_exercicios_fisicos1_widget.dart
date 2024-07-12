@@ -93,16 +93,6 @@ class _TelaDeExerciciosFisicos1WidgetState
                     ),
                   ),
                 ),
-                Align(
-                  alignment: Alignment.topRight - const Alignment(0.0, -0.02),
-                  child: ClipRRect(
-                    child: Image.asset(
-                      'assets/images/globalImages/logo-removebg-preview.png',
-                      width: 90,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
                 ClipRRect(
                   child: SizedBox(
                       width: MediaQuery.of(context).size.width,
