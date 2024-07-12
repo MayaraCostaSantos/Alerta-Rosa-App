@@ -49,7 +49,7 @@ class _TelaDeFiseoTerapia5WidgetState extends State<TelaDeFiseoTerapia5Widget> {
           decoration: const BoxDecoration(
             image: DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage('assets/images/globalImages/plano-de-fundo.png'),
+              image: AssetImage('assets/images/globalImages/plano-de-fundo-2.png'),
             ),
           ),
           child: Stack(

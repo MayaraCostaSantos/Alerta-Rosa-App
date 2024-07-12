@@ -182,7 +182,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                               borderRadius: BorderRadius.circular(25.0),
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 15 : 10),
+                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 16 : 12),
                           FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed(
@@ -216,7 +216,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                               borderRadius: BorderRadius.circular(25.0),
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 15 : 10),
+                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 16 : 12),
                           FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed(
@@ -249,7 +249,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                               borderRadius: BorderRadius.circular(25.0),
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 15 : 10),
+                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 16 : 12),
                           FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed(
@@ -282,7 +282,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                               borderRadius: BorderRadius.circular(25.0),
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 15 : 10),
+                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 16 : 12),
                           FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed(
@@ -319,7 +319,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                               borderRadius: BorderRadius.circular(25.0),
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 15 : 10),
+                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 16 : 12),
                           FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed(
@@ -353,7 +353,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                               borderRadius: BorderRadius.circular(25.0),
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 15 : 10),
+                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 16 : 12),
                           FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed(
@@ -387,7 +387,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                               borderRadius: BorderRadius.circular(25.0),
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 15 : 10),
+                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 16 : 12),
                           FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed(
@@ -421,7 +421,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                               borderRadius: BorderRadius.circular(25.0),
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 15 : 10),
+                          SizedBox(height: MediaQuery.of(context).size.height > 800 ? 16 : 12),
                           FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed(
