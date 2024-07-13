@@ -81,7 +81,7 @@ class _TelaDeExerciciosFisicosModerados6WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.52),
+                  alignment: const AlignmentDirectional(0.0, -0.67),
                   child: SizedBox(
                     child: Text(
                       '6. Subir e descer escadas',
@@ -183,7 +183,7 @@ class _TelaDeExerciciosFisicosModerados6WidgetState
                 ),
 
                 const Align(
-                  alignment: AlignmentDirectional(0, 0),
+                  alignment: AlignmentDirectional(0, -0.1),
                   child: SizedBox(
                     width: 150,
                     child: FlutterFlowVideoPlayer(
@@ -355,22 +355,7 @@ class _TelaDeExerciciosFisicosModerados6WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.75),
-                  child: SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.85,
-                    child: Text(
-                      'É recomendável realizar a série de exercícios. Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Montserrat',
-                        fontSize: 12.0,
-                        letterSpacing: 0.0,
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.00, -0.6),
+                  alignment: const AlignmentDirectional(0.00, -0.75),
                   child: Container(
                     width: 200.0,
                     decoration: BoxDecoration(
@@ -379,7 +364,7 @@ class _TelaDeExerciciosFisicosModerados6WidgetState
                     ),
                     padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
                     child: Text(
-                      'Quinta-Feira 1',
+                      'Quinta-Feira',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Montserrat',

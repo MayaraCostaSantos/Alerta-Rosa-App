@@ -118,7 +118,7 @@ class _TelaDeFiseoTerapia2WidgetState extends State<TelaDeFiseoTerapia2Widget> {
                 Align(
                   alignment: const AlignmentDirectional(0, -0.55),
                   child: Text(
-                    'Exercícios Iniciais - 2',
+                    'Exercícios Iniciais',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                       fontFamily: 'Open Sans',
                       fontSize: 20.0,
@@ -143,10 +143,9 @@ class _TelaDeFiseoTerapia2WidgetState extends State<TelaDeFiseoTerapia2Widget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, 0.69),
+                  alignment: const AlignmentDirectional(0.0, 0.65),
                   child: Container(
                     width: 336.0,
-                    height: 203.0,
                     constraints: const BoxConstraints(
                       minWidth: 3.0,
                     ),
@@ -170,22 +169,26 @@ class _TelaDeFiseoTerapia2WidgetState extends State<TelaDeFiseoTerapia2Widget> {
                         topRight: Radius.circular(24.0),
                       ),
                     ),
-                    child: Center(
-                      child: Padding(
-                        padding:
-                        const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
-                        child: Text(
-                          'Levante os braços acima da linha dos ombros até a altura que você sentir que os pontos não estão sendo repuxados. Depois, abra os braços para os lados. Em seguida, coloque-os na nuca devagar. Tente também colocar os braços para  trás, como se fosse coçar as costas. Você pode usar os braços à vontade, mas lembre-se de que deve evitar os movimentos rápidos, repetitivos e com peso.',
-                          textAlign: TextAlign.justify,
-                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Montserrat',
-                              fontSize: 12.0,
-                              letterSpacing: 0.0,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black
+                    child: Wrap(
+                      children: [
+                        Center(
+                          child: Padding(
+                            padding:
+                            const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 24.0),
+                            child: Text(
+                              'Levante os braços acima da linha dos ombros até a altura que você sentir que os pontos não estão sendo repuxados. Depois, abra os braços para os lados. Em seguida, coloque-os na nuca devagar. Tente também colocar os braços para  trás, como se fosse coçar as costas. Você pode usar os braços à vontade, mas lembre-se de que deve evitar os movimentos rápidos, repetitivos e com peso.',
+                              textAlign: TextAlign.justify,
+                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 12.0,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.black
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
+                        )
+                      ],
                     )
                   ),
                 ),

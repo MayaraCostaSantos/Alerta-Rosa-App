@@ -145,11 +145,10 @@ class _TelaDeExerciciosFisicosLeves1WidgetState
                 Align(
                   alignment: const AlignmentDirectional(0.0, -0.44),
                   child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(45.0, 0.0, 30.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0),
                     child: Text(
                       '1. Alongamento da região interescapular, posterior do ombro:',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',
                             fontSize: 14.0,

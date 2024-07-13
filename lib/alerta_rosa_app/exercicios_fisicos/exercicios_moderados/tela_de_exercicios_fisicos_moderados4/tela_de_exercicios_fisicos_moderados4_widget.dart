@@ -97,7 +97,7 @@ class _TelaDeExerciciosFisicosModerados4WidgetState
                     ),
                   ),
                   Align(
-                    alignment: const AlignmentDirectional(0.0, -0.52),
+                    alignment: const AlignmentDirectional(0.0, -0.67),
                     child: SizedBox(
                       child: Text(
                         '4. Desenvolvimento com carga externa',
@@ -172,7 +172,7 @@ class _TelaDeExerciciosFisicosModerados4WidgetState
                     ),
                   ),
                   Align(
-                    alignment: const AlignmentDirectional(-0.8, 0.11),
+                    alignment: const AlignmentDirectional(-0.8, -0.05),
                     child: Text(
                       'Passo a passo:',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -183,7 +183,7 @@ class _TelaDeExerciciosFisicosModerados4WidgetState
                     ),
                   ),
                   Align(
-                    alignment: const Alignment(0.0, 0.41),
+                    alignment: const Alignment(0.0, 0.25),
                     child: SizedBox(
                       width: MediaQuery.of(context).size.width * 0.85,
                       child: Text(
@@ -198,7 +198,7 @@ class _TelaDeExerciciosFisicosModerados4WidgetState
                     ),
                   ),
                   const Align(
-                    alignment: AlignmentDirectional(0, -0.27),
+                    alignment: AlignmentDirectional(0, -0.47),
                     child: SizedBox(
                       width: 125,
                       child: FlutterFlowVideoPlayer(
@@ -371,22 +371,7 @@ class _TelaDeExerciciosFisicosModerados4WidgetState
                     ),
                   ),
                   Align(
-                    alignment: const AlignmentDirectional(0.0, -0.75),
-                    child: SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.85,
-                      child: Text(
-                        'É recomendável realizar a série de exercícios. Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
-                        textAlign: TextAlign.justify,
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Montserrat',
-                          fontSize: 12.0,
-                          letterSpacing: 0.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: const AlignmentDirectional(0.00, -0.6),
+                    alignment: const AlignmentDirectional(0.00, -0.75),
                     child: Container(
                       width: 200.0,
                       decoration: BoxDecoration(
@@ -395,7 +380,7 @@ class _TelaDeExerciciosFisicosModerados4WidgetState
                       ),
                       padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
                       child: Text(
-                        'Quarta-Feira 2',
+                        'Quarta-Feira',
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Montserrat',

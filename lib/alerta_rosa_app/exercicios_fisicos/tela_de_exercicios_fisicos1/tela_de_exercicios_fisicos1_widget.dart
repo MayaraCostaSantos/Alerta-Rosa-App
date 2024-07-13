@@ -211,182 +211,186 @@ class _TelaDeExerciciosFisicos1WidgetState
                         ),
                   ),
                 ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, 0.46),
-                  child: Padding(
-                    padding:
+
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.9,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+
+                    children: [
+                      Padding(
+                        padding:
                         const EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 50.0, 0.0),
-                    child: FFButtonWidget(
-                      onPressed: () async {
-                        context.pushNamed(
-                          'TelaDeExerciciosIntensos1',
-                          extra: <String, dynamic>{
-                            kTransitionInfoKey: const TransitionInfo(
-                              hasTransition: true,
-                              transitionType: PageTransitionType.fade,
-                              duration: Duration(milliseconds: 0),
-                            ),
+                        child: FFButtonWidget(
+                          onPressed: () async {
+                            context.pushNamed(
+                              'TelaDeExerciciosFisicosLeves1',
+                              extra: <String, dynamic>{
+                                kTransitionInfoKey: const TransitionInfo(
+                                  hasTransition: true,
+                                  transitionType: PageTransitionType.leftToRight,
+                                ),
+                              },
+                            );
                           },
-                        );
-                      },
-                      text: 'Exercícios intensos',
-                      options: FFButtonOptions(
-                        width: 300.0,
-                        height: 30.0,
-                        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFDB5275),
-                        textAlign: TextAlign.center,
-                        textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                            fontFamily: 'Montserrat',
-                            color: Colors.white,
-                            letterSpacing: 0.0,
+                          text: 'Exercícios leves',
+                          options: FFButtonOptions(
+                            width: 300.0,
+                            height: 30.0,
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            color: const Color(0xFFDB5275),
+                            textAlign: TextAlign.center,
+                            textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                              fontFamily: 'Montserrat',
+                              color: Colors.white,
+                            ),
+                            elevation: 3.0,
+                            borderSide: const BorderSide(
+                              color: Colors.transparent,
+                              width: 1.0,
+                            ),
+                            borderRadius: BorderRadius.circular(16.0),
                           ),
-                        elevation: 3.0,
-                        borderSide: const BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(16.0),
                       ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, -0.06),
-                  child: Padding(
-                    padding:
+                      const SizedBox(height: 4.0,),
+                      SizedBox(
+                          width: 300,
+                          child: Wrap(
+                            children: [
+                              Text(
+                                'Para pacientes pós-operatórios recentes, é recomendável iniciar com exercícios leves.',
+                                textAlign: TextAlign.justify,
+                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 12.0,
+                                  letterSpacing: 0.0,
+                                ),
+                              ),
+                            ],
+                          )
+                      ),
+
+                      const SizedBox(height: 24.0,),
+
+                      Padding(
+                        padding:
                         const EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 50.0, 0.0),
-                    child: FFButtonWidget(
-                      onPressed: () async {
-                        context.pushNamed(
-                          'TelaDeExerciciosFisicosLeves1',
-                          extra: <String, dynamic>{
-                            kTransitionInfoKey: const TransitionInfo(
-                              hasTransition: true,
-                              transitionType: PageTransitionType.leftToRight,
-                            ),
+                        child: FFButtonWidget(
+                          onPressed: () async {
+                            context.pushNamed(
+                              'TelaDeExerciciosFisicosModerados1',
+                              extra: <String, dynamic>{
+                                kTransitionInfoKey: const TransitionInfo(
+                                  hasTransition: true,
+                                  transitionType: PageTransitionType.fade,
+                                  duration: Duration(milliseconds: 0),
+                                ),
+                              },
+                            );
                           },
-                        );
-                      },
-                      text: 'Exercícios leves',
-                      options: FFButtonOptions(
-                        width: 300.0,
-                        height: 30.0,
-                        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFDB5275),
-                        textAlign: TextAlign.center,
-                        textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                            fontFamily: 'Montserrat',
-                            color: Colors.white,
+                          text: 'Exercícios moderados',
+                          options: FFButtonOptions(
+                            width: 300.0,
+                            height: 30.0,
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            color: const Color(0xFFDB5275),
+                            textAlign: TextAlign.center,
+                            textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                              fontFamily: 'Montserrat',
+                              color: Colors.white,
+                              letterSpacing: 0.0,
+                            ),
+                            elevation: 3.0,
+                            borderSide: const BorderSide(
+                              color: Colors.transparent,
+                              width: 1.0,
+                            ),
+                            borderRadius: BorderRadius.circular(16.0),
                           ),
-                        elevation: 3.0,
-                        borderSide: const BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(16.0),
                       ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, 0.13),
-                  child: Padding(
-                    padding:
+                      const SizedBox(height: 4.0,),
+                      SizedBox(
+                          width: 300,
+                          child: Wrap(
+                            children: [Text(
+                              'Para pacientes pós-operatórios com melhoria física e adaptados aos exercícios leves, é recomendável incorporar atividades moderadas, pois podem contribuir significativamente para a recuperação física.',
+                              textAlign: TextAlign.justify,
+                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                fontFamily: 'Montserrat',
+                                fontSize: 12.0,
+                                letterSpacing: 0.0,
+                              ),
+                            ),],
+                          )
+                      ),
+
+                      const SizedBox(height: 24.0,),
+
+                      Padding(
+                        padding:
                         const EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 50.0, 0.0),
-                    child: FFButtonWidget(
-                      onPressed: () async {
-                        context.pushNamed(
-                          'TelaDeExerciciosFisicosModerados1',
-                          extra: <String, dynamic>{
-                            kTransitionInfoKey: const TransitionInfo(
-                              hasTransition: true,
-                              transitionType: PageTransitionType.fade,
-                              duration: Duration(milliseconds: 0),
-                            ),
+                        child: FFButtonWidget(
+                          onPressed: () async {
+                            context.pushNamed(
+                              'TelaDeExerciciosIntensos1',
+                              extra: <String, dynamic>{
+                                kTransitionInfoKey: const TransitionInfo(
+                                  hasTransition: true,
+                                  transitionType: PageTransitionType.fade,
+                                  duration: Duration(milliseconds: 0),
+                                ),
+                              },
+                            );
                           },
-                        );
-                      },
-                      text: 'Exercícios moderados',
-                      options: FFButtonOptions(
-                        width: 300.0,
-                        height: 30.0,
-                        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFDB5275),
-                        textAlign: TextAlign.center,
-                        textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                            fontFamily: 'Montserrat',
-                            color: Colors.white,
-                            letterSpacing: 0.0,
+                          text: 'Exercícios intensos',
+                          options: FFButtonOptions(
+                            width: 300.0,
+                            height: 30.0,
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            color: const Color(0xFFDB5275),
+                            textAlign: TextAlign.center,
+                            textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                              fontFamily: 'Montserrat',
+                              color: Colors.white,
+                              letterSpacing: 0.0,
+                            ),
+                            elevation: 3.0,
+                            borderSide: const BorderSide(
+                              color: Colors.transparent,
+                              width: 1.0,
+                            ),
+                            borderRadius: BorderRadius.circular(16.0),
                           ),
-                        elevation: 3.0,
-                        borderSide: const BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(16.0),
                       ),
-                    ),
+                      const SizedBox(height: 4.0,),
+                      SizedBox(
+                          width: 300,
+                          child: Wrap(
+                            children: [
+                              Text(
+                                'É fundamental estar adaptado a exercícios físicos leves e moderados antes de iniciar atividades intensas, garantindo uma transição gradual e segura sob supervisão médica para preservar a saúde e evitar lesões.',
+                                textAlign: TextAlign.justify,
+                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 12.0,
+                                  letterSpacing: 0.0,
+                                ),
+                              ),
+                            ],
+                          )
+                      ),
+
+                      SizedBox(height: MediaQuery.of(context).size.height > 800 ? 24.0 : 8.0,),
+                    ],
                   ),
                 ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, 0.03),
-                  child: SizedBox(
-                    width: 300,
-                    child: Wrap(
-                      children: [
-                        Text(
-                          'Para pacientes pós-operatórios recentes, é recomendável iniciar com exercícios leves.',
-                          textAlign: TextAlign.justify,
-                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Montserrat',
-                            fontSize: 12.0,
-                            letterSpacing: 0.0,
-                          ),
-                        ),
-                      ],
-                    )
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, 0.31),
-                  child: SizedBox(
-                    width: 300,
-                    child: Wrap(
-                      children: [Text(
-                        'Para pacientes pós-operatórios com melhoria física e adaptados aos exercícios leves, é recomendável incorporar atividades moderadas, pois podem contribuir significativamente para a recuperação física.',
-                        textAlign: TextAlign.justify,
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Montserrat',
-                          fontSize: 12.0,
-                          letterSpacing: 0.0,
-                        ),
-                      ),],
-                    )
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, 0.7),
-                  child: SizedBox(
-                    width: 300,
-                    child: Wrap(
-                      children: [
-                        Text(
-                          'É fundamental estar adaptado a exercícios físicos leves e moderados antes de iniciar atividades intensas, garantindo uma transição gradual e segura sob supervisão médica para preservar a saúde e evitar lesões.',
-                          textAlign: TextAlign.justify,
-                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Montserrat',
-                            fontSize: 12.0,
-                            letterSpacing: 0.0,
-                          ),
-                        ),
-                      ],
-                    )
-                  ),
-                ),
+
                 Align(
                   alignment: const AlignmentDirectional(0, 0.95),
                   child: Flex(

@@ -80,7 +80,7 @@ class _TelaDeExerciciosIntensos6WidgetState
                 ),
 
                 Align(
-                  alignment: const AlignmentDirectional(0, -0.53),
+                  alignment: const AlignmentDirectional(0, -0.67),
                   child: SizedBox(
                     child: Text(
                       '6. Triceps testa deitado no chão',
@@ -131,7 +131,7 @@ class _TelaDeExerciciosIntensos6WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.8, 0.07),
+                  alignment: const AlignmentDirectional(-0.8, -0.05),
                   child: Text(
                     'Passo a passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -142,11 +142,11 @@ class _TelaDeExerciciosIntensos6WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const Alignment(0.0, 0.44),
+                  alignment: const Alignment(0.0, 0.3),
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(
-                      'A praticante deverá ficar deitada, com as costas voltadas para baixo, em uma superfície plana horizontal e preferencialmente acolchoada, elevando seus braços a frente segurando uma carga externa (saco de arroz/feijão/garrafa pet) e flexionar os cotovelos controlando a descida da carga até a testa e em seguinda voltando para a posição inicial. Prestar atenção no movimento para que haja de fato apenas o movimento de extensão e flexão dos cotovelos, conforme vídeo. Deve-se fazer 1 série de 15 a 20 repetições nas duas primeiras semanas e a partir da terceira semana, 3 séries de 10 a 15 repetições',
+                      'A praticante deverá ficar deitada, com as costas voltadas para baixo, em uma superfície plana horizontal e preferencialmente acolchoada, elevando seus braços a frente segurando uma carga externa (saco de arroz/feijão/garrafa pet) e flexionar os cotovelos controlando a descida da carga até a testa e em seguinda voltando para a posição inicial. Prestar atenção no movimento para que haja de fato apenas o movimento de extensão e flexão dos cotovelos, conforme vídeo. Deve-se fazer 1 série de 15 a 20 repetições nas duas primeiras semanas e a partir da terceira semana, 3 séries de 10 a 15 repetições.',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
@@ -187,7 +187,7 @@ class _TelaDeExerciciosIntensos6WidgetState
                   ),
                 ),
                 const Align(
-                  alignment: AlignmentDirectional(0.0, -0.3),
+                  alignment: AlignmentDirectional(0.0, -0.47),
                   child: SizedBox(
                     width: 125.0,
                     child: FlutterFlowVideoPlayer(
@@ -358,22 +358,7 @@ class _TelaDeExerciciosIntensos6WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.75),
-                  child: SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.85,
-                    child: Text(
-                      'É recomendável realizar a série de exercícios. Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Montserrat',
-                        fontSize: 12.0,
-                        letterSpacing: 0.0,
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.00, -0.6),
+                  alignment: const AlignmentDirectional(0.00, -0.75),
                   child: Container(
                     width: 200.0,
                     decoration: BoxDecoration(

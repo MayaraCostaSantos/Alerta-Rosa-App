@@ -60,7 +60,7 @@ class _TelaDeExerciciosFisicosLeves3WidgetState
             child: Stack(
               children: [
                 Align(
-                  alignment: const AlignmentDirectional(0.4, -0.9),
+                  alignment: const AlignmentDirectional(0.4, -0.85),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -91,7 +91,7 @@ class _TelaDeExerciciosFisicosLeves3WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.4, -0.9),
+                  alignment: const AlignmentDirectional(-0.4, -0.85),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -129,7 +129,7 @@ class _TelaDeExerciciosFisicosLeves3WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.00, -0.95),
+                  alignment: const AlignmentDirectional(0.00, -0.9),
                   child: SizedBox(
                     height: 70.0,
                     child: Image.asset(
@@ -139,13 +139,13 @@ class _TelaDeExerciciosFisicosLeves3WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.5),
+                  alignment: const AlignmentDirectional(0.0, -0.54),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(45.0, 0.0, 30.0, 0),
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0),
                     child: Text(
                       '3. Alongamento da região peitoral, anterior do braço e ombro',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
                         fontSize: 14.0,
@@ -155,7 +155,7 @@ class _TelaDeExerciciosFisicosLeves3WidgetState
                   ),
                 ),
                 const Align(
-                  alignment: AlignmentDirectional(-0.8, -0.15),
+                  alignment: AlignmentDirectional(-0.8, -0.2),
                   child: SizedBox(
                     width: 125.0,
                     child: FlutterFlowVideoPlayer(
@@ -170,7 +170,7 @@ class _TelaDeExerciciosFisicosLeves3WidgetState
                   ),
                 ),
                 const Align(
-                  alignment: AlignmentDirectional(0.75, -0.15),
+                  alignment: AlignmentDirectional(0.75, -0.20),
                   child: SizedBox(
                     width: 125.0,
                     child: FlutterFlowVideoPlayer(
@@ -185,7 +185,7 @@ class _TelaDeExerciciosFisicosLeves3WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.8, 0.2),
+                  alignment: const AlignmentDirectional(-0.8, 0.15),
                   child: Text(
                     'Passo a passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -196,7 +196,7 @@ class _TelaDeExerciciosFisicosLeves3WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const Alignment(0.0, 0.43),
+                  alignment: const Alignment(0.0, 0.38),
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(
@@ -366,22 +366,7 @@ class _TelaDeExerciciosFisicosLeves3WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.75),
-                  child: SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.85,
-                    child: Text(
-                      'É recomendável realizar a série de exercícios. Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Montserrat',
-                        fontSize: 12.0,
-                        letterSpacing: 0.0,
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.00, -0.6),
+                  alignment: const AlignmentDirectional(0.00, -0.65),
                   child: Container(
                     width: 200.0,
                     decoration: BoxDecoration(

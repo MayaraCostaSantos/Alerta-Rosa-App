@@ -141,10 +141,9 @@ class _TelaDeFiseoTerapia9WidgetState extends State<TelaDeFiseoTerapia9Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.0, 0.69),
+                alignment: const AlignmentDirectional(0.0, 0.6),
                 child: Container(
                   width: 336.0,
-                  height: 203.0,
                   constraints: const BoxConstraints(
                     minWidth: 3.0,
                   ),
@@ -166,24 +165,27 @@ class _TelaDeFiseoTerapia9WidgetState extends State<TelaDeFiseoTerapia9Widget> {
                       topLeft: Radius.circular(30.0),
                       topRight: Radius.circular(30.0),
                     ),
-                    
                   ),
-                  child: Center(
-                    child: Padding(
-                      padding:
-                      const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
-                      child: Text(
-                        'Os movimentos circulares devem ser feitos com o polegar. Já com a mão em forma de concha, faça movimentos lentos e de leve compressão, como se estivesse bombeando a pele. Repita entre cinco a dez vezes em cada região, sempre indo em direção aos gânglios linfáticos, que ficam próximos à região da virilha.',
-                        textAlign: TextAlign.justify,
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Montserrat',
-                          fontSize: 12.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
+                  child: Wrap(
+                    children: [
+                      Center(
+                        child: Padding(
+                          padding:
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 24.0),
+                          child: Text(
+                            'Os movimentos circulares devem ser feitos com o polegar. Já com a mão em forma de concha, faça movimentos lentos e de leve compressão, como se estivesse bombeando a pele. Repita entre cinco a dez vezes em cada região, sempre indo em direção aos gânglios linfáticos, que ficam próximos à região da virilha.',
+                            textAlign: TextAlign.justify,
+                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Montserrat',
+                              fontSize: 12.0,
+                              letterSpacing: 0.0,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black,
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
+                      )
+                    ],
                   )
                 ),
               ),

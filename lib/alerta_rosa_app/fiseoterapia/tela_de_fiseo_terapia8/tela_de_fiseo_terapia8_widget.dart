@@ -109,7 +109,7 @@ class _TelaDeFiseoTerapia8WidgetState extends State<TelaDeFiseoTerapia8Widget> {
               Align(
                 alignment: const AlignmentDirectional(0, -0.55),
                 child: Text(
-                  'Exercícios complementares - 3',
+                  'Exercícios complementares',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: 'Open Sans',
                     fontSize: 20.0,
@@ -134,10 +134,9 @@ class _TelaDeFiseoTerapia8WidgetState extends State<TelaDeFiseoTerapia8Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.0, 0.69),
+                alignment: const AlignmentDirectional(0.0, 0.55),
                 child: Container(
                   width: 336.0,
-                  height: 203.0,
                   constraints: const BoxConstraints(
                     minWidth: 3.0,
                   ),
@@ -160,22 +159,26 @@ class _TelaDeFiseoTerapia8WidgetState extends State<TelaDeFiseoTerapia8Widget> {
                       topRight: Radius.circular(30.0),
                     ),
                   ),
-                  child: Center(
-                    child: Padding(
-                      padding:
-                      const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
-                      child: Text(
-                        '3. Com um bastão, eleve os braços acima da cabeça, dobre os cotovelos até encaixar o bastão atrás da cabeça e retorne para o alto. ',
-                        textAlign: TextAlign.justify,
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Montserrat',
-                          fontSize: 12.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
+                  child: Wrap(
+                    children: [
+                      Center(
+                        child: Padding(
+                          padding:
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 24.0),
+                          child: Text(
+                            '3. Com um bastão, eleve os braços acima da cabeça, dobre os cotovelos até encaixar o bastão atrás da cabeça e retorne para o alto. ',
+                            textAlign: TextAlign.justify,
+                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Montserrat',
+                              fontSize: 12.0,
+                              letterSpacing: 0.0,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black,
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
+                      )
+                    ],
                   )
                 ),
               ),

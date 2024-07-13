@@ -146,7 +146,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                     padding: const EdgeInsetsDirectional.fromSTEB(
                         16.0, 0.0, 16.0, 0.0),
                     child: Text(
-                      'A alimentação saudável é crucial para portadores de câncer de mama, pois pode ajudar na prevenção de recorrência da doença e na melhoria da qualidade de vida durante e após o tratamento.',
+                      '\"A alimentação saudável é crucial para portadores de câncer de mama, pois pode ajudar na prevenção de recorrência da doença e na melhoria da qualidade de vida durante e após o tratamento.\"',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
@@ -171,7 +171,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0, 1.0),
+                  alignment: const AlignmentDirectional(0, 0),
                   child: Flex(
                     direction: Axis.vertical,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -207,7 +207,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                           borderRadius: BorderRadius.circular(16.0),
                         ),
                       ),
-                      SizedBox(height: MediaQuery.of(context).size.height > 800 ? 24 : 16),
+                      SizedBox(height: MediaQuery.of(context).size.height > 800 ? 32 : 24),
                       FFButtonWidget(
                         onPressed: () async {
                           context.pushNamed(
@@ -239,43 +239,11 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                           borderRadius: BorderRadius.circular(16.0),
                         ),
                       ),
-                      SizedBox(height: MediaQuery.of(context).size.height > 800 ? 24 : 16),
-                      FFButtonWidget(
-                        onPressed: () async {
-                          context.pushNamed(
-                            'TelaDeReceitas',
-                            extra: <String, dynamic>{
-                              kTransitionInfoKey: const TransitionInfo(
-                                hasTransition: true,
-                                transitionType: PageTransitionType.leftToRight,
-                              ),
-                            },
-                          );
-                        },
-                        text: 'Receitas nutritivas',
-                        options: FFButtonOptions(
-                          width: 300.0,
-                          padding: const EdgeInsets.all(12.0),
-                          color: const Color(0xFFDB5275),
-                          textAlign: TextAlign.center,
-                          textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                            fontFamily: 'Montserrat',
-                            color: Colors.white,
-                          ),
-                          elevation: 3.0,
-                          borderSide: const BorderSide(
-                            color: Colors.transparent,
-                            width: 1.0,
-                          ),
-                          borderRadius: BorderRadius.circular(16.0),
-                        ),
-                      ),
                     ],
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, 0.5),
+                  alignment: const AlignmentDirectional(0.0, 0.6),
                   child: Padding(
                     padding: const EdgeInsetsDirectional.fromSTEB(
                         16.0, 0.0, 16.0, 0.0),

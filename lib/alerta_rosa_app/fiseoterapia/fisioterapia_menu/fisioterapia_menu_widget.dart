@@ -162,7 +162,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Exercício inicial - 1',
+                            text: 'Exercício inicial',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-1.png'),
                               size: 32,
@@ -195,7 +195,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Exercício inicial - 2',
+                            text: 'Exercício inicial',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-2.png'),
                               size: 32,
@@ -229,7 +229,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Exercício inicial - 3',
+                            text: 'Exercício inicial',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-3.png'),
                               size: 32,
@@ -262,7 +262,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Após retirar os pontos - 1',
+                            text: 'Após retirar os pontos',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-4.png'),
                               size: 32,
@@ -295,7 +295,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Após retirar os pontos - 2',
+                            text: 'Após retirar os pontos',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-5.png'),
                               size: 32,
@@ -332,7 +332,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Exercícios complementares - 1',
+                            text: 'Exercícios complementares',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-6.png'),
                               size: 32,
@@ -366,7 +366,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Exercícios complementares - 2',
+                            text: 'Exercícios complementares',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-7.png'),
                               size: 32,
@@ -400,7 +400,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Exercícios complementares - 3',
+                            text: 'Exercícios complementares',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-8.png'),
                               size: 32,
@@ -435,6 +435,11 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                               );
                             },
                             text: 'Autodrenagem Manual',
+                            icon: const ImageIcon(
+                              AssetImage('assets/images/iconNumbers/icone-9.png'),
+                              size: 32,
+                              semanticLabel: 'icone-8',
+                            ),
                             options: FFButtonOptions(
                               width: 275.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),

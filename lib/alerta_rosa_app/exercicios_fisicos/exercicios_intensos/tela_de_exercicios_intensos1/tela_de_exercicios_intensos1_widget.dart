@@ -165,7 +165,7 @@ class _TelaDeExerciciosIntensos1WidgetState
                   )
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.8, 0.11),
+                  alignment: const AlignmentDirectional(-0.8, 0.1),
                   child: Text(
                     'Passo a passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -176,7 +176,7 @@ class _TelaDeExerciciosIntensos1WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const Alignment(0.0, 0.42),
+                  alignment: const Alignment(0.0, 0.4),
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(
@@ -372,7 +372,7 @@ class _TelaDeExerciciosIntensos1WidgetState
                     ),
                     padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
                     child: Text(
-                      'Segunda-Feira 1',
+                      'Segunda-Feira',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Montserrat',

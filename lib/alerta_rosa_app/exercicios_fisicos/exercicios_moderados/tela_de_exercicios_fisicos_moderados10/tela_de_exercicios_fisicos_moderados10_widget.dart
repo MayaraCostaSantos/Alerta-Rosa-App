@@ -183,7 +183,7 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
                   ),
                 ),
                 const Align(
-                  alignment: AlignmentDirectional(0, -0.27),
+                  alignment: AlignmentDirectional(0, -0.42),
                   child: SizedBox(
                     width: 125,
                     child: FlutterFlowVideoPlayer(
@@ -357,21 +357,6 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.75),
-                  child: SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.85,
-                    child: Text(
-                      'É recomendável realizar a série de exercícios. Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Montserrat',
-                        fontSize: 12.0,
-                        letterSpacing: 0.0,
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
                   alignment: const AlignmentDirectional(0.00, -0.6),
                   child: Container(
                     width: 200.0,
@@ -381,7 +366,7 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
                     ),
                     padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
                     child: Text(
-                      'Sexta-Feira 2',
+                      'Sexta-Feira',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Montserrat',

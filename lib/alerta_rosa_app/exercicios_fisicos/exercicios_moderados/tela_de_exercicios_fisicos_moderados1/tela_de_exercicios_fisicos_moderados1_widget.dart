@@ -122,7 +122,7 @@ class _TelaDeExerciciosFisicosModerados1WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const Alignment(0.0, 0.4),
+                  alignment: const Alignment(0.0, 0.25),
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(

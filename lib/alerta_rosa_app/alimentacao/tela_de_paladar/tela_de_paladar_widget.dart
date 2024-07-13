@@ -114,7 +114,7 @@ class _TelaDePaladarWidgetState extends State<TelaDePaladarWidget> {
                         const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 15.0, 0.0),
                     child: Text(
                       'Os tratamentos contra o câncer podem reduzir o apetite, levando os pacientes a comerem menos do que o habitual.',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
                         fontSize: 12.0,
@@ -193,7 +193,7 @@ class _TelaDePaladarWidgetState extends State<TelaDePaladarWidget> {
                         const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 16.0, 0.0),
                     child: Text(
                       'A quimioterapia e a radioterapia podem causar boca seca, afetando o paladar, a mucosa da boca se torna sensível, sendo difícil comer alimentos quentes, picantes ou ácidos.',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',
                             fontSize: 12.0,
@@ -254,7 +254,7 @@ class _TelaDePaladarWidgetState extends State<TelaDePaladarWidget> {
                         const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 16.0, 0.0),
                     child: Text(
                       'Muitas pessoas relatam gosto metálco na boca, alguns alimentos podem parecer amargo ou sem gosto, docês se transformam em excessivamente doces.',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',
                             fontSize: 12.0,
@@ -301,7 +301,7 @@ class _TelaDePaladarWidgetState extends State<TelaDePaladarWidget> {
                         const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 16.0, 0.0),
                     child: Text(
                       'Os efeitos colaterais dos tratamentos podem incluir náusea e vômito, o que pode impactar a percepção do gosto dos alimentos.',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',
                             fontSize: 12.0,

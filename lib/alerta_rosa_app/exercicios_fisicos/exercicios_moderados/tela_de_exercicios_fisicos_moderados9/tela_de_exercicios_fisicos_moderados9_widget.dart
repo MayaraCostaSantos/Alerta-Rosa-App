@@ -81,7 +81,7 @@ class _TelaDeExerciciosFisicosModerados9WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0, -0.52),
+                  alignment: const AlignmentDirectional(0, -0.67),
                   child: SizedBox(
                     child: Text(
                       '9. Panturrilha em pé simultânea:',
@@ -157,7 +157,7 @@ class _TelaDeExerciciosFisicosModerados9WidgetState
                 ),
 
                 Align(
-                  alignment: const AlignmentDirectional(-0.8, 0.11),
+                  alignment: const AlignmentDirectional(-0.8, -0.05),
                   child: Text(
                     'Passo a passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -168,11 +168,11 @@ class _TelaDeExerciciosFisicosModerados9WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const Alignment(0.0, 0.4),
+                  alignment: const Alignment(0.0, 0.2),
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(
-                      'A  praticante deverá começar o exercício sentado em uma cadeira e repetir o ato de levantar e sentar seguidamente de acordo com o número de vezes estabelecido abaixo, conforme vídeo.\nDeve-se fazer 2 séries de 15 a 20 repetições nas duas primeiras semanas e a partir da terceira semana 3 séries de 12 a 15 repetições.',
+                      'A praticante deverá começar o exercício sentado em uma cadeira e repetir o ato de levantar e sentar seguidamente de acordo com o número de vezes estabelecido abaixo, conforme vídeo.\nDeve-se fazer 2 séries de 15 a 20 repetições nas duas primeiras semanas e a partir da terceira semana 3 séries de 12 a 15 repetições.',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
@@ -184,7 +184,7 @@ class _TelaDeExerciciosFisicosModerados9WidgetState
                 ),
 
                 const Align(
-                  alignment: AlignmentDirectional(0, -0.27),
+                  alignment: AlignmentDirectional(0, -0.47),
                   child: SizedBox(
                     width: 125,
                     child: FlutterFlowVideoPlayer(
@@ -357,22 +357,7 @@ class _TelaDeExerciciosFisicosModerados9WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.75),
-                  child: SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.85,
-                    child: Text(
-                      'É recomendável realizar a série de exercícios. Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Montserrat',
-                        fontSize: 12.0,
-                        letterSpacing: 0.0,
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.00, -0.6),
+                  alignment: const AlignmentDirectional(0.00, -0.75),
                   child: Container(
                     width: 200.0,
                     decoration: BoxDecoration(
@@ -381,7 +366,7 @@ class _TelaDeExerciciosFisicosModerados9WidgetState
                     ),
                     padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
                     child: Text(
-                      'Sexta-Feira 1',
+                      'Sexta-Feira',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Montserrat',

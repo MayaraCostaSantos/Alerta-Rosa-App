@@ -68,7 +68,7 @@ class _TelaDeEntradaWidgetState extends State<TelaDeEntradaWidget> {
                     alignment: const AlignmentDirectional(0.0, 0.15),
                     child: Image.asset(
                       'assets/images/globalImages/text-overlay.png',
-                      width: 250,
+                      width: 275,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -80,7 +80,7 @@ class _TelaDeEntradaWidgetState extends State<TelaDeEntradaWidget> {
                         color: Color(0x00FFFFFF),
                       ),
                       child: const Text(
-                        'Autocuidado para pacientes com câncer de mama',
+                        'Prevenção e autocuidado para pacientes com câncer de mama',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color(0xFFE52687),

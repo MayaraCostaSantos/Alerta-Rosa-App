@@ -80,12 +80,12 @@ class _TelaDeExerciciosIntensos4WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.52),
+                  alignment: const AlignmentDirectional(0.0, -0.67),
                   child: Padding(
-                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                     child: Text(
                       '4. Desenvolvimento com carga externa',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
                         fontSize: 14.0,
@@ -97,7 +97,7 @@ class _TelaDeExerciciosIntensos4WidgetState
                   ),
                 ),
                 const Align(
-                  alignment: AlignmentDirectional(0.0, -0.27),
+                  alignment: AlignmentDirectional(0.0, -0.47),
                   child: SizedBox(
                     width: 125,
                     child: FlutterFlowVideoPlayer(
@@ -113,7 +113,7 @@ class _TelaDeExerciciosIntensos4WidgetState
                   )
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.8, 0.1),
+                  alignment: const AlignmentDirectional(-0.8, -0.05),
                   child: Text(
                     'Passo a passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -124,7 +124,7 @@ class _TelaDeExerciciosIntensos4WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const Alignment(0.0, 0.4),
+                  alignment: const Alignment(0.0, 0.25),
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(
@@ -355,22 +355,7 @@ class _TelaDeExerciciosIntensos4WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.75),
-                  child: SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.85,
-                    child: Text(
-                      'É recomendável realizar a série de exercícios. Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Montserrat',
-                        fontSize: 12.0,
-                        letterSpacing: 0.0,
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.00, -0.6),
+                  alignment: const AlignmentDirectional(0.00, -0.75),
                   child: Container(
                     width: 200.0,
                     decoration: BoxDecoration(
@@ -379,7 +364,7 @@ class _TelaDeExerciciosIntensos4WidgetState
                     ),
                     padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
                     child: Text(
-                      'Terça-Feira 2',
+                      'Terça-Feira',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Montserrat',

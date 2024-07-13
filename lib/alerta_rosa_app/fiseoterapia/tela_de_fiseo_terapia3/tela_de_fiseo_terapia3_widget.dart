@@ -109,7 +109,7 @@ class _TelaDeFiseoTerapia3WidgetState extends State<TelaDeFiseoTerapia3Widget> {
               Align(
                 alignment: const AlignmentDirectional(0, -0.55),
                 child: Text(
-                  'Exercícios Iniciais - 3',
+                  'Exercícios Iniciais',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: 'Open Sans',
                     fontSize: 20.0,
@@ -134,10 +134,10 @@ class _TelaDeFiseoTerapia3WidgetState extends State<TelaDeFiseoTerapia3Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.0, 0.69),
+                alignment: const AlignmentDirectional(0.0, 0.6),
                 child: Container(
                   width: 336.0,
-                  height: 203.0,
+                  
                   constraints: const BoxConstraints(
                     minWidth: 3.0,
                   ),
@@ -160,22 +160,26 @@ class _TelaDeFiseoTerapia3WidgetState extends State<TelaDeFiseoTerapia3Widget> {
                       topRight: Radius.circular(30.0),
                     ),
                   ),
-                  child: Center(
-                    child: Padding(
-                      padding:
-                      const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
-                      child: Text(
-                        'Com os braços esticados, tente levar as mãos para trás, acima da cabeça. Caso prefira, pode fazer com as mão entrelaçadas ou segurando um bastão para facilitar o movimento. Faça este exercício deitado (a), sentado (a) ou em pé.',
-                        textAlign: TextAlign.justify,
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Montserrat',
-                          fontSize: 12.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
+                  child: Wrap(
+                    children: [
+                      Center(
+                        child: Padding(
+                          padding:
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 24.0),
+                          child: Text(
+                            'Com os braços esticados, tente levar as mãos para trás, acima da cabeça. Caso prefira, pode fazer com as mão entrelaçadas ou segurando um bastão para facilitar o movimento. Faça este exercício deitado (a), sentado (a) ou em pé.',
+                            textAlign: TextAlign.justify,
+                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Montserrat',
+                              fontSize: 12.0,
+                              letterSpacing: 0.0,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black,
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
+                      )
+                    ],
                   )
                 ),
               ),
