@@ -2,37 +2,27 @@ import '/flutter_flow/flutter_flow_audio_player.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'tela_de_meditacao_guiada_model.dart';
-export 'tela_de_meditacao_guiada_model.dart';
+import 'tela_de_musica_relaxante_model.dart';
+export 'tela_de_musica_relaxante_model.dart';
 
-class TelaDeMeditacaoGuiadaWidget extends StatefulWidget {
-  const TelaDeMeditacaoGuiadaWidget({super.key});
+class TelaDeMusicaRelaxanteWidget extends StatefulWidget {
+  const TelaDeMusicaRelaxanteWidget({super.key});
 
   @override
-  State<TelaDeMeditacaoGuiadaWidget> createState() =>
-      _TelaDeMeditacaoGuiadaWidgetState();
+  State<TelaDeMusicaRelaxanteWidget> createState() =>
+      _TelaDeMusicaRelaxanteWidgetState();
 }
 
-class _TelaDeMeditacaoGuiadaWidgetState
-    extends State<TelaDeMeditacaoGuiadaWidget> {
-  late TelaDeMeditacaoGuiadaModel _model;
-  bool isLoading = true;
+class _TelaDeMusicaRelaxanteWidgetState
+    extends State<TelaDeMusicaRelaxanteWidget> {
+  late TelaDeMusicaRelaxanteModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
-
-  void simulateAudioLoading() async {
-    // Simulate some loading
-    await Future.delayed(const Duration(seconds: 8));
-    setState(() {
-      isLoading = false;
-    });
-  }
 
   @override
   void initState() {
     super.initState();
-    simulateAudioLoading();
-    _model = createModel(context, () => TelaDeMeditacaoGuiadaModel());
+    _model = createModel(context, () => TelaDeMusicaRelaxanteModel());
   }
 
   @override
@@ -108,47 +98,6 @@ class _TelaDeMeditacaoGuiadaWidgetState
                     ),
                   ),
                 ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, -0.58),
-                  child: Padding(
-                    padding:
-                    const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                    child: Text(
-                      '\"Meditar ajuda a desenvolver uma maior resiliência emocional, essencial para lidar com a ansiedade e depressão associadas ao câncer de mama\". ',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Montserrat',
-                        fontSize: 12.0,
-                        letterSpacing: 0.0,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.85, -0.48),
-                  child: Text(
-                    '- Dr. Jon Kabat-Zinn, 1990.',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Montserrat',
-                      fontSize: 12.0,
-                      letterSpacing: 0.0,
-                      fontWeight: FontWeight.bold,
-                      fontStyle: FontStyle.italic,
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(-0.95, -0.3),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8.0),
-                    child: Image.asset(
-                      'assets/images/meditao3-removebg-preview.png',
-                      width: 105.0,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width,
                   child: Flex(
@@ -157,7 +106,6 @@ class _TelaDeMeditacaoGuiadaWidgetState
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      SizedBox(height: MediaQuery.of(context).size.height * 0.3),
                       Container(
                         width: 250.0,
                         decoration: BoxDecoration(
@@ -171,12 +119,13 @@ class _TelaDeMeditacaoGuiadaWidgetState
                         ),
                         child: FlutterFlowAudioPlayer(
                           audio: Audio.network(
-                            'https://drive.google.com/uc?export=download&id=14Ya21GcoP-WsPoA_uezP-NNGT79wu38n',
+                            'https://www.youtube.com/watch?v=0crvD3XrE4c',
                             metas: Metas(
-                              id: 'a_forca_da_vida.mp3',
-                              title: 'A força da vida',
+                              id: 'musica_relaxante_para_alivio_do_estresse',
+                              title: 'Música relaxante para o alívio do estresse, ansiedade e estados depressivos.',
                             ),
                           ),
+                          isURL: true,
                           titleTextStyle:
                           FlutterFlowTheme.of(context).titleLarge.override(
                             fontFamily: 'Montserrat',
@@ -211,10 +160,10 @@ class _TelaDeMeditacaoGuiadaWidgetState
                         ),
                         child: FlutterFlowAudioPlayer(
                           audio: Audio.network(
-                            'https://drive.google.com/uc?export=download&id=1GJyCMhvoGA_0N3VW7cCYqNuXsU1_xpRz',
+                            'https://www.youtube.com/watch?v=4xcwzPOYhog',
                             metas: Metas(
-                              id: 'limpeza_das_dores_e_doencas_emocionais.mp3',
-                              title: 'Limpeza das dores e doenças emocionais',
+                              id: 'musica_para_dormir_frequencia_432hz',
+                              title: 'Música para dormir - Frequência  432Hz - Ideal para dormir profundamente.',
                             ),
                           ),
                           titleTextStyle: FlutterFlowTheme.of(context).titleLarge.override(
@@ -231,34 +180,93 @@ class _TelaDeMeditacaoGuiadaWidgetState
                           playbackButtonColor: const Color(0xFFF35A81),
                           activeTrackColor: FlutterFlowTheme.of(context).alternate,
                           elevation: 4.0,
-                          playInBackground:
-                          PlayInBackground.disabledRestoreOnForeground,
+                          playInBackground: PlayInBackground.disabledRestoreOnForeground,
+                          isURL: true,
+                        ),
+                      ),
+                      const SizedBox(height: 16.0),
+                      Container(
+                        width: 250.0,
+                        decoration: BoxDecoration(
+                          color: FlutterFlowTheme.of(context).secondaryBackground,
+                          borderRadius: const BorderRadius.only(
+                            bottomLeft: Radius.circular(30.0),
+                            bottomRight: Radius.circular(30.0),
+                            topLeft: Radius.circular(30.0),
+                            topRight: Radius.circular(30.0),
+                          ),
+                        ),
+                        child: FlutterFlowAudioPlayer(
+                          audio: Audio.network(
+                            'https://www.youtube.com/watch?v=UA0zcxFoOi4',
+                            metas: Metas(
+                              id: 'ativar_o_poder_de_cura',
+                              title: 'Ativar o poder de cura e limpar energia destrutiva. Estabilidade emocional e melhora do humor.',
+                            ),
+                          ),
+                          titleTextStyle: FlutterFlowTheme.of(context).titleLarge.override(
+                            fontFamily: 'Montserrat',
+                            fontSize: 14.0,
+                            letterSpacing: 0.0,
+                            fontWeight: FontWeight.w500,
+                          ),
+                          playbackDurationTextStyle: FlutterFlowTheme.of(context).labelMedium.override(
+                            fontFamily: 'Montserrat',
+                            letterSpacing: 0.0,
+                          ),
+                          fillColor: FlutterFlowTheme.of(context).secondaryBackground,
+                          playbackButtonColor: const Color(0xFFF35A81),
+                          activeTrackColor: FlutterFlowTheme.of(context).alternate,
+                          elevation: 4.0,
+                          playInBackground: PlayInBackground.disabledRestoreOnForeground,
+                          isURL: true,
+                        ),
+                      ),
+                      const SizedBox(height: 16.0),
+                      Container(
+                        width: 250.0,
+                        decoration: BoxDecoration(
+                          color: FlutterFlowTheme.of(context).secondaryBackground,
+                          borderRadius: const BorderRadius.only(
+                            bottomLeft: Radius.circular(30.0),
+                            bottomRight: Radius.circular(30.0),
+                            topLeft: Radius.circular(30.0),
+                            topRight: Radius.circular(30.0),
+                          ),
+                        ),
+                        child: FlutterFlowAudioPlayer(
+                          audio: Audio.network(
+                            'https://www.youtube.com/watch?v=PwGK61LnTdg',
+                            metas: Metas(
+                              id: 'frequencia_de_cura_tom_milagres',
+                              title: 'Frequência de cura - Tom milagres - Cura emocional e espiritual.',
+                            ),
+                          ),
+                          titleTextStyle: FlutterFlowTheme.of(context).titleLarge.override(
+                            fontFamily: 'Montserrat',
+                            fontSize: 14.0,
+                            letterSpacing: 0.0,
+                            fontWeight: FontWeight.w500,
+                          ),
+                          playbackDurationTextStyle: FlutterFlowTheme.of(context).labelMedium.override(
+                            fontFamily: 'Montserrat',
+                            letterSpacing: 0.0,
+                          ),
+                          fillColor: FlutterFlowTheme.of(context).secondaryBackground,
+                          playbackButtonColor: const Color(0xFFF35A81),
+                          activeTrackColor: FlutterFlowTheme.of(context).alternate,
+                          elevation: 4.0,
+                          playInBackground: PlayInBackground.disabledRestoreOnForeground,
+                          isURL: true,
                         ),
                       ),
                     ],
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.26, -0.3),
-                  child: Padding(
-                    padding:
-                    const EdgeInsetsDirectional.fromSTEB(110.0, 0.0, 16.0, 0.0),
-                    child: Text(
-                      '\"Coloque fones de ouvido, feche os olhos e deixe-se guiar e sintonizar com a meditação, ouça, absorva e se deixe curar, relaxar, receber e agradecer.\"\n\n- Yoga Mudra, por Raissa Zoccal.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Montserrat',
-                        fontSize: 12.0,
-                        letterSpacing: 0.0,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
                   alignment: const AlignmentDirectional(0, -0.69),
                   child: Text(
-                    'Meditação guiada',
+                    'Músicas Relaxantes',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                       fontFamily: 'Open Sans',
                       fontSize: 20.0,

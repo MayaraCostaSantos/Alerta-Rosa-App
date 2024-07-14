@@ -214,9 +214,11 @@ class _TelaDeExerciciosFisicos1WidgetState
 
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.9,
+                  width: MediaQuery.of(context).size.width,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
-
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
                         padding:

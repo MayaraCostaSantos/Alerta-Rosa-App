@@ -190,7 +190,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.pushNamed(
-                      'TelaDeLidandoDepressao',
+                      'TelaDeMeditacaoGuiada',
                       extra: <String, dynamic>{
                         kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
@@ -199,7 +199,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                       },
                     );
                   },
-                  text: 'Lidando com a depressão ',
+                  text: 'Meditação guiada',
                   options: FFButtonOptions(
                     width: 250.0,
                     padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
@@ -248,7 +248,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.pushNamed(
-                      'TelaDeMeditacaoGuiada',
+                      'TelaDeMusicaRelaxante',
                       extra: <String, dynamic>{
                         kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
@@ -257,7 +257,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                       },
                     );
                   },
-                  text: 'Meditação guiada',
+                  text: 'Musicas Relaxantes',
                   options: FFButtonOptions(
                     width: 250.0,
                     padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),

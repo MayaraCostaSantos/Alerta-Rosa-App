@@ -123,7 +123,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                                         ),
                                       ),
                                       Align(
-                                        alignment: Alignment.centerRight + const Alignment(1.0, 0.0),
+                                        alignment: Alignment.centerRight + (MediaQuery.of(context).size.width < 600 ? const Alignment(1, 0.0) : const Alignment(0.8, 0.0)),
                                         child: Image.asset(
                                           'assets/images/alimentacao.png',
                                           width: 70,
@@ -254,6 +254,7 @@ class _TelaDeAlimentacaoWidgetState extends State<TelaDeAlimentacaoWidget> {
                         fontFamily: 'Montserrat',
                         fontSize: 12.0,
                         letterSpacing: 0.0,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   ),

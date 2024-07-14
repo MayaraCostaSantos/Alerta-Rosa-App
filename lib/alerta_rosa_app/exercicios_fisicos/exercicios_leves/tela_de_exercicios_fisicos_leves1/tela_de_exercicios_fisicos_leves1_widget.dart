@@ -10,8 +10,6 @@ import 'package:flutter/material.dart';
 import 'tela_de_exercicios_fisicos_leves1_model.dart';
 export 'tela_de_exercicios_fisicos_leves1_model.dart';
 
-import 'dart:math' as math;
-
 class TelaDeExerciciosFisicosLeves1Widget extends StatefulWidget {
   const TelaDeExerciciosFisicosLeves1Widget({super.key});
 

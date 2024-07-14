@@ -212,7 +212,6 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                         ),
                   ),
                 ),
-
                 Align(
                   alignment: const AlignmentDirectional(0.0, -0.46),
                   child: Padding(
@@ -222,10 +221,11 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                       'Olha-se no espelho e inspecione as mamas com os braços em diferentes posições.',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Montserrat',
-                            fontSize: 12.0,
-                            letterSpacing: 0.0,
-                          ),
+                        fontFamily: 'Montserrat',
+                        fontSize: 12.0,
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                   ),
                 ),
@@ -273,6 +273,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                         fontFamily: 'Montserrat',
                         fontSize: 12.0,
                         letterSpacing: 0.0,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   )
@@ -299,6 +300,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                         fontFamily: 'Montserrat',
                         fontSize: 12.0,
                         letterSpacing: 0.0,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   ),
@@ -325,6 +327,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                         fontFamily: 'Montserrat',
                         fontSize: 12.0,
                         letterSpacing: 0.0,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   )
@@ -351,6 +354,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                         fontFamily: 'Montserrat',
                         fontSize: 12.0,
                         letterSpacing: 0.0,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   )

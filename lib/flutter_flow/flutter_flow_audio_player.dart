@@ -19,6 +19,7 @@
 import 'dart:math' as math;
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '/flutter_flow/flutter_flow_util.dart' show routeObserver;
 
@@ -37,6 +38,7 @@ class FlutterFlowAudioPlayer extends StatefulWidget {
     required this.elevation,
     this.pauseOnNavigate = true,
     required this.playInBackground,
+    this.isURL = false,
   });
 
   final Audio audio;
@@ -49,6 +51,7 @@ class FlutterFlowAudioPlayer extends StatefulWidget {
   final double elevation;
   final bool pauseOnNavigate;
   final PlayInBackground playInBackground;
+  final bool isURL;
 
   @override
   _FlutterFlowAudioPlayerState createState() => _FlutterFlowAudioPlayerState();
@@ -63,6 +66,11 @@ class _FlutterFlowAudioPlayerState extends State<FlutterFlowAudioPlayer>
   void initState() {
     super.initState();
     openPlayer();
+  }
+
+  Future<void> _launchURL(String url) async {
+    Uri urlPath = Uri.parse(url);
+    await launchUrl(urlPath);
   }
 
   Future openPlayer() async {
@@ -156,10 +164,10 @@ class _FlutterFlowAudioPlayerState extends State<FlutterFlowAudioPlayer>
                                     widget.audio.metas.title ?? 'Audio Title',
                                     style: widget.titleTextStyle,
                                   ),
-                                  Text(
+                                  !widget.isURL ? Text(
                                     playbackStateText(infos),
                                     style: widget.playbackDurationTextStyle,
-                                  )
+                                  ) : Container(),
                                 ],
                               ),
                             ),
@@ -169,7 +177,7 @@ class _FlutterFlowAudioPlayerState extends State<FlutterFlowAudioPlayer>
                             child: Material(
                               color: Colors.transparent,
                               child: IconButton(
-                                onPressed: _assetsAudioPlayer!.playOrPause,
+                                onPressed: () => widget.isURL ? _launchURL(widget.audio.path) : _assetsAudioPlayer!.playOrPause(),
                                 icon: Icon(
                                   (isPlaying)
                                       ? Icons.pause_circle_filled_rounded

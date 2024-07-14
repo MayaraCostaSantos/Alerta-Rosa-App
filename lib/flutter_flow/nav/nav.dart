@@ -287,6 +287,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const TelaDeSaudeMentalWidget(),
         ),
         FFRoute(
+          name: 'TelaDeMusicaRelaxante',
+          path: '/telaDeMusicaRelaxante',
+          builder: (context, params) => const TelaDeMusicaRelaxanteWidget(),
+        ),
+        FFRoute(
           name: 'TelaDeEntrada',
           path: '/telaDeEntrada',
           builder: (context, params) => const TelaDeEntradaWidget(),
