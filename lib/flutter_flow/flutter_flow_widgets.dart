@@ -1,6 +1,5 @@
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 
 class FFButtonOptions {
   const FFButtonOptions({
@@ -228,7 +227,7 @@ class _FFButtonWidgetState extends State<FFButtonWidget> {
           label: textWidget,
           onPressed: onPressed,
           style: style.copyWith(
-            alignment: Alignment.centerLeft + Alignment(0.05, 0),
+            alignment: Alignment.centerLeft + const Alignment(0.05, 0),
           ),
         ),
       );

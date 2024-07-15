@@ -97,7 +97,7 @@ class _TelaDeExamesDeRotinaWidgetState
                                   padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
                                   child: Center(
                                       child: Stack(
-                                        alignment: AlignmentDirectional(0.0, 0.0),
+                                        alignment: const AlignmentDirectional(0.0, 0.0),
                                         children: [
                                           const Text(
                                             'EXAMES\nDE\nROTINA ',

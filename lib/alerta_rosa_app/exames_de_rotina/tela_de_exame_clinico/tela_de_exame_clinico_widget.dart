@@ -86,7 +86,7 @@ class _TelaDeExameClinicoWidgetState extends State<TelaDeExameClinicoWidget> {
                         Center(
                           child: DecoratedBox(
                             decoration: const BoxDecoration(
-                              color: const Color(0xFFF03E69),
+                              color: Color(0xFFF03E69),
                               borderRadius: BorderRadius.only(
                                 topRight: Radius.elliptical(255, 255),
                                 bottomRight: Radius.elliptical(255, 255),
