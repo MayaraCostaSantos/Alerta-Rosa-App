@@ -173,7 +173,7 @@ class _TelaDeFiseoTerapia5WidgetState extends State<TelaDeFiseoTerapia5Widget> {
                           padding:
                           const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 24.0),
                           child: Text(
-                            '- Alongamento \n\nCom os dedos entrelaçados atrás da cabeça, mantenha os cotovelos voltados para fora, bem abertos. Os alongamentos devem ser feitos lentamente, e mantido o estiramento máximo do músculo por 20 segundos. ',
+                            'Com os dedos entrelaçados atrás da cabeça, mantenha os cotovelos voltados para fora, bem abertos. Os alongamentos devem ser feitos lentamente, e mantido o estiramento máximo do músculo por 20 segundos. ',
                             textAlign: TextAlign.justify,
                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Montserrat',

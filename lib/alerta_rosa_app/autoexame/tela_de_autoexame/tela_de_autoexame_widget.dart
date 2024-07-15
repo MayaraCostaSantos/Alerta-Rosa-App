@@ -252,33 +252,6 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.87, 0.48),
-                  child: Text(
-                    '5°  Passo:',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Montserrat',
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.9, 0.61),
-                  child: SizedBox(
-                    width: 80,
-                    child: Text(
-                      'Examine no sentido horário e anti-horário.',
-                      textAlign: TextAlign.justify,
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Montserrat',
-                        fontSize: 12.0,
-                        letterSpacing: 0.0,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  )
-                ),
-                Align(
                   alignment: const AlignmentDirectional(-0.93, 0.29),
                   child: Text(
                     '2°  Passo:',
@@ -290,9 +263,9 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.92, 0.38),
+                  alignment: const AlignmentDirectional(-0.92, 0.41),
                   child: SizedBox(
-                    width: 111,
+                    width: 100,
                     child: Text(
                       'Use suavemente as pontas dos dedos.',
                       textAlign: TextAlign.justify,
@@ -306,7 +279,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.92, 0.47),
+                  alignment: const AlignmentDirectional(-0.92, 0.5),
                   child: Text(
                     '3°  Passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -317,9 +290,9 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-0.92, 0.54),
+                  alignment: const AlignmentDirectional(-0.92, 0.57),
                   child: SizedBox(
-                    width: 111,
+                    width: 100,
                     child: Text(
                       'Examine na vertical.',
                       textAlign: TextAlign.justify,
@@ -333,7 +306,7 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                   )
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.87, 0.29),
+                  alignment: const AlignmentDirectional(0.82, 0.29),
                   child: Text(
                     '4°  Passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -344,9 +317,9 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.9, 0.4),
+                  alignment: const AlignmentDirectional(0.9, 0.41),
                   child: SizedBox(
-                    width: 80,
+                    width: 90,
                     child: Text(
                       'Verifique se existem pequenos caroços.',
                       textAlign: TextAlign.justify,
@@ -358,6 +331,33 @@ class _TelaDeAutoexameWidgetState extends State<TelaDeAutoexameWidget> {
                       ),
                     ),
                   )
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(0.82, 0.5),
+                  child: Text(
+                    '5°  Passo:',
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Montserrat',
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Align(
+                    alignment: const AlignmentDirectional(0.9, 0.63),
+                    child: SizedBox(
+                      width: 90,
+                      child: Text(
+                        'Examine no sentido horário e anti-horário.',
+                        textAlign: TextAlign.justify,
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                          fontFamily: 'Montserrat',
+                          fontSize: 12.0,
+                          letterSpacing: 0.0,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    )
                 ),
                 Align(
                   alignment: const AlignmentDirectional(-0.05, 0.8),

@@ -171,9 +171,9 @@ class _TelaDeMeditacaoGuiadaWidgetState
                         ),
                         child: FlutterFlowAudioPlayer(
                           audio: Audio.network(
-                            'https://drive.google.com/uc?export=download&id=14Ya21GcoP-WsPoA_uezP-NNGT79wu38n',
+                            'https://firebasestorage.googleapis.com/v0/b/alertarosa-c180e.appspot.com/o/A%20for%C3%A7a%20da%20vida%20.ogg?alt=media&token=e7b8122d-d98a-4d9d-92e6-6b868c114884',
                             metas: Metas(
-                              id: 'a_forca_da_vida.mp3',
+                              id: 'a_forca_da_vida',
                               title: 'A força da vida',
                             ),
                           ),
@@ -211,9 +211,9 @@ class _TelaDeMeditacaoGuiadaWidgetState
                         ),
                         child: FlutterFlowAudioPlayer(
                           audio: Audio.network(
-                            'https://drive.google.com/uc?export=download&id=1GJyCMhvoGA_0N3VW7cCYqNuXsU1_xpRz',
+                            'https://firebasestorage.googleapis.com/v0/b/alertarosa-c180e.appspot.com/o/Limpeza%20das%20dores%20e%20doen%C3%A7as%20emocionais.oga?alt=media&token=0b924c25-9325-422f-bcb6-df9309ec40b8',
                             metas: Metas(
-                              id: 'limpeza_das_dores_e_doencas_emocionais.mp3',
+                              id: 'limpeza_das_dores_e_doencas_emocionais',
                               title: 'Limpeza das dores e doenças emocionais',
                             ),
                           ),
