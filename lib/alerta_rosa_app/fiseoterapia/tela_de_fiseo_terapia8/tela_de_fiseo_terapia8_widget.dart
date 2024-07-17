@@ -166,7 +166,7 @@ class _TelaDeFiseoTerapia8WidgetState extends State<TelaDeFiseoTerapia8Widget> {
                           padding:
                           const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 24.0),
                           child: Text(
-                            '3. Com um bastão, eleve os braços acima da cabeça, dobre os cotovelos até encaixar o bastão atrás da cabeça e retorne para o alto. ',
+                            'Com um bastão, eleve os braços acima da cabeça, dobre os cotovelos até encaixar o bastão atrás da cabeça e retorne para o alto. ',
                             textAlign: TextAlign.justify,
                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Montserrat',

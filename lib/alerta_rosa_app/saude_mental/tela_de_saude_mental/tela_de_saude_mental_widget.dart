@@ -185,38 +185,9 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                   ),
                 ),
               ),
+
               Align(
-                alignment: const AlignmentDirectional(0.0, -0.2),
-                child: FFButtonWidget(
-                  onPressed: () async {
-                    context.pushNamed(
-                      'TelaDeMeditacaoGuiada',
-                      extra: <String, dynamic>{
-                        kTransitionInfoKey: const TransitionInfo(
-                          hasTransition: true,
-                          transitionType: PageTransitionType.leftToRight,
-                        ),
-                      },
-                    );
-                  },
-                  text: 'Meditação guiada',
-                  options: FFButtonOptions(
-                    width: 250.0,
-                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: const Color(0xFFDB5275),
-                    textStyle: const TextStyle(
-                      fontFamily: 'Montserrat, sans-serif',
-                      color: Color(0xFFFFF4E9),
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w700,
-                    ),
-                    elevation: 10.0,
-                    borderRadius: BorderRadius.circular(25.0),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(-0.88, 0.3),
+                alignment: const AlignmentDirectional(-0.88, 0.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -228,7 +199,7 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.85, 0.3),
+                alignment: const AlignmentDirectional(0.85, 0.0),
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width * 0.55,
                   child: Text(
@@ -243,36 +214,75 @@ class _TelaDeSaudeMentalWidgetState extends State<TelaDeSaudeMentalWidget> {
                   ),
                 ),
               ),
-              Align(
-                alignment: const AlignmentDirectional(0.0, 0.6),
-                child: FFButtonWidget(
-                  onPressed: () async {
-                    context.pushNamed(
-                      'TelaDeMusicaRelaxante',
-                      extra: <String, dynamic>{
-                        kTransitionInfoKey: const TransitionInfo(
-                          hasTransition: true,
-                          transitionType: PageTransitionType.leftToRight,
-                        ),
+
+              SizedBox(
+                height: MediaQuery.of(context).size.height*0.8,
+                width: MediaQuery.of(context).size.width,
+                child: Flex(
+                  direction: Axis.vertical,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    FFButtonWidget(
+                      onPressed: () async {
+                        context.pushNamed(
+                          'TelaDeMeditacaoGuiada',
+                          extra: <String, dynamic>{
+                            kTransitionInfoKey: const TransitionInfo(
+                              hasTransition: true,
+                              transitionType: PageTransitionType.leftToRight,
+                            ),
+                          },
+                        );
                       },
-                    );
-                  },
-                  text: 'Musicas Relaxantes',
-                  options: FFButtonOptions(
-                    width: 250.0,
-                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: const Color(0xFFDB5275),
-                    textStyle: const TextStyle(
-                      fontFamily: 'Montserrat, sans-serif',
-                      color: Color(0xFFFFF4E9),
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w700,
+                      text: 'Meditação guiada',
+                      options: FFButtonOptions(
+                        width: 250.0,
+                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFDB5275),
+                        textStyle: const TextStyle(
+                          fontFamily: 'Montserrat, sans-serif',
+                          color: Color(0xFFFFF4E9),
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w700,
+                        ),
+                        elevation: 10.0,
+                        borderRadius: BorderRadius.circular(25.0),
+                      ),
                     ),
-                    elevation: 10.0,
-                    borderRadius: BorderRadius.circular(25.0),
-                  ),
+                    const SizedBox(height: 16),
+                    FFButtonWidget(
+                      onPressed: () async {
+                        context.pushNamed(
+                          'TelaDeMusicaRelaxante',
+                          extra: <String, dynamic>{
+                            kTransitionInfoKey: const TransitionInfo(
+                              hasTransition: true,
+                              transitionType: PageTransitionType.leftToRight,
+                            ),
+                          },
+                        );
+                      },
+                      text: 'Musicas Relaxantes',
+                      options: FFButtonOptions(
+                        width: 250.0,
+                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFDB5275),
+                        textStyle: const TextStyle(
+                          fontFamily: 'Montserrat, sans-serif',
+                          color: Color(0xFFFFF4E9),
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w700,
+                        ),
+                        elevation: 10.0,
+                        borderRadius: BorderRadius.circular(25.0),
+                      ),
+                    ),
+                  ],
                 ),
               ),
+
               Align(
                 alignment: const AlignmentDirectional(0, 0.95),
                 child: Flex(
