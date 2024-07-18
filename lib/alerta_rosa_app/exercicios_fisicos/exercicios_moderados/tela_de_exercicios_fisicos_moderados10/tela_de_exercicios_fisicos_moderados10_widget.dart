@@ -81,7 +81,7 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -0.52),
+                  alignment: const AlignmentDirectional(0.0, -0.67),
                   child: SizedBox(
                     child: Text(
                       '10. Panturrilha em pé simultânea',
@@ -130,7 +130,7 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
                 ),
 
                 Align(
-                  alignment: const AlignmentDirectional(-0.8, 0.11),
+                  alignment: const AlignmentDirectional(-0.8, -0.05),
                   child: Text(
                     'Passo a passo:',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -141,12 +141,12 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const Alignment(0.0, 0.4),
+                  alignment: const Alignment(0.0, 0.2),
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(
                       'Caso a praticante tenha acesso a uma bicicleta estacionária, deverá fazer uso da mesma como uma forma de aquecer e melhorar o condicionamento cardiorrespiratório. \nDeve durar de 3 a 7 minutos',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',
                             fontSize: 12.0,
@@ -183,7 +183,7 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
                   ),
                 ),
                 const Align(
-                  alignment: AlignmentDirectional(0, -0.42),
+                  alignment: AlignmentDirectional(0, -0.47),
                   child: SizedBox(
                     width: 125,
                     child: FlutterFlowVideoPlayer(
@@ -357,7 +357,7 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.00, -0.6),
+                  alignment: const AlignmentDirectional(0.00, -0.75),
                   child: Container(
                     width: 200.0,
                     decoration: BoxDecoration(

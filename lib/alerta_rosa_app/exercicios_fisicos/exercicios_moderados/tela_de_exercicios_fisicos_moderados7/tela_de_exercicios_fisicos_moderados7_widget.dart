@@ -97,32 +97,32 @@ class _TelaDeExerciciosFisicosModerados7WidgetState
                   ),
                 ),
 
-                // Align(
-                //   alignment: const AlignmentDirectional(-0.8, 0.11),
-                //   child: Text(
-                //     'Passo a passo:',
-                //     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                //       fontFamily: 'Montserrat',
-                //       letterSpacing: 0.0,
-                //       fontWeight: FontWeight.bold,
-                //     ),
-                //   ),
-                // ),
-                // Align(
-                //   alignment: const Alignment(0.0, 0.4),
-                //   child: SizedBox(
-                //     width: MediaQuery.of(context).size.width * 0.85,
-                //     child: Text(
-                //       'É recomendável realizar a série de exercícios.  Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
-                //       textAlign: TextAlign.justify,
-                //       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                //         fontFamily: 'Montserrat',
-                //         fontSize: 12.0,
-                //         letterSpacing: 0.0,
-                //       ),
-                //     ),
-                //   ),
-                // ),
+                Align(
+                  alignment: const AlignmentDirectional(-0.8, -0.05),
+                  child: Text(
+                    'Passo a passo:',
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Montserrat',
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const Alignment(0.0, 0.3),
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    child: Text(
+                      'A praticante deverá ficar deitada em decúbito dorsal (com as costas voltadas para baixo) em uma superfície plana horizontal e preferencialmente alcochoada), com suas pernas flexionadas e pés completamente apoiados no chão. Os  seus braços deverão ficar estendidos e ao longo do tronco. Em seguida a praticante deverá fazer força para elevar seu quadril do chão, conforme vídeo. Deve-se fazer 3 séria de 15 a 20 repetições nas duas primeiras semanas e a partir da terceira semana 4 séries de 15 a 20 repetições.\nObs.: podem ser usados sacos de 1kg ou mais de arroz/feijão ou garrafas pet de vários tamanhos com água, areia ou ambos, de acordo com o nível de força e condicionamento de cada praticante.',
+                      textAlign: TextAlign.justify,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Montserrat',
+                        fontSize: 11.0,
+                        letterSpacing: 0.0,
+                      ),
+                    ),
+                  ),
+                ),
                 Align(
                   alignment: const AlignmentDirectional(-0.4, -0.9),
                   child: InkWell(
@@ -183,9 +183,9 @@ class _TelaDeExerciciosFisicosModerados7WidgetState
                 ),
 
                 const Align(
-                  alignment: AlignmentDirectional(0, -0.1),
+                  alignment: AlignmentDirectional(0, -0.47),
                   child: SizedBox(
-                    width: 150,
+                    width: 125,
                     child: FlutterFlowVideoPlayer(
                       path:
                       'https://firebasestorage.googleapis.com/v0/b/alertarosa-c180e.appspot.com/o/WhatsApp_Video_2024-05-03_at_15.47.27.mp4?alt=media&token=206d3e40-dc28-494e-a6b8-40f275cd0b9d',

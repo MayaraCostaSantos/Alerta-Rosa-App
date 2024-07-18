@@ -85,7 +85,7 @@ class _TelaDeExerciciosFisicosModerados9WidgetState
                   child: SizedBox(
                     child: Text(
                       '9. Panturrilha em pé simultânea:',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
                         fontSize: 15.0,

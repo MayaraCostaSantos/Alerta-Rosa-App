@@ -183,9 +183,9 @@ class _TelaDeExerciciosFisicosModerados6WidgetState
                 ),
 
                 const Align(
-                  alignment: AlignmentDirectional(0, -0.1),
+                  alignment: AlignmentDirectional(0, -0.47),
                   child: SizedBox(
-                    width: 150,
+                    width: 125,
                     child: FlutterFlowVideoPlayer(
                       path:
                       'https://firebasestorage.googleapis.com/v0/b/alertarosa-c180e.appspot.com/o/WhatsApp%20Video%202024-05-03%20at%2015.56.37.mp4?alt=media&token=5f5a3a9d-47de-4e43-9067-f8d55868fb00',
@@ -197,6 +197,32 @@ class _TelaDeExerciciosFisicosModerados6WidgetState
                       allowPlaybackSpeedMenu: false,
                     ),
                   )
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(-0.8, -0.05),
+                  child: Text(
+                    'Passo a passo:',
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Montserrat',
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const Alignment(0.0, 0.2),
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    child: Text(
+                      'Sempre suba e desça os degraus de frente. Nunca tente subir ou descer de costas ou de lado, pois isso aumenta o risco de quedas e acidentes. Mantenha-se atenta ao movimento e esteja ciente de cada degrau que está pisando.',
+                      textAlign: TextAlign.justify,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Montserrat',
+                        fontSize: 11.0,
+                        letterSpacing: 0.0,
+                      ),
+                    ),
+                  ),
                 ),
                 Align(
                   alignment: const AlignmentDirectional(-0.85, 0.6),

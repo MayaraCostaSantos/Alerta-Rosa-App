@@ -155,37 +155,36 @@ class _TelaDeExerciciosFisicosModerados8WidgetState
                     ),
                   ),
                 ),
-
-                // Align(
-                //   alignment: const AlignmentDirectional(-0.8, 0.11),
-                //   child: Text(
-                //     'Passo a passo:',
-                //     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                //       fontFamily: 'Montserrat',
-                //       letterSpacing: 0.0,
-                //       fontWeight: FontWeight.bold,
-                //     ),
-                //   ),
-                // ),
-                // Align(
-                //   alignment: const Alignment(0.0, 0.4),
-                //   child: SizedBox(
-                //     width: MediaQuery.of(context).size.width * 0.85,
-                //     child: Text(
-                //       'A praticante deverá ficar deitada em decúbito dorsal (com as costas voltadas para baixo) em uma superfície plana horizontal e preferencialmente alcochoada), com suas pernas flexionadas e pés completamente apoiados no chão. Os  seus braços deverão ficar cruzados como se estivesse se abraçando cada mão tocando o ombro contralateral. Em seguida a praticante deverá fazer a flexão do tronco tirando a região das escapulas do chão, conforme vídeo. \nDeve-se fazer 3 séries de 15 a 20 repetições nas duas primeiras semanas e a partir da terceira semana 3 séries de 30 a 40 repetições.',
-                //       textAlign: TextAlign.justify,
-                //       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                //         fontFamily: 'Montserrat',
-                //         fontSize: 12.0,
-                //         letterSpacing: 0.0,
-                //       ),
-                //     ),
-                //   ),
-                // ),
-                const Align(
-                  alignment: AlignmentDirectional(0, -0.1),
+                Align(
+                  alignment: const AlignmentDirectional(-0.8, -0.05),
+                  child: Text(
+                    'Passo a passo:',
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Montserrat',
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const Alignment(0.0, 0.32),
                   child: SizedBox(
-                    width: 150,
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    child: Text(
+                      'A praticante deverá ficar deitada em decúbito dorsal (com as costas voltadas para baixo) em uma superfície plana horizontal e preferencialmente alcochoada, com suas pernas flexionadas e pés completamente apoiados no chão. Os  seus braços deverão ficar cruzados como se estivesse se abraçando cada mão tocando o ombro contralateral. Em seguida a praticante deverá fazer a flexão do tronco tirando a região das escapulas do chão, conforme vídeo. Deve-se fazer 3 séries de 15 a 20 repetições nas duas primeiras semanas e a partir da terceira semana 3 séries de 30 a 40 repetições.\nObs.: Ter cuidado para não forçar demasiadamente a região cervical (do pescoço) durante o exercício. Caso sinta desconforto exagerado nessa região, deve aumentar os intervalos de recuperação.',
+                      textAlign: TextAlign.justify,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Montserrat',
+                        fontSize: 11.0,
+                        letterSpacing: 0.0,
+                      ),
+                    ),
+                  ),
+                ),
+                const Align(
+                  alignment: AlignmentDirectional(0, -0.47),
+                  child: SizedBox(
+                    width: 125,
                     child: FlutterFlowVideoPlayer(
                       path:
                       'https://firebasestorage.googleapis.com/v0/b/alertarosa-c180e.appspot.com/o/WhatsApp_Video_2024-05-03_at_15.59.52.mp4?alt=media&token=215faca3-725a-4bbb-a42c-89830031d202',

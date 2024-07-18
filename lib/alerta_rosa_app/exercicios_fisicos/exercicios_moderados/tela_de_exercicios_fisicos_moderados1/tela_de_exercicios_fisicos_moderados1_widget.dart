@@ -127,7 +127,7 @@ class _TelaDeExerciciosFisicosModerados1WidgetState
                     width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(
                       'A caminhada estacionária em diferentes níveis (joelho mais alto para quem tem melhor condicionamento físico e joelho mais baixo para quem tem baixo condicionamento)\nTempo: 2 a 5 minutos',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
                         fontSize: 12.0,

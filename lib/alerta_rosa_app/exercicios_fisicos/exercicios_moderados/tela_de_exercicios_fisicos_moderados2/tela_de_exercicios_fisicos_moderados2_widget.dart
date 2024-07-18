@@ -175,7 +175,7 @@ class _TelaDeExerciciosFisicosModerados2WidgetState
                     width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(
                       'A praticante deverá ficar deitado com as costas voltadas para baixo em uma superfície plana horizontal e preferencialmente alcochoada, elevando seus braços lateralmente e com os cotovelos flexionados (dobrados) a um ângulo de 90 graus. Em seguida usando sacos de feijão/arroz ou qualquer aparato como carga externa, deverá empurrá-los para frente para que se toquem, conforme vídeo.\nDeve-se fazer 1 série de 15 a 20 repetições nas duas primeiras semanas e a partir da terceira semana 3 séries de 10 a 15 repetições.',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',
                             fontSize: 12.0,

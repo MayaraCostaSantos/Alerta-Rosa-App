@@ -173,7 +173,7 @@ class _TelaDeExerciciosFisicosModerados3WidgetState
                     width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(
                       'A praticante deverá ficar de pé, de frente e de lado,  segurando os pesos (saco de arroz/feijão ou garrafa pet). Em seguida elevar os braços flexionados lateralmente com os cotovelos num ângulo de 90 graus de flexão. Em seguida os pesos deverão ser empurrados para cima para que se toquem ao final do movimento e em seguida voltar a posição inicial de forma controlada, conforme vídeo.\nDeve-se fazer 1 série de 12 a 15 repetições nas duas primeiras semanas e a partir da terceira semana 3 séries de 10 a 15 repetições.repetições.',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
                         fontSize: 12.0,
