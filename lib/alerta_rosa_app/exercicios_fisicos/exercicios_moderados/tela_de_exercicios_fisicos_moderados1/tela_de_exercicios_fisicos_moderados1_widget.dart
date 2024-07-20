@@ -183,7 +183,7 @@ class _TelaDeExerciciosFisicosModerados1WidgetState
                   alignment: const AlignmentDirectional(0, -0.52),
                   child: SizedBox(
                     child: Text(
-                      '1. Aquecimento:',
+                      '1. Aquecimento',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',

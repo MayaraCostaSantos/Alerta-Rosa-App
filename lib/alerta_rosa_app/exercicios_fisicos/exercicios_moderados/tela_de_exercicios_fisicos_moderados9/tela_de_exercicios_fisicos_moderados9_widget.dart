@@ -84,7 +84,7 @@ class _TelaDeExerciciosFisicosModerados9WidgetState
                   alignment: const AlignmentDirectional(0, -0.67),
                   child: SizedBox(
                     child: Text(
-                      '9. Panturrilha em pé simultânea:',
+                      '9. Panturrilha em pé simultânea',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
