@@ -320,7 +320,7 @@ class _TelaDeExerciciosFisicosLeves2WidgetState
                         extra: <String, dynamic>{
                           kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
-                            transitionType: PageTransitionType.leftToRight,
+                            transitionType: PageTransitionType.rightToLeft,
                           ),
                         },
                       );
@@ -348,7 +348,7 @@ class _TelaDeExerciciosFisicosLeves2WidgetState
                         extra: <String, dynamic>{
                           kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
-                            transitionType: PageTransitionType.rightToLeft,
+                            transitionType: PageTransitionType.leftToRight,
                           ),
                         },
                       );

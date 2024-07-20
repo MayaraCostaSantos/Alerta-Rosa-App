@@ -118,7 +118,7 @@ class _TelaDeFiseoTerapia2WidgetState extends State<TelaDeFiseoTerapia2Widget> {
                 Align(
                   alignment: const AlignmentDirectional(0, -0.55),
                   child: Text(
-                    'Exercícios Iniciais',
+                    'Mobilidade de ombro em pé',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                       fontFamily: 'Open Sans',
                       fontSize: 20.0,

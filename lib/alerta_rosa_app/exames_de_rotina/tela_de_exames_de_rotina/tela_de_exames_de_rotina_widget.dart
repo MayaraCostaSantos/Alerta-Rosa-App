@@ -112,10 +112,10 @@ class _TelaDeExamesDeRotinaWidgetState
                                             ),
                                           ),
                                           Align(
-                                            alignment: Alignment.centerRight + const Alignment(1.5, 0.0),
+                                            alignment: Alignment.centerRight + const Alignment(1, 0.0),
                                             child: Image.asset(
                                               'assets/images/exames_de_rotina_2.png',
-                                              height: 100.0,
+                                              height: 80.0,
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -131,10 +131,10 @@ class _TelaDeExamesDeRotinaWidgetState
               ),
 
               Align(
-                alignment: const AlignmentDirectional(0.5, -0.35),
+                alignment: const AlignmentDirectional(0.5, -0.45),
                   child: Container(
                     width: MediaQuery.of(context).size.width * 0.8,
-                    height: 125,
+                    height: 165,
                     decoration: const BoxDecoration(
                       color: Color(0xFFD9A19C),
                       borderRadius: BorderRadius.only(
@@ -143,10 +143,10 @@ class _TelaDeExamesDeRotinaWidgetState
                         bottomRight: Radius.circular(100),
                       ),
                     ),
-                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 12.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(28.0, 20.0, 28.0, 12.0),
                     child: const Center(
                       child: Text(
-                        'Você sabia que fazer o exame de sangue, o autoexame e os exames de mama com frequência são fundamentais? A detecção precoce do câncer de mama torna este tipo de câncer com altas taxas de cura.',
+                        'Você sabia que fazer o exame de sangue, o exame clínico e a mamografia com frequência são fundamentais? Além disso, quando há nódulos palpáveis que não são vistos na mamografia é indicado fazer uma ultrassom das mamas, mas não se preocupe, seu médico (a) irá te orientar!',
                         overflow: TextOverflow.clip,
                         textAlign: TextAlign.justify,
                         style: TextStyle(
@@ -335,7 +335,7 @@ class _TelaDeExamesDeRotinaWidgetState
                         SizedBox(
                           width: MediaQuery.of(context).size.width * 0.65,
                           child: Text(
-                            'É uma radiografia das mamas, realizada por um equipamento de raios X chamado mamógrafo, que consegue ver alterações suspeitas nas mamas.',
+                            'A mamografia pode provocar dor em algumas mulheres, mas o Ministério da Saúde recomenda realizar a mamografia a cada dois anos entre os 50 e 69 anos.',
                             textAlign: TextAlign.justify,
                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Montserrat',

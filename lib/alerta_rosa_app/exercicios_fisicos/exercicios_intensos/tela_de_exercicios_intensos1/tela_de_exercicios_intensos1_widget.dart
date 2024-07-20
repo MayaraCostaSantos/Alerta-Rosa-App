@@ -84,7 +84,7 @@ class _TelaDeExerciciosIntensos1WidgetState
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                     child: Text(
-                      '1. Remada unilateral:',
+                      '1. Supino reto',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',

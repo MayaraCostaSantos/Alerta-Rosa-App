@@ -84,7 +84,7 @@ class _TelaDeExerciciosFisicosModerados3WidgetState
                   alignment: const AlignmentDirectional(0.0, -0.67),
                   child: SizedBox(
                     child: Text(
-                      '3. Elevação Frontal',
+                      '3. Desenvolvimento com carga externa',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',

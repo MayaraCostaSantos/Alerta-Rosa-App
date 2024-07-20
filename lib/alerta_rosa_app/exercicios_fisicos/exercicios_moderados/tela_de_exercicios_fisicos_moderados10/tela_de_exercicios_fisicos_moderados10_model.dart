@@ -11,10 +11,10 @@ class TelaDeExerciciosFisicosModerados10Model
 
   final unfocusNode = FocusNode();
   // State field(s) for Timer widget.
-  final timerInitialTimeMs = 420000;
-  int timerMilliseconds = 420000;
+  final timerInitialTimeMs = 180000;
+  int timerMilliseconds = 180000;
   String timerValue = StopWatchTimer.getDisplayTime(
-    420000,
+    180000,
     hours: false,
     milliSecond: false,
   );

@@ -116,7 +116,7 @@ class _TelaDeFiseoTerapia9WidgetState extends State<TelaDeFiseoTerapia9Widget> {
               Align(
                 alignment: const AlignmentDirectional(0, -0.55),
                 child: Text(
-                  'Autodrenagem Manual',
+                  'Autodrenagem manual',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: 'Open Sans',
                     fontSize: 20.0,

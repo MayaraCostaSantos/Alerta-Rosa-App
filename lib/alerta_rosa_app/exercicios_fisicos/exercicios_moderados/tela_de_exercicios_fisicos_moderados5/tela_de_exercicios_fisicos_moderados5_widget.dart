@@ -183,7 +183,7 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                   ),
                 ),
                 const Align(
-                  alignment: AlignmentDirectional(0.8, -0.47),
+                  alignment: AlignmentDirectional(0, -0.47),
                   child: SizedBox(
                     width: 125,
                     child: FlutterFlowVideoPlayer(
@@ -198,24 +198,6 @@ class _TelaDeExerciciosFisicosModerados5WidgetState
                     ),
                   )
                 ),
-
-                const Align(
-                  alignment: AlignmentDirectional(-0.8, -0.47),
-                  child: SizedBox(
-                    width: 125,
-                    child: FlutterFlowVideoPlayer(
-                      path:
-                      'https://firebasestorage.googleapis.com/v0/b/alertarosa-c180e.appspot.com/o/WhatsApp_Video_2024-05-03_at_15.06.11.mp4?alt=media&token=676fa616-9ac1-416c-93b6-8eeb1d141983',
-                      videoType: VideoType.network,
-                      autoPlay: false,
-                      looping: true,
-                      showControls: true,
-                      allowFullScreen: true,
-                      allowPlaybackSpeedMenu: false,
-                    ),
-                  )
-                ),
-
                 Align(
                   alignment: const AlignmentDirectional(-0.85, 0.6),
                   child: SizedBox(

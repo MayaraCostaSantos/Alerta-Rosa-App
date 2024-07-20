@@ -97,32 +97,6 @@ class _TelaDeExerciciosFisicosModerados6WidgetState
                   ),
                 ),
 
-                // Align(
-                //   alignment: const AlignmentDirectional(-0.8, 0.11),
-                //   child: Text(
-                //     'Passo a passo:',
-                //     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                //       fontFamily: 'Montserrat',
-                //       letterSpacing: 0.0,
-                //       fontWeight: FontWeight.bold,
-                //     ),
-                //   ),
-                // ),
-                // Align(
-                //   alignment: const Alignment(0.0, 0.4),
-                //   child: SizedBox(
-                //     width: MediaQuery.of(context).size.width * 0.85,
-                //     child: Text(
-                //       'É recomendável realizar a série de exercícios.  Em caso de desconforto, reduza a frequência para uma a duas vezes por semana, com supervisão terapêutica e médica.',
-                //       textAlign: TextAlign.justify,
-                //       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                //         fontFamily: 'Montserrat',
-                //         fontSize: 12.0,
-                //         letterSpacing: 0.0,
-                //       ),
-                //     ),
-                //   ),
-                // ),
                 Align(
                   alignment: const AlignmentDirectional(-0.4, -0.9),
                   child: InkWell(
@@ -136,7 +110,7 @@ class _TelaDeExerciciosFisicosModerados6WidgetState
                         extra: <String, dynamic>{
                           kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
-                            transitionType: PageTransitionType.leftToRight,
+                            transitionType: PageTransitionType.rightToLeft,
                           ),
                         },
                       );
@@ -163,7 +137,7 @@ class _TelaDeExerciciosFisicosModerados6WidgetState
                         extra: <String, dynamic>{
                           kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
-                            transitionType: PageTransitionType.rightToLeft,
+                            transitionType: PageTransitionType.leftToRight,
                           ),
                         },
                       );

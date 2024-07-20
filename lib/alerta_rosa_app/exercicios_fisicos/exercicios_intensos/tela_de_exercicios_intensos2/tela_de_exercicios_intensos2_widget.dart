@@ -85,7 +85,7 @@ class _TelaDeExerciciosIntensos2WidgetState
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                     child: Text(
-                      '2. Elevação lateral:',
+                      '2. Remada unilateral',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',

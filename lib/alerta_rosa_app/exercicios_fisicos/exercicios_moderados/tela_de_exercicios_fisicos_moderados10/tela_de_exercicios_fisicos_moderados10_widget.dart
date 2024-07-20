@@ -84,7 +84,7 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
                   alignment: const AlignmentDirectional(0.0, -0.67),
                   child: SizedBox(
                     child: Text(
-                      '10. Panturrilha em pé simultânea',
+                      '10. Agachamento',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',
@@ -145,7 +145,7 @@ class _TelaDeExerciciosFisicosModerados10WidgetState
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.85,
                     child: Text(
-                      'Caso a praticante tenha acesso a uma bicicleta estacionária, deverá fazer uso da mesma como uma forma de aquecer e melhorar o condicionamento cardiorrespiratório. \nDeve durar de 3 a 7 minutos',
+                      'Deixe os pés paralelos e alinhados com o quadril, mantendo a coluna reta, peito estufado e cabeça alinhada com a coluna, olhando sempre para frente e não para baixo. Realize o movimento como se fosse sentar em uma cadeira e retorne para a posição inicial, em pé. Este exercício deve ser realizado de 2 a 3 minutos.',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',

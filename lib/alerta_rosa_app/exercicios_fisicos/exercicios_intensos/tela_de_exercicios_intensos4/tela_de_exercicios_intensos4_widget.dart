@@ -84,7 +84,7 @@ class _TelaDeExerciciosIntensos4WidgetState
                   child: Padding(
                     padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                     child: Text(
-                      '4. Desenvolvimento com carga externa',
+                      '4. Elevação lateral',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',

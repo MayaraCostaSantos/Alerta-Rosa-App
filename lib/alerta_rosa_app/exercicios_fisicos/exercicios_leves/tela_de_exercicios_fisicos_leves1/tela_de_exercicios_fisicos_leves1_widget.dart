@@ -144,7 +144,7 @@ class _TelaDeExerciciosFisicosLeves1WidgetState
                   child: Padding(
                     padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0),
                     child: Text(
-                      '1. Alongamento da região interescapular, posterior do ombro:',
+                      '1. Alongamento da região interescapular, posterior do ombro',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',

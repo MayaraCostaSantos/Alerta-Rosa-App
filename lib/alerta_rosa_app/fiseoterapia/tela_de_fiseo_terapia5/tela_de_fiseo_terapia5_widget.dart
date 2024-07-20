@@ -115,7 +115,7 @@ class _TelaDeFiseoTerapia5WidgetState extends State<TelaDeFiseoTerapia5Widget> {
               Align(
                 alignment: const AlignmentDirectional(0, -0.55),
                 child: Text(
-                  'Após retirar os pontos',
+                  'Alongamento de peitoral',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: 'Open Sans',
                     fontSize: 20.0,

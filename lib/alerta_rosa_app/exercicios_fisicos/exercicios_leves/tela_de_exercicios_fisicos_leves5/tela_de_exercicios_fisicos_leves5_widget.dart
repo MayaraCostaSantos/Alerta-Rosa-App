@@ -105,7 +105,7 @@ class _TelaDeExerciciosFisicosLeves5WidgetState
                     padding:
                       const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0),
                     child: Text(
-                      '5. Alongamento dos músculos da região posterior da coxa e da perna e dos paravertebrais:',
+                      '5. Alongamento dos músculos da região posterior da coxa e da perna e dos paravertebrais',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Montserrat',

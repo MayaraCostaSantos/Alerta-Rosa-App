@@ -169,7 +169,7 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                               semanticLabel: 'icone-1',
                             ),
                             options: FFButtonOptions(
-                              width: 275.0,
+                              width: 290.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                               color: const Color(0xFFDB5275),
                               textStyle: const TextStyle(
@@ -195,14 +195,14 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Exercício inicial',
+                            text: 'Mobilidade de ombro em pé',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-2.png'),
                               size: 32,
                               semanticLabel: 'icone-2',
                             ),
                             options: FFButtonOptions(
-                              width: 275.0,
+                              width: 290.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                               iconPadding: const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
                               color: const Color(0xFFF8A2B0),
@@ -229,14 +229,14 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Exercício inicial',
+                            text: 'Mobilidade de ombro deitada',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-3.png'),
                               size: 32,
                               semanticLabel: 'icone-3',
                             ),
                             options: FFButtonOptions(
-                              width: 275.0,
+                              width: 290.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                               color: const Color(0xFFDB5275),
                               textStyle: const TextStyle(
@@ -262,14 +262,14 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Após retirar os pontos',
+                            text: 'Alongamentos dos braços',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-4.png'),
                               size: 32,
                               semanticLabel: 'icone-4',
                             ),
                             options: FFButtonOptions(
-                              width: 275.0,
+                              width: 290.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                               color: const Color(0xFFF8A2B0),
                               textStyle: const TextStyle(
@@ -295,14 +295,14 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Após retirar os pontos',
+                            text: 'Alongamento de peitoral',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-5.png'),
                               size: 32,
                               semanticLabel: 'icone-5',
                             ),
                             options: FFButtonOptions(
-                              width: 275.0,
+                              width: 290.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                               iconPadding: const EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 0.0, 0.0),
                               color: const Color(0xFFDB5275),
@@ -332,14 +332,14 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Exercícios complementares',
+                            text: 'Ganho de amplitude de movimento',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-6.png'),
                               size: 32,
                               semanticLabel: 'icone-6',
                             ),
                             options: FFButtonOptions(
-                              width: 275.0,
+                              width: 290.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                               iconPadding: const EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 0.0, 0.0),
                               color: const Color(0xFFF8A2B0),
@@ -366,14 +366,14 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Exercícios complementares',
+                            text: 'Hiperextensão de ombros',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-7.png'),
                               size: 32,
                               semanticLabel: 'icone-7',
                             ),
                             options: FFButtonOptions(
-                              width: 275.0,
+                              width: 290.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                               iconPadding: const EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 0.0, 0.0),
                               color: const Color(0xFFDB5275),
@@ -400,14 +400,14 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Exercícios complementares',
+                            text: 'Exercício complementar',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-8.png'),
                               size: 32,
                               semanticLabel: 'icone-8',
                             ),
                             options: FFButtonOptions(
-                              width: 275.0,
+                              width: 290.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                               iconPadding: const EdgeInsetsDirectional.fromSTEB(2, 0.0, 0.0, 0.0),
                               color: const Color(0xFFF8A2B0),
@@ -434,14 +434,14 @@ class _FisioterapiaMenuWidgetState extends State<FisioterapiaMenuWidget> {
                                 },
                               );
                             },
-                            text: 'Autodrenagem Manual',
+                            text: 'Autodrenagem manual',
                             icon: const ImageIcon(
                               AssetImage('assets/images/iconNumbers/icone-9.png'),
                               size: 32,
                               semanticLabel: 'icone-8',
                             ),
                             options: FFButtonOptions(
-                              width: 275.0,
+                              width: 290.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                               iconPadding: const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
                               color: const Color(0xFFDB5275),
