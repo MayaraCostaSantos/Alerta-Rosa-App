@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tela_de_exames_de_rotina_model.dart';
 export 'tela_de_exames_de_rotina_model.dart';
 
@@ -40,266 +38,340 @@ class _TelaDeExamesDeRotinaWidgetState
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
       body: Visibility(
-        visible: responsiveVisibility(
-          context: context,
-          tablet: false,
-          tabletLandscape: false,
-          desktop: false,
-        ),
         child: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Color(0xFFECA9BB), Color(0xFFF8A2B0), Color(0xFFECA9BB)],
-              stops: [0.0, 1.0, 1.0],
-              begin: AlignmentDirectional(0.0, -1.0),
-              end: AlignmentDirectional(0, 1.0),
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/globalImages/plano-de-fundo-2.png'),
             ),
           ),
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(-0.05, -0.91),
-                child: Container(
-                  width: 80.0,
-                  height: 80.0,
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                  ),
-                  child: Image.asset(
-                    'assets/images/icone-exame_de_rotina-removebg-preview.png',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.0, -0.33),
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 80.0, 0.0),
-                  child: Text(
-                    'Você sabia que fazer o exame de sangue, o autoexame e os exames de mama com frequência são fundamentais? A detecção precoce do câncer de mama torna este tipo de câncer com altas taxas de cura.',
-                    textAlign: TextAlign.justify,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          color: FlutterFlowTheme.of(context).primaryText,
-                          fontSize: 11.0,
-                          letterSpacing: 0.0,
-                        ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.07, -0.69),
-                child: Text(
-                  'Exames de Rotina',
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Roboto',
-                        color: FlutterFlowTheme.of(context).primaryText,
-                        fontSize: 20.0,
-                        letterSpacing: 2.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(1.07, 0.01),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/medica1-removebg-preview.png',
-                    width: 124.0,
-                    height: 166.0,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.06, 0.92),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/logo-removebg-preview.png',
-                    width: 130.0,
-                    height: 60.0,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.42, -0.86),
+                alignment: Alignment.topLeft - const Alignment(-0.05, -0.05),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    context.pushNamed(
-                      'TelaDeMenuInicial',
-                      extra: <String, dynamic>{
-                        kTransitionInfoKey: TransitionInfo(
-                          hasTransition: true,
-                          transitionType: PageTransitionType.fade,
-                          duration: Duration(milliseconds: 0),
-                        ),
-                      },
-                    );
+                    context.canPop() ? context.pop() : null;
                   },
-                  child: Icon(
-                    Icons.arrow_left,
-                    color: Color(0xFFC92D7E),
-                    size: 40.0,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(8.0),
+                    child: Image.asset(
+                      'assets/images/iconeVoltar.png',
+                      height: 44.8,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.92, 0.28),
+                alignment: Alignment.topRight - const Alignment(0.0, -0.02),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
-                    'assets/images/luta7-removebg-preview.png',
-                    width: 110.0,
-                    height: 93.0,
+                    'assets/images/globalImages/logo-removebg-preview.png',
+                    width: 90,
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
-              Align(
-                alignment: AlignmentDirectional(-0.03, 0.3),
-                child: Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(125.0, 0.0, 10.0, 0.0),
-                  child: Text(
-                    'Por favor clique no exame que deseja saber mais!',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Plus Jakarta Sans',
-                          letterSpacing: 0.0,
+              ClipRRect(
+                child: SizedBox(
+                    width: MediaQuery.of(context).size.width,
+                    height: MediaQuery.of(context).size.height * 0.25,
+                    child: Stack(
+                      children: [
+                        Center(
+                          child: DecoratedBox(
+                              decoration: BoxDecoration(
+                                color: const Color.fromARGB(51, 219, 82, 117),
+                                borderRadius: BorderRadius.circular(25.0),
+                              ),
+                              child: Container(
+                                  width: MediaQuery.of(context).size.width * 0.5,
+                                  height: MediaQuery.of(context).size.height * 0.15,
+                                  padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+                                  child: Center(
+                                      child: Stack(
+                                        alignment: const AlignmentDirectional(0.0, 0.0),
+                                        children: [
+                                          const Text(
+                                            'EXAMES\nDE\nROTINA ',
+                                            overflow: TextOverflow.clip,
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                              fontFamily: 'Open Sans Extra Bold',
+                                              color: Color(0xFFD07170),
+                                              fontSize: 24.0,
+                                              fontWeight: FontWeight.w900,
+                                              overflow: TextOverflow.clip,
+                                            ),
+                                          ),
+                                          Align(
+                                            alignment: Alignment.centerRight + const Alignment(1, 0.0),
+                                            child: Image.asset(
+                                              'assets/images/exames_de_rotina_2.png',
+                                              height: 80.0,
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ],
+                                      )
+                                  )
+                              )
+                          ),
                         ),
+                      ],
+                    )
+                ),
+              ),
+
+              Align(
+                alignment: const AlignmentDirectional(0.5, -0.45),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.8,
+                    height: 165,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFD9A19C),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(100),
+                        topRight: Radius.circular(100),
+                        bottomRight: Radius.circular(100),
+                      ),
+                    ),
+                    padding: const EdgeInsetsDirectional.fromSTEB(28.0, 20.0, 28.0, 12.0),
+                    child: const Center(
+                      child: Text(
+                        'Você sabia que fazer o exame de sangue, o exame clínico e a mamografia com frequência são fundamentais? Além disso, quando há nódulos palpáveis que não são vistos na mamografia é indicado fazer uma ultrassom das mamas, mas não se preocupe, seu médico (a) irá te orientar!',
+                        overflow: TextOverflow.clip,
+                        textAlign: TextAlign.justify,
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          color: Color(0xFFFFFFFF),
+                          fontSize: 14.0,
+                          fontStyle: FontStyle.italic,
+                          height: 1.1,
+                        ),
+                      ),
+                    ),
+                  ),
+              ),
+              Align(
+                alignment: const AlignmentDirectional(-0.9, -0.05),
+                child: ClipRRect(
+                  child: Image.asset(
+                    'assets/images/chat_rotina.png',
+                    width: 150,
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
+
               Align(
-                alignment: AlignmentDirectional(0.04, 0.67),
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 5.0),
-                  child: FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed(
-                        'TelaDeMamografia',
-                        extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
-                            hasTransition: true,
-                            transitionType: PageTransitionType.leftToRight,
-                          ),
-                        },
-                      );
-                    },
-                    text: 'Mamografia',
-                    options: FFButtonOptions(
-                      width: 172.0,
-                      height: 30.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFFC92D7E),
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Plus Jakarta Sans',
+                alignment: const AlignmentDirectional(-1, 0.25),
+                child: SizedBox(
+                    child: Flex(
+                      direction: Axis.horizontal,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          height: 85,
+                          width: MediaQuery.of(context).size.width * 0.32,
+                          child: FFButtonWidget(
+                            onPressed: () async {
+                              context.pushNamed(
+                                'TelaDeExameDeSangue',
+                                extra: <String, dynamic>{
+                                  kTransitionInfoKey: const TransitionInfo(
+                                    hasTransition: true,
+                                    transitionType: PageTransitionType.rightToLeft,
+                                  ),
+                                },
+                              );
+                            },
+                            text: 'EXAME DE SANGUE',
+                            options: FFButtonOptions(
+                              color: const Color(0xFFEF959C),
+                              textAlign: TextAlign.center,
+                              textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                fontFamily: 'Montserrat',
                                 color: Colors.white,
-                                letterSpacing: 0.0,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14.0,
                               ),
-                      elevation: 3.0,
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                  ),
+                              maxLines: 2,
+                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
+                              borderRadius: const BorderRadius.only(
+                                topRight: Radius.circular(100),
+                                bottomRight: Radius.circular(100),
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.65,
+                          child: Text(
+                            'Quando o corpo desenvolve algum tipo de câncer, é comum que algumas proteínas aumentem no sangue. Por isso, um exame de sangue é fundamental para identificar o câncer de mama.',
+                            textAlign: TextAlign.justify,
+                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Montserrat',
+                              fontSize: 12,
+                              lineHeight: 1,
+                            ),
+                          ),
+                        )
+                      ],
+                    )
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.04, 0.5),
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                  child: FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed(
-                        'TelaDeExameDeSangue',
-                        extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
-                            hasTransition: true,
-                            transitionType: PageTransitionType.leftToRight,
+                alignment: const AlignmentDirectional(-1, 0.5),
+                child: SizedBox(
+                  child: Flex(
+                    direction: Axis.horizontal,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 85,
+                        width: MediaQuery.of(context).size.width * 0.32,
+                        child: FFButtonWidget(
+                          onPressed: () async {
+                            context.pushNamed(
+                              'TelaDeExameClinico',
+                              extra: <String, dynamic>{
+                                kTransitionInfoKey: const TransitionInfo(
+                                  hasTransition: true,
+                                  transitionType: PageTransitionType.rightToLeft,
+                                ),
+                              },
+                            );
+                          },
+                          text: 'EXAME CLÍNICO',
+                          options: FFButtonOptions(
+                            color: const Color(0xFFF03E69),
+                            textAlign: TextAlign.center,
+                            textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                              fontFamily: 'Montserrat',
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 14.0,
+                            ),
+                            maxLines: 2,
+                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
+                            borderRadius: const BorderRadius.only(
+                              topRight: Radius.circular(100),
+                              bottomRight: Radius.circular(100),
+                            ),
                           ),
-                        },
-                      );
-                    },
-                    text: 'Exame de Sangue',
-                    options: FFButtonOptions(
-                      width: 172.0,
-                      height: 30.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFFC92D7E),
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Plus Jakarta Sans',
-                                color: Colors.white,
-                                letterSpacing: 0.0,
-                              ),
-                      elevation: 3.0,
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
+                        ),
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                  ),
+                      const SizedBox(width: 8),
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.65,
+                        child: Text(
+                          'É a observação e palpação das mamas por um médico ou enfermeiro.',
+                          textAlign: TextAlign.justify,
+                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Montserrat',
+                            fontSize: 12,
+                            lineHeight: 1,
+                          ),
+                        ),
+                      )
+                    ],
+                  )
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.04, 0.59),
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
-                  child: FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed(
-                        'TelaDeExameClinico',
-                        extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
-                            hasTransition: true,
-                            transitionType: PageTransitionType.leftToRight,
-                          ),
-                        },
-                      );
-                    },
-                    text: 'Exame Clínico',
-                    options: FFButtonOptions(
-                      width: 172.0,
-                      height: 30.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFFC92D7E),
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Plus Jakarta Sans',
+                alignment: const AlignmentDirectional(-1, 0.75),
+                child: SizedBox(
+                    child: Flex(
+                      direction: Axis.horizontal,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          height: 85,
+                          width: MediaQuery.of(context).size.width * 0.32,
+                          child: FFButtonWidget(
+                            onPressed: () async {
+                              context.pushNamed(
+                                'TelaDeMamografia',
+                                extra: <String, dynamic>{
+                                  kTransitionInfoKey: const TransitionInfo(
+                                    hasTransition: true,
+                                    transitionType: PageTransitionType.rightToLeft,
+                                  ),
+                                },
+                              );
+                            },
+                            text: 'MAMOGRAFIA',
+                            options: FFButtonOptions(
+                              color: const Color(0xFFEF959C),
+                              textStyle:
+                              FlutterFlowTheme.of(context).titleSmall.override(
+                                fontFamily: 'Montserrat',
                                 color: Colors.white,
-                                letterSpacing: 0.0,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14.0,
                               ),
-                      elevation: 3.0,
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
-                      ),
+                              textAlign: TextAlign.left,
+                              padding: const EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 8.0, 0.0),
+                              borderRadius: const BorderRadius.only(
+                                topRight: Radius.circular(100),
+                                bottomRight: Radius.circular(100),
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.65,
+                          child: Text(
+                            'A mamografia pode provocar dor em algumas mulheres, mas o Ministério da Saúde recomenda realizar a mamografia a cada dois anos entre os 50 e 69 anos.',
+                            textAlign: TextAlign.justify,
+                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Montserrat',
+                              fontSize: 12,
+                              lineHeight: 1,
+                            ),
+                          ),
+                        )
+                      ],
+                    )
+                ),
+              ),
+
+              Align(
+                alignment: const AlignmentDirectional(0, 0.95),
+                child: Flex(
+                  direction: Axis.horizontal,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
+                        height: 30.0,
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                  ),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/globalImages/download.png',
+                        height: 50.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],

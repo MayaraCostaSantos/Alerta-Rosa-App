@@ -19,6 +19,7 @@
 import 'dart:math' as math;
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '/flutter_flow/flutter_flow_util.dart' show routeObserver;
 
@@ -26,7 +27,7 @@ export 'package:assets_audio_player/assets_audio_player.dart';
 
 class FlutterFlowAudioPlayer extends StatefulWidget {
   const FlutterFlowAudioPlayer({
-    Key? key,
+    super.key,
     required this.audio,
     required this.titleTextStyle,
     required this.playbackDurationTextStyle,
@@ -37,7 +38,8 @@ class FlutterFlowAudioPlayer extends StatefulWidget {
     required this.elevation,
     this.pauseOnNavigate = true,
     required this.playInBackground,
-  }) : super(key: key);
+    this.isURL = false,
+  });
 
   final Audio audio;
   final TextStyle titleTextStyle;
@@ -49,6 +51,7 @@ class FlutterFlowAudioPlayer extends StatefulWidget {
   final double elevation;
   final bool pauseOnNavigate;
   final PlayInBackground playInBackground;
+  final bool isURL;
 
   @override
   _FlutterFlowAudioPlayerState createState() => _FlutterFlowAudioPlayerState();
@@ -63,6 +66,11 @@ class _FlutterFlowAudioPlayerState extends State<FlutterFlowAudioPlayer>
   void initState() {
     super.initState();
     openPlayer();
+  }
+
+  Future<void> _launchURL(String url) async {
+    Uri urlPath = Uri.parse(url);
+    await launchUrl(urlPath);
   }
 
   Future openPlayer() async {
@@ -156,10 +164,10 @@ class _FlutterFlowAudioPlayerState extends State<FlutterFlowAudioPlayer>
                                     widget.audio.metas.title ?? 'Audio Title',
                                     style: widget.titleTextStyle,
                                   ),
-                                  Text(
+                                  !widget.isURL ? Text(
                                     playbackStateText(infos),
                                     style: widget.playbackDurationTextStyle,
-                                  )
+                                  ) : Container(),
                                 ],
                               ),
                             ),
@@ -169,7 +177,7 @@ class _FlutterFlowAudioPlayerState extends State<FlutterFlowAudioPlayer>
                             child: Material(
                               color: Colors.transparent,
                               child: IconButton(
-                                onPressed: _assetsAudioPlayer!.playOrPause,
+                                onPressed: () => widget.isURL ? _launchURL(widget.audio.path) : _assetsAudioPlayer!.playOrPause(),
                                 icon: Icon(
                                   (isPlaying)
                                       ? Icons.pause_circle_filled_rounded
@@ -206,7 +214,7 @@ class _FlutterFlowAudioPlayerState extends State<FlutterFlowAudioPlayer>
 }
 
 class PositionSeekWidget extends StatefulWidget {
-  const PositionSeekWidget({
+  const PositionSeekWidget({super.key, 
     required this.currentPosition,
     required this.duration,
     required this.seekTo,
@@ -303,18 +311,11 @@ class FlutterFlowRoundedRectSliderTrackShape extends SliderTrackShape
     bool isEnabled = false,
     double additionalActiveTrackHeight = 0,
   }) {
-    assert(context != null);
-    assert(offset != null);
-    assert(parentBox != null);
-    assert(sliderTheme != null);
     assert(sliderTheme.disabledActiveTrackColor != null);
     assert(sliderTheme.disabledInactiveTrackColor != null);
     assert(sliderTheme.activeTrackColor != null);
     assert(sliderTheme.inactiveTrackColor != null);
     assert(sliderTheme.thumbShape != null);
-    assert(enableAnimation != null);
-    assert(textDirection != null);
-    assert(thumbCenter != null);
     // If the slider [SliderThemeData.trackHeight] is less than or equal to 0,
     // then it makes no difference whether the track is painted or not,
     // therefore the painting  can be a no-op.

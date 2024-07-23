@@ -10,6 +10,11 @@
   <string>io.flutter.flutter.app</string>
   <key>CFBundleInfoDictionaryVersion</key>
   <string>6.0</string>
+  <key>LSApplicationQueriesSchemes</key>
+  <array>
+    <string>sms</string>
+    <string>tel</string>
+  </array>
   <key>CFBundleName</key>
   <string>App</string>
   <key>CFBundlePackageType</key>

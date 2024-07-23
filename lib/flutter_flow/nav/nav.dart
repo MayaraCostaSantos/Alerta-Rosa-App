@@ -1,19 +1,12 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
-import '/main.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -78,310 +71,315 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? TelaDeMenuInicialWidget()
-          : TelaDeEntradaWidget(),
+          ? const TelaDeMenuInicialWidget()
+          : const TelaDeEntradaWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? TelaDeMenuInicialWidget()
-              : TelaDeEntradaWidget(),
+              ? const TelaDeMenuInicialWidget()
+              : const TelaDeEntradaWidget(),
         ),
         FFRoute(
           name: 'TelaDeExamesDeRotina',
           path: '/telaDeExamesDeRotina',
-          builder: (context, params) => TelaDeExamesDeRotinaWidget(),
+          builder: (context, params) => const TelaDeExamesDeRotinaWidget(),
         ),
         FFRoute(
           name: 'TelaDeAutoexame',
           path: '/telaDeAutoexame',
-          builder: (context, params) => TelaDeAutoexameWidget(),
+          builder: (context, params) => const TelaDeAutoexameWidget(),
         ),
         FFRoute(
           name: 'TelaDeFiseoTerapia1',
           path: '/telaDeFiseoTerapia1',
-          builder: (context, params) => TelaDeFiseoTerapia1Widget(),
+          builder: (context, params) => const TelaDeFiseoTerapia1Widget(),
         ),
         FFRoute(
           name: 'SinaisEsintomas',
           path: '/sinaisEsintomas',
-          builder: (context, params) => SinaisEsintomasWidget(),
+          builder: (context, params) => const SinaisEsintomasWidget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicos1',
           path: '/telaDeExerciciosFisicos1',
-          builder: (context, params) => TelaDeExerciciosFisicos1Widget(),
+          builder: (context, params) => const TelaDeExerciciosFisicos1Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosLeves1',
           path: '/telaDeExerciciosFisicosLeves1',
-          builder: (context, params) => TelaDeExerciciosFisicosLeves1Widget(),
+          builder: (context, params) => const TelaDeExerciciosFisicosLeves1Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosLeves2',
           path: '/telaDeExerciciosFisicosLeves2',
-          builder: (context, params) => TelaDeExerciciosFisicosLeves2Widget(),
+          builder: (context, params) => const TelaDeExerciciosFisicosLeves2Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosLeves3',
           path: '/telaDeExerciciosFisicosLeves3',
-          builder: (context, params) => TelaDeExerciciosFisicosLeves3Widget(),
+          builder: (context, params) => const TelaDeExerciciosFisicosLeves3Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosLeves5',
           path: '/telaDeExerciciosFisicosLeves5',
-          builder: (context, params) => TelaDeExerciciosFisicosLeves5Widget(),
+          builder: (context, params) => const TelaDeExerciciosFisicosLeves5Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosLeves4',
           path: '/telaDeExerciciosFisicosLeves4',
-          builder: (context, params) => TelaDeExerciciosFisicosLeves4Widget(),
+          builder: (context, params) => const TelaDeExerciciosFisicosLeves4Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosModerados1',
           path: '/TelaDeExerciciosFisicosModerados1',
           builder: (context, params) =>
-              TelaDeExerciciosFisicosModerados1Widget(),
+              const TelaDeExerciciosFisicosModerados1Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosModerados2',
           path: '/telaDeExerciciosFisicosModerados2',
           builder: (context, params) =>
-              TelaDeExerciciosFisicosModerados2Widget(),
+              const TelaDeExerciciosFisicosModerados2Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosModerados3',
           path: '/telaDeExerciciosFisicosModerados3',
           builder: (context, params) =>
-              TelaDeExerciciosFisicosModerados3Widget(),
+              const TelaDeExerciciosFisicosModerados3Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosModerados4',
           path: '/telaDeExerciciosFisicosModerados4',
           builder: (context, params) =>
-              TelaDeExerciciosFisicosModerados4Widget(),
+              const TelaDeExerciciosFisicosModerados4Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosModerados5',
           path: '/telaDeExerciciosFisicosModerados5',
           builder: (context, params) =>
-              TelaDeExerciciosFisicosModerados5Widget(),
+              const TelaDeExerciciosFisicosModerados5Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosModerados6',
           path: '/telaDeExerciciosFisicosModerados6',
           builder: (context, params) =>
-              TelaDeExerciciosFisicosModerados6Widget(),
+              const TelaDeExerciciosFisicosModerados6Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosModerados7',
           path: '/telaDeExerciciosFisicosModerados7',
           builder: (context, params) =>
-              TelaDeExerciciosFisicosModerados7Widget(),
+              const TelaDeExerciciosFisicosModerados7Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosModerados8',
           path: '/telaDeExerciciosFisicosModerados8',
           builder: (context, params) =>
-              TelaDeExerciciosFisicosModerados8Widget(),
+              const TelaDeExerciciosFisicosModerados8Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosModerados9',
           path: '/telaDeExerciciosFisicosModerados9',
           builder: (context, params) =>
-              TelaDeExerciciosFisicosModerados9Widget(),
+              const TelaDeExerciciosFisicosModerados9Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosFisicosModerados10',
           path: '/telaDeExerciciosFisicosModerados10',
           builder: (context, params) =>
-              TelaDeExerciciosFisicosModerados10Widget(),
+              const TelaDeExerciciosFisicosModerados10Widget(),
         ),
         FFRoute(
           name: 'TelaSecrecaonomamilo',
           path: '/telaSecrecaonomamilo',
-          builder: (context, params) => TelaSecrecaonomamiloWidget(),
+          builder: (context, params) => const TelaSecrecaonomamiloWidget(),
         ),
         FFRoute(
           name: 'TelaNoduloNaMama',
           path: '/telaNoduloNaMama',
-          builder: (context, params) => TelaNoduloNaMamaWidget(),
+          builder: (context, params) => const TelaNoduloNaMamaWidget(),
         ),
         FFRoute(
           name: 'TelaDeMamiloInvertido',
           path: '/telaDeMamiloInvertido',
-          builder: (context, params) => TelaDeMamiloInvertidoWidget(),
+          builder: (context, params) => const TelaDeMamiloInvertidoWidget(),
         ),
         FFRoute(
           name: 'TelaDeCarocoNaAxila',
           path: '/telaDeCarocoNaAxila',
-          builder: (context, params) => TelaDeCarocoNaAxilaWidget(),
+          builder: (context, params) => const TelaDeCarocoNaAxilaWidget(),
         ),
         FFRoute(
           name: 'TelaInchacoOuTodaAmama',
           path: '/telaInchacoOuTodaAmama',
-          builder: (context, params) => TelaInchacoOuTodaAmamaWidget(),
+          builder: (context, params) => const TelaInchacoOuTodaAmamaWidget(),
         ),
         FFRoute(
           name: 'TelaPeleComAspectoEnrugado',
           path: '/telaPeleComAspectoEnrugado',
-          builder: (context, params) => TelaPeleComAspectoEnrugadoWidget(),
+          builder: (context, params) => const TelaPeleComAspectoEnrugadoWidget(),
         ),
         FFRoute(
           name: 'TelaDeIrritacaoNaPele',
           path: '/telaDeIrritacaoNaPele',
-          builder: (context, params) => TelaDeIrritacaoNaPeleWidget(),
+          builder: (context, params) => const TelaDeIrritacaoNaPeleWidget(),
         ),
         FFRoute(
           name: 'TelaDeDorNaMamaOuMamilo',
           path: '/telaDeDorNaMamaOuMamilo',
-          builder: (context, params) => TelaDeDorNaMamaOuMamiloWidget(),
+          builder: (context, params) => const TelaDeDorNaMamaOuMamiloWidget(),
         ),
         FFRoute(
           name: 'TelaDeExameDeSangue',
           path: '/telaDeExameDeSangue',
-          builder: (context, params) => TelaDeExameDeSangueWidget(),
+          builder: (context, params) => const TelaDeExameDeSangueWidget(),
         ),
         FFRoute(
           name: 'TelaDeExameClinico',
           path: '/telaDeExameClinico',
-          builder: (context, params) => TelaDeExameClinicoWidget(),
+          builder: (context, params) => const TelaDeExameClinicoWidget(),
         ),
         FFRoute(
           name: 'TelaDeMamografia',
           path: '/telaDeMamografia',
-          builder: (context, params) => TelaDeMamografiaWidget(),
+          builder: (context, params) => const TelaDeMamografiaWidget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosIntensos1',
           path: '/telaDeExerciciosIntensos1',
-          builder: (context, params) => TelaDeExerciciosIntensos1Widget(),
+          builder: (context, params) => const TelaDeExerciciosIntensos1Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosIntensos2',
           path: '/telaDeExerciciosIntensos2',
-          builder: (context, params) => TelaDeExerciciosIntensos2Widget(),
+          builder: (context, params) => const TelaDeExerciciosIntensos2Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosIntensos3',
           path: '/telaDeExerciciosIntensos3',
-          builder: (context, params) => TelaDeExerciciosIntensos3Widget(),
+          builder: (context, params) => const TelaDeExerciciosIntensos3Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosIntensos4',
           path: '/telaDeExerciciosIntensos4',
-          builder: (context, params) => TelaDeExerciciosIntensos4Widget(),
+          builder: (context, params) => const TelaDeExerciciosIntensos4Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosIntensos5',
           path: '/telaDeExerciciosIntensos5',
-          builder: (context, params) => TelaDeExerciciosIntensos5Widget(),
+          builder: (context, params) => const TelaDeExerciciosIntensos5Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosIntensos6',
           path: '/telaDeExerciciosIntensos6',
-          builder: (context, params) => TelaDeExerciciosIntensos6Widget(),
+          builder: (context, params) => const TelaDeExerciciosIntensos6Widget(),
         ),
         FFRoute(
           name: 'TelaDeExerciciosIntensos7',
-          path: '/TelaDeExerciciosFisicos1',
-          builder: (context, params) => TelaDeExerciciosIntensos7Widget(),
+          path: '/telaDeExerciciosIntensos7',
+          builder: (context, params) => const TelaDeExerciciosIntensos7Widget(),
         ),
         FFRoute(
           name: 'TelaDeSaudeMental',
           path: '/saudemental',
-          builder: (context, params) => TelaDeSaudeMentalWidget(),
+          builder: (context, params) => const TelaDeSaudeMentalWidget(),
+        ),
+        FFRoute(
+          name: 'TelaDeMusicaRelaxante',
+          path: '/telaDeMusicaRelaxante',
+          builder: (context, params) => const TelaDeMusicaRelaxanteWidget(),
         ),
         FFRoute(
           name: 'TelaDeEntrada',
           path: '/telaDeEntrada',
-          builder: (context, params) => TelaDeEntradaWidget(),
+          builder: (context, params) => const TelaDeEntradaWidget(),
         ),
         FFRoute(
           name: 'TelaDeAlimentacao',
           path: '/telaDeAlimentacao',
-          builder: (context, params) => TelaDeAlimentacaoWidget(),
+          builder: (context, params) => const TelaDeAlimentacaoWidget(),
         ),
         FFRoute(
           name: 'TelaDePaladar',
           path: '/telaDePaladar',
-          builder: (context, params) => TelaDePaladarWidget(),
+          builder: (context, params) => const TelaDePaladarWidget(),
         ),
         FFRoute(
           name: 'TelaDeRegularAlimentacao',
           path: '/telaDeRegularAlimentacao',
-          builder: (context, params) => TelaDeRegularAlimentacaoWidget(),
+          builder: (context, params) => const TelaDeRegularAlimentacaoWidget(),
         ),
         FFRoute(
           name: 'TelaDeReceitas',
           path: '/telaDeReceitas',
-          builder: (context, params) => TelaDeReceitasWidget(),
+          builder: (context, params) => const TelaDeReceitasWidget(),
         ),
         FFRoute(
           name: 'TelaDeApoioEmocional',
           path: '/telaDeApoioEmocional',
-          builder: (context, params) => TelaDeApoioEmocionalWidget(),
+          builder: (context, params) => const TelaDeApoioEmocionalWidget(),
         ),
         FFRoute(
           name: 'TelaDeMeditacaoGuiada',
           path: '/telaDeMeditacaoGuiada',
-          builder: (context, params) => TelaDeMeditacaoGuiadaWidget(),
+          builder: (context, params) => const TelaDeMeditacaoGuiadaWidget(),
         ),
         FFRoute(
           name: 'TelaDeLidandoDepressao',
           path: '/telaDeLidandoDepressao',
-          builder: (context, params) => TelaDeLidandoDepressaoWidget(),
+          builder: (context, params) => const TelaDeLidandoDepressaoWidget(),
         ),
         FFRoute(
           name: 'FisioterapiaMenu',
           path: '/fisioterapiaMenu',
-          builder: (context, params) => FisioterapiaMenuWidget(),
+          builder: (context, params) => const FisioterapiaMenuWidget(),
         ),
         FFRoute(
           name: 'TelaDeFiseoTerapia2',
           path: '/telaDeFiseoTerapia2',
-          builder: (context, params) => TelaDeFiseoTerapia2Widget(),
+          builder: (context, params) => const TelaDeFiseoTerapia2Widget(),
         ),
         FFRoute(
           name: 'TelaDeFiseoTerapia3',
           path: '/telaDeFiseoTerapia3',
-          builder: (context, params) => TelaDeFiseoTerapia3Widget(),
+          builder: (context, params) => const TelaDeFiseoTerapia3Widget(),
         ),
         FFRoute(
           name: 'TelaDeFiseoTerapia4',
           path: '/telaDeFiseoTerapia4',
-          builder: (context, params) => TelaDeFiseoTerapia4Widget(),
+          builder: (context, params) => const TelaDeFiseoTerapia4Widget(),
         ),
         FFRoute(
           name: 'TelaDeFiseoTerapia5',
           path: '/telaDeFiseoTerapia5',
-          builder: (context, params) => TelaDeFiseoTerapia5Widget(),
+          builder: (context, params) => const TelaDeFiseoTerapia5Widget(),
         ),
         FFRoute(
           name: 'TelaDeFiseoTerapia6',
           path: '/telaDeFiseoTerapia6',
-          builder: (context, params) => TelaDeFiseoTerapia6Widget(),
+          builder: (context, params) => const TelaDeFiseoTerapia6Widget(),
         ),
         FFRoute(
           name: 'TelaDeFiseoTerapia7',
           path: '/telaDeFiseoTerapia7',
-          builder: (context, params) => TelaDeFiseoTerapia7Widget(),
+          builder: (context, params) => const TelaDeFiseoTerapia7Widget(),
         ),
         FFRoute(
           name: 'TelaDeFiseoTerapia8',
           path: '/telaDeFiseoTerapia8',
-          builder: (context, params) => TelaDeFiseoTerapia8Widget(),
+          builder: (context, params) => const TelaDeFiseoTerapia8Widget(),
         ),
         FFRoute(
           name: 'TelaDeFiseoTerapia9',
           path: '/telaDeFiseoTerapia9',
-          builder: (context, params) => TelaDeFiseoTerapia9Widget(),
+          builder: (context, params) => const TelaDeFiseoTerapia9Widget(),
         ),
         FFRoute(
           name: 'TelaDeMenuInicial',
           path: '/telaDeMenuInicial',
-          builder: (context, params) => TelaDeMenuInicialWidget(),
+          builder: (context, params) => const TelaDeMenuInicialWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
@@ -566,7 +564,7 @@ class FFRoute {
               : builder(context, ffParams);
           final child = appStateNotifier.loading
               ? Container(
-                  color: Color(0xFFF8A2B0),
+                  color: const Color(0xFFF8A2B0),
                   child: Image.asset(
                     'assets/images/MA-03.png',
                     fit: BoxFit.contain,
@@ -614,7 +612,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(
+  static TransitionInfo appDefault() => const TransitionInfo(
         hasTransition: true,
         transitionType: PageTransitionType.fade,
         duration: Duration(milliseconds: 0),

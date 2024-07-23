@@ -77,6 +77,8 @@ export '/alerta_rosa_app/exercicios_fisicos/exercicios_intensos/tela_de_exercici
     show TelaDeExerciciosIntensos7Widget;
 export '/alerta_rosa_app/saude_mental/tela_de_saude_mental/tela_de_saude_mental_widget.dart'
     show TelaDeSaudeMentalWidget;
+export '/alerta_rosa_app/saude_mental/tela_de_musica_relaxante/tela_de_musica_relaxante_widget.dart'
+    show TelaDeMusicaRelaxanteWidget;
 export '/alerta_rosa_app/telas_de_entrada/tela_de_entrada/tela_de_entrada_widget.dart'
     show TelaDeEntradaWidget;
 export '/alerta_rosa_app/alimentacao/tela_de_alimentacao/tela_de_alimentacao_widget.dart'

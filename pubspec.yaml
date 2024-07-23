@@ -51,6 +51,8 @@ dependencies:
   flutter_secure_storage_macos: 3.0.1
   flutter_secure_storage_platform_interface: 1.0.2
   flutter_secure_storage_web: 1.1.2
+  flutter_web_plugins:
+    sdk: flutter
   flutter_secure_storage_windows: 2.1.1
   font_awesome_flutter: 10.6.0
   from_css_color: 2.0.0
@@ -62,7 +64,7 @@ dependencies:
   google_sign_in_ios: 5.6.4
   google_sign_in_platform_interface: 2.4.2
   google_sign_in_web: 0.12.1
-  intl: 0.18.1
+  intl: 0.19.0
   json_path: 0.6.2
   page_transition: 2.1.0
   path_provider: 2.0.14
@@ -114,6 +116,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
 
+  crypto: any
+  http: any
 dependency_overrides:
   http: 1.2.0
   pointer_interceptor: 0.10.1
@@ -154,6 +158,8 @@ flutter:
   assets:
     - assets/fonts/
     - assets/images/
+    - assets/images/globalImages/
+    - assets/images/iconNumbers/
     - assets/videos/
     - assets/audios/
     - assets/lottie_animations/
@@ -172,8 +178,20 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
+  fonts:
+     - family: Source Sans Pro
+       fonts:
+         - asset: assets/fonts/source-sans-pro-latin-300-normal.ttf
+           weight: 300
+         - asset: assets/fonts/source-sans-pro-latin-400-normal.ttf
+         - asset: assets/fonts/source-sans-pro-latin-700-normal.ttf
+           weight: 700
+     - family: Nautilus Pompilius
+       fonts:
+         - asset: assets/fonts/NautilusPompilius.otf
+     - family: Shrinkhand
+       fonts:
+         - asset: assets/fonts/Shrikhand-Regular.ttf
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf

@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tela_de_regular_alimentacao_model.dart';
 export 'tela_de_regular_alimentacao_model.dart';
 
@@ -44,48 +41,67 @@ class _TelaDeRegularAlimentacaoWidgetState
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Visibility(
-          visible: responsiveVisibility(
-            context: context,
-            tablet: false,
-            tabletLandscape: false,
-            desktop: false,
-          ),
           child: Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color(0xFFECA9BB),
-                  Color(0xFFF8A2B0),
-                  Color(0xFFECA9BB)
-                ],
-                stops: [0.0, 0.5, 1.0],
-                begin: AlignmentDirectional(-1.0, -1.0),
-                end: AlignmentDirectional(1.0, 1.0),
-              ),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/globalImages/plano-de-fundo-2.png'),
+            ),
             ),
             child: Stack(
               children: [
                 Align(
-                  alignment: AlignmentDirectional(0.1, -0.67),
-                  child: Text(
-                    'Como regular a alimentação',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          fontSize: 20.0,
-                          letterSpacing: 2.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  alignment: Alignment.topRight - const Alignment(0.0, -0.02),
+                  child: ClipRRect(
+                    child: Image.asset(
+                      'assets/images/globalImages/logo-removebg-preview.png',
+                      width: 90,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.01, -0.89),
+                  alignment: Alignment.topLeft - const Alignment(-0.05, -0.05),
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.safePop();
+                    },
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/iconeVoltar.png',
+                        height: 44.8,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(0, -0.69),
+                  child: Text(
+                    'Como regular a alimentação',
+                    textAlign: TextAlign.center,
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Open Sans',
+                      fontSize: 20.0,
+                      letterSpacing: 2.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(-0.01, -0.89),
                   child: Container(
                     width: 80.0,
                     height: 80.0,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
@@ -95,15 +111,15 @@ class _TelaDeRegularAlimentacaoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, -0.28),
+                  alignment: const AlignmentDirectional(0.0, -0.28),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 15.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 16.0, 0.0),
                     child: Text(
                       'Eles são especializados em planejar dietas que atendam às necessidades específicas de pacientes com câncer, levando em consideração fatores como tratamento, efeitos colaterais e necessidades nutricionais individuais.',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
+                            fontFamily: 'Montserrat',
                             fontSize: 12.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.normal,
@@ -112,29 +128,29 @@ class _TelaDeRegularAlimentacaoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, -0.6),
+                  alignment: const AlignmentDirectional(0.0, -0.6),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Text(
                       '\"Quando se trata de alimentação durante o tratamento do câncer, a ênfase está em consumir uma dieta equilibrada para manter a força e a energia.\"',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
+                            fontFamily: 'Montserrat',
                             fontSize: 12.0,
                             letterSpacing: 0.0,
-                            fontWeight: FontWeight.w600,
+                            fontWeight: FontWeight.w500,
                           ),
                     ),
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.88, -0.29),
+                  alignment: const AlignmentDirectional(-0.88, -0.29),
                   child: Container(
                     width: 100.0,
                     height: 100.0,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
@@ -144,23 +160,26 @@ class _TelaDeRegularAlimentacaoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.83, -0.07),
-                  child: Text(
-                    '2. Mantenha-se Hidratado:',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  alignment: const AlignmentDirectional(-1, -0.07),
+                  child: Padding(
+                    padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    child: Text(
+                      '2. Mantenha-se Hidratado:',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Montserrat',
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.84, 0.08),
+                  alignment: const AlignmentDirectional(-0.84, 0.08),
                   child: Container(
                     width: 90.0,
                     height: 90.0,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
@@ -170,15 +189,15 @@ class _TelaDeRegularAlimentacaoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.07),
+                  alignment: const AlignmentDirectional(0.0, 0.07),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 15.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 16.0, 0.0),
                     child: Text(
                       'Beba bastante água para ajudar na hidratação e na eliminação de toxinas do corpo.',
-                      textAlign: TextAlign.start,
+                      textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
+                            fontFamily: 'Montserrat',
                             fontSize: 12.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.normal,
@@ -187,23 +206,26 @@ class _TelaDeRegularAlimentacaoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.94, 0.51),
-                  child: Text(
-                    '4. Suplementos:',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
+                  alignment: const AlignmentDirectional(-1, 0.51),
+                  child: Padding(
+                    padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    child: Text(
+                      '4. Suplementos:',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Montserrat',
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  )
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.86, 0.4),
+                  alignment: const AlignmentDirectional(-0.86, 0.4),
                   child: Container(
                     width: 100.0,
                     height: 100.0,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
@@ -213,49 +235,56 @@ class _TelaDeRegularAlimentacaoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.82, -0.41),
-                  child: Text(
-                    '1. Consulte um Nutricionista Oncológico(a):',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
+                  alignment: const AlignmentDirectional(-1, -0.41),
+                  child: Padding(
+                    padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    child: Text(
+                      '1. Consulte um Nutricionista Oncológico(a):',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Montserrat',
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  )
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.81, -0.51),
+                  alignment: const AlignmentDirectional(0.81, -0.5),
                   child: Text(
                     '- American Cancer Society, 2002.',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          fontSize: 12.0,
-                          letterSpacing: 0.0,
-                          fontStyle: FontStyle.italic,
-                        ),
+                      fontFamily: 'Montserrat',
+                      fontSize: 12.0,
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                    ),
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.87, 0.21),
-                  child: Text(
-                    '3. Faça Refeições Frequentes e Pequenas:',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Roboto',
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
+                  alignment: const AlignmentDirectional(-1, 0.21),
+                  child: Padding(
+                    padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    child: Text(
+                      '3. Faça Refeições Frequentes e Pequenas:',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Montserrat',
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  )
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.36),
+                  alignment: const AlignmentDirectional(0.0, 0.36),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 15.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 16.0, 0.0),
                     child: Text(
                       'Comer pequenas refeições ao longo do dia pode ajudar a manter os níveis de energia e evitar náuseas ou desconforto gastrointestinal.',
                       textAlign: TextAlign.justify,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Roboto',
+                            fontFamily: 'Montserrat',
                             fontSize: 12.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.normal,
@@ -264,61 +293,28 @@ class _TelaDeRegularAlimentacaoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-0.35, -0.84),
-                  child: InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      context.pushNamed(
-                        'TelaDeAlimentacao',
-                        extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
-                            hasTransition: true,
-                            transitionType: PageTransitionType.fade,
-                            duration: Duration(milliseconds: 0),
-                          ),
-                        },
-                      );
-                    },
-                    child: Icon(
-                      Icons.arrow_left,
-                      color: Color(0xFFC92D7E),
-                      size: 40.0,
+                  alignment: const AlignmentDirectional(0.0, 0.78),
+                  child: Padding(
+                    padding: const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 16.0, 0.0),
+                    child: Text(
+                      'Em alguns casos, suplementos nutricionais podem ser recomendados para garantir que você esteja recebendo todos os nutrientes necessários, especialmente se tiver dificuldade em comer o suficiente devido aos efeitos colaterais do tratamento.',
+                      textAlign: TextAlign.justify,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12.0,
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.normal,
+                      ),
                     ),
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            150.0, 600.0, 10.0, 0.0),
-                        child: Text(
-                          'Em alguns casos, suplementos nutricionais podem ser recomendados para garantir que você esteja recebendo todos os nutrientes necessários, especialmente se tiver dificuldade em comer o suficiente devido aos efeitos colaterais do tratamento.',
-                          textAlign: TextAlign.start,
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Roboto',
-                                    fontSize: 12.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.normal,
-                                  ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Align(
-                  alignment: AlignmentDirectional(-0.85, 0.72),
+                  alignment: const AlignmentDirectional(-0.85, 0.77),
                   child: Container(
                     width: 100.0,
                     height: 100.0,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
@@ -328,15 +324,28 @@ class _TelaDeRegularAlimentacaoWidgetState
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.01, 0.95),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8.0),
-                    child: Image.asset(
-                      'assets/images/logo-removebg-preview.png',
-                      width: 130.0,
-                      height: 60.0,
-                      fit: BoxFit.cover,
-                    ),
+                  alignment: const AlignmentDirectional(0, 0.95),
+                  child: Flex(
+                    direction: Axis.horizontal,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/globalImages/cnpq-conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico_(1).png',
+                          height: 30.0,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/globalImages/download.png',
+                          height: 50.0,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
